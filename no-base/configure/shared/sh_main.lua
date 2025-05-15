@@ -1,0 +1,3 @@
+Config = {
+    UseFrameworkIfExist = true
+}

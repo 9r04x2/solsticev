@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debux Basketball</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div style="display: none" class="minigame">
+      <div class="minigameSide">
+        <div class="minigameInside">
+          <div class="ball"></div>
+          <div class="arenaImgLeft"></div>
+          <div class="hoop"></div>
+          <div class="arenaImgRight"></div>
+        </div>
+      </div>
+    </div>
+    <div style="display: none" class="BuyPage">
+      <div class="PageInside">
+        <div class="TopSide">
+          <div class="BasketIconBG"><div></div></div>
+          <div class="BasketIconText">
+            BASKETBALL
+            <p>MACHINE</p>
+          </div>
+          <div onclick="DefaultClose()" class="CloseArea">
+            <div class="CloseText">
+              CLOSE
+              <p>MENU</p>
+            </div>
+            <div class="CloseBar">&#10006;</div>
+          </div>
+        </div>
+        <div class="Pages">
+          <div class="PageLeft">
+            <div class="leaderboard">
+              <div class="leadetboarText">Total Basket <t>Leader List</t></div>
+              <div class="leaders one">
+                <div class="ProfileDetail">
+                  <div class="Profile"></div>
+                  <div class="ProfileName">
+                    <t>Thomas</t>
+                    <p>Richardson</p>
+                  </div>
+                </div>
+                <div class="leaderlist">#1</div>
+                <div class="leaderbasket">0</div>
+              </div>
+              <div class="leaders two">
+                <div class="ProfileDetail">
+                  <div class="Profile"></div>
+                  <div class="ProfileName">
+                    <t>Thomas</t>
+                    <p>Richardson</p>
+                  </div>
+                </div>
+                <div class="leaderlist">#2</div>
+                <div class="leaderbasket">0</div>
+              </div>
+              <div class="leaders three">
+                <div class="ProfileDetail">
+                  <div class="Profile"></div>
+                  <div class="ProfileName">
+                    <t>Thomas</t>
+                    <p>Richardson</p>
+                  </div>
+                </div>
+                <div class="leaderlist">#3</div>
+                <div class="leaderbasket">0</div>
+              </div>
+            </div>
+            <div class="leftbottomPages">
+              <div class="GameSelection">
+                <div class="GameST">Game <t>Selection</t></div>
+                <div class="GameSelectBars">
+                  <div class="GameSelectBar" id="3" onclick="SelectGame(3)">
+                    3 Top
+                  </div>
+                  <div
+                    class="GameSelectBar active"
+                    id="5"
+                    onclick="SelectGame(5)"
+                  >
+                    5 Top
+                  </div>
+                  <div class="GameSelectBar" id="7" onclick="SelectGame(7)">
+                    7 Top
+                  </div>
+                  <div class="GameSelectBar" id="10" onclick="SelectGame(10)">
+                    10 Top
+                  </div>
+                  <div class="GameSelectBar" id="13" onclick="SelectGame(13)">
+                    13 Top
+                  </div>
+                  <div class="GameSelectBar" id="15" onclick="SelectGame(15)">
+                    15 Top
+                  </div>
+                  <div class="GameSelectBar" id="17" onclick="SelectGame(17)">
+                    17 Top
+                  </div>
+                  <div class="GameSelectBar" id="20" onclick="SelectGame(20)">
+                    20 Top
+                  </div>
+                </div>
+                <div class="YouSelectBar">
+                  <div onclick="SelectGameUpdate('remove')" class="remove">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.0938vw"
+                      height="1.0417vw"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M15.4615 10.9215H5.76924C5.55503 10.9215 5.34959 10.8364 5.19812 10.685C5.04664 10.5335 4.96155 10.3281 4.96155 10.1138C4.96155 9.89963 5.04664 9.69419 5.19812 9.54272C5.34959 9.39125 5.55503 9.30615 5.76924 9.30615H15.4615C15.6758 9.30615 15.8812 9.39125 16.0327 9.54272C16.1841 9.69419 16.2692 9.89963 16.2692 10.1138C16.2692 10.3281 16.1841 10.5335 16.0327 10.685C15.8812 10.8364 15.6758 10.9215 15.4615 10.9215Z"
+                        fill="white"
+                        fill-opacity="0.51"
+                      />
+                    </svg>
+                  </div>
+                  <t>5 Top</t>
+                  <div onclick="SelectGameUpdate('add')" class="add">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.0938vw"
+                      height="1.0417vw"
+                      viewBox="0 0 21 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M15.1923 10.9215H11.1539V14.96C11.1539 15.1742 11.0688 15.3796 10.9173 15.5311C10.7658 15.6826 10.5604 15.7677 10.3462 15.7677C10.132 15.7677 9.92652 15.6826 9.77504 15.5311C9.62357 15.3796 9.53848 15.1742 9.53848 14.96V10.9215H5.50001C5.2858 10.9215 5.08036 10.8364 4.92889 10.6849C4.77742 10.5335 4.69232 10.328 4.69232 10.1138C4.69232 9.89959 4.77742 9.69415 4.92889 9.54268C5.08036 9.39121 5.2858 9.30611 5.50001 9.30611H9.53848V5.26765C9.53848 5.05344 9.62357 4.848 9.77504 4.69653C9.92652 4.54506 10.132 4.45996 10.3462 4.45996C10.5604 4.45996 10.7658 4.54506 10.9173 4.69653C11.0688 4.848 11.1539 5.05344 11.1539 5.26765V9.30611H15.1923C15.4065 9.30611 15.612 9.39121 15.7634 9.54268C15.9149 9.69415 16 9.89959 16 10.1138C16 10.328 15.9149 10.5335 15.7634 10.6849C15.612 10.8364 15.4065 10.9215 15.1923 10.9215Z"
+                        fill="white"
+                        fill-opacity="0.51"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="balldec">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.0417vw"
+                    height="1.0417vw"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.64794 1.60803C5.20991 1.60803 1.60803 5.20991 1.60803 9.64794C1.60803 14.086 5.20991 17.6878 9.64794 17.6878C14.086 17.6878 17.6878 14.086 17.6878 9.64794C17.6878 5.20991 14.086 1.60803 9.64794 1.60803ZM10.4519 13.6679H8.84395V8.84395H10.4519V13.6679ZM10.4519 7.23597H8.84395V5.62799H10.4519V7.23597Z"
+                      fill="white"
+                      fill-opacity="0.65"
+                    />
+                  </svg>
+                  <t>Pratik yaparken ayrılamazsın.</t>
+                </div>
+                <div class="GameButtons">
+                  <div class="GameStart" onclick="StartGame()">Oyunu Başlat</div>
+                  <div class="GamePrice">$50</div>
+                </div>
+              </div>
+              <div class="leftDec">
+                <div class="LeftDec">
+                  <div class="LeftDecImg"></div>
+                  <div class="LeftDecText">Nasıl<t>Oynanır</t></div>
+                  <div class="LeftDecTextOne">
+                    Basketbol menüsünü açmak için [E] tuşuna basın. Burada görüntüleyebilirsiniz
+                    istatistikleriniz ve atışlarınızı uygulamaya başlayın.
+                  </div>
+                  <div class="LeftDecTextTwo">
+                    ve - düğmelerini kullanarak top miktarını ayarlayın. Hazır olduğunda,
+                    Basketbol atışlarınızı uygulamaya başlamak için BAŞLAT'a basın.
+                    Becerilerinizi geliştirin ve en iyi oyuncu olun!
+                  </div>
+                  <div class="LeftDecTextThree">
+                    Topun hareketini dikkatlice izleyin. Top hareket ettiğinde [SPACE] tuşuna basın.
+                    basket atmak için top merkezdedir.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="PageRight">
+            <div class="RightDec">
+              <div class="RightDecBigT">Skor Tablosu <t>Liste</t></div>
+              <div class="RightDecT">
+                Toplam başarılı basketleriniz sıralamanızı belirler
+                liderlik tablosu. Düzenli olarak pratik yapın ve diğer oyuncularla yarışın
+                en üst pozisyona ulaşmak için!
+              </div>
+            </div>
+            <div class="RightCharacterBG"></div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="PageInsideBlur"></div>
+      <div class="PageInsideCloseBlur"></div>
+    </div>
+    <div class="YourScoreBoard" style="display: none">
+      <div class="YourScoreBoardSide">
+        <div class="YourScoreTop">
+          <div class="YourScoreLogo"><div></div></div>
+          <div class="YourScoreText">
+            BASKETBALL
+            <p>MACHINE</p>
+          </div>
+        </div>
+        <div class="YourScoreDec">
+          Puanını Ve Kalan Toplarını Gösterir 
+          Haydi Başarabilirsin
+        </div>
+        <div class="YourScoreSide">
+          <t>Puanınız</t>
+          <div class="YourScore">5/3</div>
+        </div>
+        <div class="RemainingSide">
+          <t>Kalan Top</t>
+          <div class="RemainingScore">6</div>
+        </div>
+      </div>
+      <div class="YourScoreBoardShadow"></div>
+    </div>
+  </body>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="./js/script.js"></script>
+</html>

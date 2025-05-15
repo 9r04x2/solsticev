@@ -1,0 +1,4 @@
+-- Uncomment this to use as command
+-- RegisterCommand("mop", function()
+--     TriggerEvent("no-mop:use")
+-- end)

@@ -1,0 +1,47 @@
+[
+    {
+        "kalkisHizi": "orta",
+        "_id": "67d434f59c06b047f38c8b1d",
+        "toprakHizi": "orta",
+        "donusHizi": "hizli",
+        "ad": "tolpstang24",
+        "maxHiz": "300",
+        "__v": 0
+    },
+    {
+        "kalkisHizi": "hizli",
+        "_id": "67d70573bf38f20485c0a717",
+        "toprakHizi": "orta",
+        "donusHizi": "orta",
+        "ad": "eu_34er404",
+        "maxHiz": "350",
+        "__v": 0
+    },
+    {
+        "kalkisHizi": "orta",
+        "_id": "67daaee5dac6afc3febba9f9",
+        "toprakHizi": "yavas",
+        "donusHizi": "orta",
+        "ad": "tolf82st",
+        "maxHiz": "290",
+        "__v": 0
+    },
+    {
+        "kalkisHizi": "hizli",
+        "_id": "67dea040c60cf91298cf0385",
+        "toprakHizi": "orta",
+        "donusHizi": "orta",
+        "ad": "toli422",
+        "maxHiz": "300",
+        "__v": 0
+    },
+    {
+        "kalkisHizi": "hizli",
+        "_id": "67ebf71720f8b6e1a53b9484",
+        "toprakHizi": "hizli",
+        "donusHizi": "hizli",
+        "ad": "tol22m5",
+        "maxHiz": "300",
+        "__v": 0
+    }
+]

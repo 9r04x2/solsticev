@@ -1,0 +1,82 @@
+{
+    "currency": "$",
+    "currency_format": "${amount}",
+    "home": "Home",
+    "welcome": "Hoş geldiniz",
+    "time": {
+        "days": "d",
+        "hours": "h",
+        "minutes": "m",
+        "seconds": "s",
+        "january": "Jam",
+        "february": "Feb",
+        "march": "Mar",
+        "april": "Apr",
+        "may": "May",
+        "june": "Jun",
+        "july": "Jul",
+        "august": "Aug",
+        "september": "Sep",
+        "october": "Oct",
+        "november": "Nov",
+        "december": "Dec"
+    },
+    "send_new_invoice": "Yeni Fatura Gönder",
+    "new_invoice": "Yeni Fatura",
+    "no_invoices_found": "Fatura bulunamadı",
+    "history": "Tarih",
+    "pending": "Beklemede",
+    "received": "Alındı",
+    "cancel_invoice": "Faturayı iptal etmek istiyor musunuz?",
+    "yes": "Evet",
+    "no": "Hayır",
+    "send": "Gönder",
+    "pay": "Ödeme",
+    "cancel": "İptal",
+    "sent": "Gönderildi",
+    "sender": "Gönderen",
+    "recipient": "Alıcı",
+    "summary": "Özet",
+    "me": "Ben",
+    "per": "/per",
+    "total_amount": "Toplam Tutar",
+    "number_of_payments": "Ödeme Sayısı",
+    "each_payment_period": "Her Ödeme Dönemi",
+    "period": {
+        "daily": "Günlük",
+        "weekly": "Haftalık",
+        "biweekly": "İki haftada bir",
+        "monthly": "Aylık",
+        "quarterly": "Üç Aylık"
+    },
+    "notifications": {
+        "no_money": {
+            "title": "Ödeme başarısız oldu",
+            "content": "You don't have enough money ({amount})"
+        },
+        "cancelled": {
+            "title": "Fatura iptal edildi #{invoice.id}",
+            "content": "{invoice.summary}"
+        },
+        "paid_sender": {
+            "title": "Ödenen Fatura #{invoice.id} {partial}",
+            "content": "({amount}) {recipient}"
+        },
+        "paid_sender_commission": {
+            "title": "({partial}) #{invoice.id} You got commission",
+            "content": "({recipient}) {commission}"
+        },
+        "paid_recipient": {
+            "title": "({amount}) Ödenen Fatura #{invoice.id}",
+            "content": "{partial}{sender}"
+        },
+        "sent_invoice": {
+            "title": "{invoice.recipient_label}",
+            "content": "Fatura aşağıdakiler için gönderilmiştir {amount}"
+        },
+        "received_invoice": {
+            "title": "{invoice.sender_label} size bir fatura gönderdi",
+            "content": "{amount} | {invoice.summary}"
+        }
+    }
+}

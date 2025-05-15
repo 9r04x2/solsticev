@@ -1,0 +1,26 @@
+Language = {
+    ["English"] = {
+        ["notvnearby"] = "Yakınlarda televizyon yok",
+        ["notsupported"] = "Bu video formatı desteklenmiyor!",
+        ["noinvehicle"] = "Araçta değilsiniz",
+        ["tvinstalled"] = "Televizyonu araca monte ettiniz",
+        ["vehiclenotowned"] = "Bu araç size ait değil",
+        ["notenoughitem"] = "Araç televizyon eşyasına sahip değilsiniz",
+        ["nopermission"] = "Bu televizyonu açma izniniz yok",
+        ["streamerdeactivated"] = "Yayıncı modu devre dışı bırakıldı",
+        ["streamerdactivated"] = "Yayıncı modu etkinleştirildi",
+        ["controltv"] = "Televizyonu kontrol et",
+    },
+	["German"] = {
+		["notvnearby"] = "Kein Fernseher in der Nähe",
+		["notsupported"] = "Das Videoformat wird nicht unterstützt!",
+		["noinvehicle"] = "Du bist nicht im Fahrzeug",
+		["tvinstalled"] = "Du hast das Fernsehgerät in einem Fahrzeug eingebaut",
+		["vehiclenotowned"] = "Dieses Fahrzeug ist nicht dein Besitz!",
+		["notenoughitem"] = "Sie haben kein Fahrzeugfernsehen",
+		["nopermission"] = "Sie haben nicht die Erlaubnis, diesen Fernseher zu öffnen",
+		["streamerdeactivated"] = "Streamer mode deactivated",
+		["streamerdactivated"] = "Streamer mode activated",		
+		["controltv"] = "Control the TV",	
+	},	
+}

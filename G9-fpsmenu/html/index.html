@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G9 FPS MENU</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-<HASH>" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="fpsMenu">
+        <div class="topWrapper">
+            <div class="header">
+                <div class="topHead">
+                    <div class="fpsHead">FPS</div>
+                    <div class="fps2Head">MENU</div>
+                </div>
+                <div class="headerComment">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            </div>
+            <div class="topRight">
+                <div class="settings">
+                    <div class="settingsText">SETTINGS</div>
+                    <div class="settingsCom">Game Settings</div>
+                </div>
+                <div class="fpsStatus">
+                    <div class="topFps">
+                        <div class="fpsText">FPS</div>
+                        <div class="fpsValue">106</div>
+                    </div>
+                    <div class="bottomFps">In-Game FPS</div>
+                </div>
+            </div>
+        </div>
+        <div class="userActions">
+            <div class="render">
+                <div class="userHeadTop">
+                    <div class="userHeader">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" id="renderPc">
+                                <path d="M0.75 0.75V3.75H1.5V11.25H0.75V14.25H3.75V13.5H5.25V15H4.5V18H7.5V17.25H15V18H18V15H17.25V7.5H18V4.5H15V5.25H13.5V3.75H14.25V0.75H11.25V1.5H3.75V0.75H0.75ZM3.75 3H11.25V3.75H12V11.25H11.25V12H3.75V11.25H3V3.75H3.75V3ZM13.5 6.75H15V7.5H15.75V15H15V15.75H7.5V15H6.75V13.5H11.25V14.25H14.25V11.25H13.5V6.75Z" fill="#FF8800"/>
+                              </svg>
+                        </div>
+                        <div class="userHeaderRight">
+                            <div class="userHead" id="renderT">RENDER</div>
+                            <div class="userHeadCom" id="settingsm">Settings</div>
+                        </div>
+                    </div>
+                    <div class="userHeadBottom" id="renderH">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore at commodi dolorem atque saepe aliquid voluptatibus? Quia, quos aut?
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="carRender" id="carRender">
+                    <div class="header50">
+                        <div class="headers">
+                            <p class="renderHead" id="lodT">Lod</p>
+                            <p class="renderHead2">Render</p>
+                        </div>
+                        <div class="yuzde" id="carYuzde">100%</div>
+                        <div class="reset" id="carReset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                                <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                                <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_130">
+                                <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="prog">
+                        <div class="progStatus"></div>
+                        <div class="progStatus2"></div>
+                    </div>
+                </div>
+                <div class="carRender" id="pedRender">
+                    <div class="header50">
+                        <div class="headers">
+                            <p class="renderHead" id="pedT">Peds</p>
+                            <p class="renderHead2">Render</p>
+                        </div>
+                        <div class="yuzde">100%</div>
+                        <div class="reset" id="pedReset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                                <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                                <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_130">
+                                <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="prog">
+                        <div class="progStatus"></div>
+                        <div class="progStatus2"></div>
+                    </div>
+                    
+                </div>
+                <div class="carRender" id="objectRender">
+                    <div class="header50">
+                        <div class="headers">
+                            <p class="renderHead" id="objectT">Object</p>
+                            <p class="renderHead2">Render</p>
+                        </div>
+                        <div class="yuzde">100%</div>
+                        <div class="reset" id="objectReset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                                <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                                <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_130">
+                                <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="prog">
+                        <div class="progStatus"></div>
+                        <div class="progStatus2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="graphic">
+                <div class="userHeadTop">
+                    <div class="userHeader">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="graphicPc">
+                                <path d="M12.0001 16H19.0001C19.5305 16 20.0392 15.7893 20.4143 15.4142C20.7893 15.0392 21.0001 14.5305 21.0001 14V6.00003C21.0001 5.4696 20.7893 4.96089 20.4143 4.58582C20.0392 4.21074 19.5305 4.00003 19.0001 4.00003H5.00006C4.46963 4.00003 3.96092 4.21074 3.58585 4.58582C3.21077 4.96089 3.00006 5.4696 3.00006 6.00003V14C3.00006 14.5305 3.21077 15.0392 3.58585 15.4142C3.96092 15.7893 4.46963 16 5.00006 16H12.0001ZM12.0001 16V20M12.0001 20H16.0001M12.0001 20H8.00006" stroke="#FF8800" stroke-width="2.37762" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </div>
+                        <div class="userHeaderRight">
+                            <div class="userHead" id="graphicL">GRAPHIC</div>
+                            <div class="userHeadCom">Settings</div>
+                        </div>
+                    </div>
+                    <div class="userHeadBottom" id="graphicCom">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore at commodi dolorem atque saepe aliquid voluptatibus? Quia, quos aut?
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="carRender" id="lightColor">
+                    <div class="header50">
+                        <div class="headers">
+                            <p class="renderHead" id="lc">Light & Color</p>
+                            <p class="renderHead2" id="detays">Details</p>
+                        </div>
+                        <div class="yuzde">0%</div>
+                        <div class="reset" id="lightReset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                                <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                                <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_130">
+                                <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="prog">
+                        <div class="progStatus"></div>
+                        <div class="progStatus2"></div>
+                    </div>
+                </div>
+                <div class="carRender" id="shadow">
+                    <div class="header50">
+                        <div class="headers">
+                            <p class="renderHead" id="shadowL">Shadow</p>
+                            <p class="renderHead2" id="detay">Details</p>
+                        </div>
+                        <div class="yuzde">100%</div>
+                        <div class="reset" id="shadowReset">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                                <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                                <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_130">
+                                <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="prog">
+                        <div class="progStatus"></div>
+                        <div class="progStatus2"></div>
+                    </div>
+                </div>
+                <div class="smallRender">
+                    <div class="smallText" id="ref">Reflections & Lights</div>
+                    <div class="smallStatus" id="reflection">ON</div>
+                    <div class="reset" id="reflectionReset">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                            <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                            <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_130">
+                            <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="smallRender">
+                    <div class="smallText" id="firee">Disable Fire Effect</div>
+                    <div class="smallStatus" id="fire">ON</div>
+                    <div class="reset" id="fireReset">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                            <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                            <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_130">
+                            <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="other">
+                <div class="userHeadTop">
+                    <div class="userHeader">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" id="otherPc">
+                                <path d="M7.5 20C6.53333 20 5.70833 19.6583 5.025 18.975C4.34167 18.2917 4 17.4667 4 16.5C4 15.5333 4.34167 14.7083 5.025 14.025C5.70833 13.3417 6.53333 13 7.5 13H18.5C19.4667 13 20.2917 13.3417 20.975 14.025C21.6583 14.7083 22 15.5333 22 16.5C22 17.4667 21.6583 18.2917 20.975 18.975C20.2917 19.6583 19.4667 20 18.5 20H7.5ZM7.5 18H18.5C18.9167 18 19.271 17.8543 19.563 17.563C19.855 17.2717 20.0007 16.9173 20 16.5C19.9993 16.0827 19.8537 15.7287 19.563 15.438C19.2723 15.1473 18.918 15.0013 18.5 15H7.5C7.08333 15 6.72933 15.146 6.438 15.438C6.14667 15.73 6.00067 16.084 6 16.5C5.99933 16.916 6.14533 17.2703 6.438 17.563C6.73067 17.8557 7.08467 18.0013 7.5 18ZM5.5 11C4.53333 11 3.70833 10.6583 3.025 9.975C2.34167 9.29167 2 8.46667 2 7.5C2 6.53333 2.34167 5.70833 3.025 5.025C3.70833 4.34167 4.53333 4 5.5 4H16.5C17.4667 4 18.2917 4.34167 18.975 5.025C19.6583 5.70833 20 6.53333 20 7.5C20 8.46667 19.6583 9.29167 18.975 9.975C18.2917 10.6583 17.4667 11 16.5 11H5.5ZM5.5 9H16.5C16.9167 9 17.271 8.85433 17.563 8.563C17.855 8.27167 18.0007 7.91733 18 7.5C17.9993 7.08267 17.8537 6.72867 17.563 6.438C17.2723 6.14733 16.918 6.00133 16.5 6H5.5C5.08333 6 4.72933 6.146 4.438 6.438C4.14667 6.73 4.00067 7.084 4 7.5C3.99933 7.916 4.14533 8.27033 4.438 8.563C4.73067 8.85567 5.08467 9.00133 5.5 9Z" fill="#FF8800"/>
+                              </svg>
+                        </div>
+                        <div class="userHeaderRight">
+                            <div class="userHead" id="otherV">OTHER</div>
+                            <div class="userHeadCom">Settings</div>
+                        </div>
+                    </div>
+                    <div class="userHeadBottom" id="otherCom">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore at commodi dolorem atque saepe aliquid voluptatibus? Quia, quos aut?
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="otherSetting" id="active">
+                    <div class="otherText" id="activeText">
+                        Activate Boost (Required)
+                    </div>
+                    <div class="otherWhat" id="otheractiv">
+                        <p> No Boost </p>
+                    </div>
+                </div>
+                <div class="otherSetting" id="clearBlood">
+                    <div class="otherText" id="cbl">
+                        Clear Ped Blood & Dirt
+                    </div>
+                    <div class="otherWhat" id="clears">
+                        <p> Clear </p>
+                    </div>
+                </div>
+                <div class="otherSetting">
+                    <div class="otherText" id="sd">
+                        GTA V Scenarios Delete
+                    </div>
+                    <div class="otherWhat" id="deletes">
+                        <p>Delete </p>
+                    </div>
+                </div>
+                <div class="otherSetting">
+                    <div class="otherText" id="ec">
+                        Events Clear
+                    </div>
+                    <div class="otherWhat" id="clears2">
+                        <p> Clear </p>
+                    </div>
+                </div>
+                <div class="otherSetting">
+                    <div class="otherText" id="rw">
+                        Raind & Wind
+                    </div>
+                    <div class="smallStatus" id="raind">ON</div>
+                    <div class="reset" id="raindr">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                            <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                            <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_130">
+                            <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="adminActions">
+            <div class="adminTexts">
+                <div class="adminHead">Admin Settings</div>
+                <div class="adminCom">Lorem Ipsum is simply dummy text of the printing and.</div>
+            </div>
+            <div class="adminRight">
+                <div class="adminAction">Disable Npcs</div>
+                <div class="smallStatus" id="admin">ON</div>
+                    <div class="reset" id="adminr">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 12 13" fill="none">
+                            <g opacity="0.1" clip-path="url(#clip0_1_130)">
+                            <path d="M11.0621 6.5C11.0621 9.08989 8.96275 11.1893 6.37287 11.1893C3.78298 11.1893 1.68359 9.08989 1.68359 6.5C1.68359 3.91012 3.78298 1.81073 6.37287 1.81073V2.74858C5.47465 2.74869 4.60629 3.07107 3.92561 3.65712C3.24493 4.24318 2.79712 5.05402 2.66357 5.94225C2.53003 6.83048 2.71961 7.73715 3.19787 8.49745C3.67612 9.25776 4.4113 9.82123 5.26978 10.0854C6.12825 10.3497 7.05303 10.2971 7.87603 9.93729C8.69904 9.57748 9.36562 8.93433 9.75463 8.12472C10.1436 7.31512 10.2293 6.39281 9.99591 5.52543C9.76257 4.65805 9.22575 3.90319 8.48304 3.39805V4.62429H7.54519V1.81073H10.3588V2.74858H9.18643C9.76909 3.18512 10.242 3.75146 10.5676 4.40265C10.8932 5.05384 11.0625 5.77195 11.0621 6.5Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_130">
+                            <rect width="11.2543" height="11.2543" fill="white" transform="translate(0.745728 0.872864)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="locale.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

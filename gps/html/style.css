@@ -1,0 +1,1368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  user-select: none;
+}
+
+.gpsLeftIconsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.875vw;
+  height: 1.875vw;
+  border-radius: 0.1563vw;
+  background: rgba(0, 0, 0, 0.64);
+}
+
+.chargingLogo {
+  width: 1.2269vw;
+  height: 0.6902vw;
+  background-image: url("../html/img/Group2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userEntryMenuLogo {
+  width: 0.3696vw;
+  height: 0.3696vw;
+  background-image: url("../html/img/Polygon1-not.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userEntryMenuOneLogo {
+  width: 0.5729vw;
+  height: 0.4961vw;
+  background-image: url("../html/img/Vector8.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userEntryMenuTwoLogo {
+  width: 0.3696vw;
+  height: 0.3696vw;
+  background-image: url("../html/img/Polygon2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userEntryLogo {
+  width: 0.5729vw;
+  height: 0.4961vw;
+  background-image: url("../html/img/Vector9.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.airTemperatureImg {
+  width: 2.0199vw;
+  height: 1.5571vw;
+  background-image: url("../html/img/Vector15.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gpsLeftIconsLogo {
+  width: 1.0938vw;
+  height: 0.9589vw;
+  background-image: url("../html/img/Vector7.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userCarBoxLogoOne {
+  width: 1.5127vw;
+  height: 2.0963vw;
+  background-image: url("../html/img/Vector1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userCarBoxLogoTwo {
+  width: 1.5127vw;
+  height: 2.0963vw;
+  background-image: url("../html/img/Vector2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userCarBoxLogoTre {
+  width: 1.5817vw;
+  height: 1.5962vw;
+  background-image: url("../html/img/Vector3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userCarBoxLogo {
+  width: 1.4583vw;
+  height: 2.1282vw;
+  background-image: url("../html/img/Vector16.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dispactCarBoxLogo {
+  width: 1.1458vw;
+  height: 1.4556vw;
+  background-image: url("../html/img/Vector10.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.timeLogo {
+  width: 0.6553vw;
+  height: 0.6553vw;
+  background-image: url("../html/img/Group4.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.locationLogo {
+  width: 0.5417vw;
+  height: 0.6771vw;
+  background-image: url("../html/img/Vector11.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bicakImg {
+  width: 0.9887vw;
+  height: 1.2095vw;
+  background-image: url("../html/img/Vector18.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ammoImg {
+  width: 0.5101vw;
+  height: 0.8428vw;
+  background-image: url("../html/img/Vector20.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sirenImg {
+  width: 0.8318vw;
+  height: 0.8471vw;
+  background-image: url("../html/img/Vector22.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gpsMinorWeaponLogo {
+  width: 1.0938vw;
+  height: 0.7181vw;
+  background-image: url("../html/img/Vector23.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.locationImg {
+  width: 0.4688vw;
+  height: 0.6094vw;
+  background-image: url("../html/img/Vector24.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.weaponImg {
+  width: 1.0907vw;
+  height: 0.7161vw;
+  background-image: url("../html/img/Vector21.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userHeatLogo {
+  width: 0.7291vw;
+  height: 0.9695vw;
+  background-image: url("../html/img/Vector19.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.starLogo {
+  width: 0.8333vw;
+  height: 0.8768vw;
+  background-image: url("../html/img/Vector25.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.caseLogo {
+  width: 0.3696vw;
+  height: 0.3696vw;
+  background-image: url("../html/img/Polygon4.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userLogo {
+  width: 0.625vw;
+  height: 0.625vw;
+  background-image: url("../html/img/Vector12.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.weaponLogo {
+  width: 1.6667vw;
+  height: 0.8463vw;
+  background-image: url("../html/img/Vector14.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.usersLogo {
+  width: 0.8333vw;
+  height: 0.5729vw;
+  background-image: url("../html/img/Vector13.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sirenLogoBox {
+  width: 1.1161vw;
+  height: 1.1365vw;
+  background-image: url("../html/img/Vector6.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gpsLeftBox {
+  position: absolute;
+  display: flex;
+  gap: 0.3646vw;
+  top: 2.1875vw;
+  left: 1.8229vw;
+}
+
+.gpsLeftMenu {
+  width: 15.2083vw;
+  height: 7.0146vw;
+  padding: 0.386vw 0.6167vw;
+  border-radius: 0.2958vw;
+  background: rgba(0, 0, 0, 0.48);
+}
+
+.entryAndExitBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 14.4271vw;
+  height: 6.25vw;
+}
+
+.userEntryBox {
+  display: flex;
+  align-items: center;
+  gap: 0.4688vw;
+}
+
+.userEntryMenu {
+  display: flex;
+  align-items: center;
+  width: 9.6875vw;
+  height: 1.875vw;
+  padding: 0.7292vw 0.5208vw;
+  border-radius: 0.1563vw;
+  background: rgba(0, 0, 0, 0.56);
+}
+
+.userName {
+  margin-left: 0.4115vw;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.7867vw;
+  font-weight: 700;
+}
+
+.userEntryMenuOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.75vw;
+  height: 1.875vw;
+  border-radius: 0.1563vw;
+  background: rgba(0, 0, 0, 0.56);
+}
+
+.userEntryMenuOne {
+  display: flex;
+  align-items: center;
+  gap: 0.2083vw;
+}
+
+.userNumberBox p {
+  color: rgba(255, 255, 255, 0.35);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.7867vw;
+  font-weight: 700;
+}
+
+.gpsBox {
+  display: flex;
+  position: absolute;
+  right: 0.5687vw;
+  bottom: 0.5687vw;
+  width: 21.9074vw;
+  height: 22.7352vw;
+  background-image: url("../html/img/gps.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  animation: topSide 1s ease-in-out;
+}
+
+.gpsDataBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13.8021vw;
+  height: 18.8542vw;
+  margin-top: 2vw;
+  margin-left: 1.5vw;
+  border-radius: 0.4486vw;
+  background: linear-gradient(180deg, #0084ff 0%, #000 100%);
+}
+
+.gpsLogiTitleBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 13.8021vw;
+  height: 18.8542vw;
+  border-radius: 0.4486vw;
+  background: linear-gradient(0deg, #0084ff 0%, #000 100%);
+  margin-top: 1.9vw;
+  margin-left: 1.5vw;
+}
+
+.gpsLoginClockBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chargingBox {
+  display: flex;
+  align-items: center;
+  gap: 0.2661vw;
+}
+
+.chargingNumber {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "SenticDisplayLight";
+  font-size: 0.7924vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.clockNumberTitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "SenticDisplayLight";
+  font-size: 2.4334vw;
+  font-weight: 700;
+}
+
+.gpsLoginCodeBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.3021vw;
+  border-radius: 0.133vw;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(0.2206vw);
+  margin-top: 3.1891vw;
+  padding: 0.2vw;
+}
+
+.gpsLoginCodeBox p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.6766vw;
+  font-weight: 700;
+}
+
+.gpsLoginMenu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 12.7604vw;
+  height: 12.1875vw;
+  margin-top: 4.7917vw;
+}
+
+.gpsNotificationBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 12.7604vw;
+  height: 3.4375vw;
+  margin-top: 0.6734vw;
+}
+
+.noticationOneBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 11.678vw;
+  height: 2.7052vw;
+  border-radius: 0.2956vw;
+  background: rgba(0, 0, 0, 0.36);
+}
+
+.noticationTwoBox {
+  display: flex;
+  align-items: center;
+  gap: 1.4583vw;
+  position: relative;
+  top: 0.5172vw;
+  width: 12.478vw;
+  height: 2.7052vw;
+  padding: 0.5104vw 0.4141vw;
+  border-radius: 0.2956vw;
+  background: rgba(0, 0, 0, 0.36);
+  backdrop-filter: blur(0.3326vw);
+}
+
+.notificationTitleBox {
+  display: flex;
+  align-items: center;
+  gap: 0.399vw;
+}
+
+.sirenBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.0104vw;
+  height: 2.0104vw;
+  border-radius: 0.0739vw;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(153, 153, 153, 0.53) 0%,
+    rgba(255, 255, 255, 0.53) 100%
+  );
+}
+
+.gpsLine {
+  width: 5.7799vw;
+  height: 0.3104vw;
+  border-radius: 0.2661vw;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 0.9167vw;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sirenTitleMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.0318vw;
+}
+
+.sirenMinorTitle p {
+  color: rgba(255, 255, 255, 0.52);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.6766vw;
+  font-weight: 700;
+}
+
+.sirenDavidTitle {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.4966vw;
+  font-weight: 700;
+  width: 6.4vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.notificationClockBox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0.4vw;
+  width: 2.4686vw;
+  height: 1.3156vw;
+  border-radius: 0.1183vw;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.notificationClockBox p {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.6766vw;
+  font-weight: 700;
+}
+
+.gpsBoxOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 12.7604vw;
+  height: 17.6563vw;
+}
+
+.gpsActiveAdemsBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5208vw;
+  width: 12.7083vw;
+  height: 5.3125vw;
+  border-radius: 0.2956vw;
+  background: radial-gradient(
+    91.45% 50% at 50% 50%,
+    rgba(43, 43, 43, 0.36) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  backdrop-filter: blur(0.3326vw);
+}
+
+.gpsOfficerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 12.7083vw;
+  height: 2.9688vw;
+  border-radius: 0.2956vw;
+  border: 0.0887vw solid rgba(255, 255, 255, 0.07);
+  background: radial-gradient(
+    91.45% 50% at 50% 50%,
+    rgba(43, 43, 43, 0.36) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  backdrop-filter: blur(0.3326vw);
+}
+
+.gpsOfficerBox .weaponLogo {
+  margin-right: 0.8333vw;
+}
+
+.gpsOfficerLogoBox {
+  display: flex;
+  align-items: center;
+  gap: 0.6208vw;
+}
+
+.gpsOfficerLogoMenu {
+  width: 1.9512vw;
+  height: 1.9512vw;
+  border-radius: 0.1052vw;
+  margin-left: 0.5703vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gpsOfficerTitleBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.0318vw;
+}
+
+.gpsOfficerTitle p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.6766vw;
+  font-weight: 700;
+}
+
+.officerActiveTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.2365vw;
+}
+
+.officerTitle {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.6766vw;
+  font-weight: 700;
+}
+
+.activeStatusBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 11.6146vw;
+  height: 1.3021vw;
+}
+
+.gpsClockAdemsBoxOne {
+  width: 5.4271vw;
+  height: 1.3021vw;
+  border-radius: 0.133vw;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(0.2206vw);
+}
+
+.ademsBoxOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4271vw;
+  height: 1.3021vw;
+  padding: 0.3646vw 0.4688vw;
+  border-radius: 0.133vw 0vw 0vw 0.133vw;
+  background: rgba(255, 255, 255, 0.36);
+  backdrop-filter: blur(0.2206vw);
+}
+
+.ademsBoxTitleOne {
+  display: flex;
+  align-items: center;
+  gap: 0.2036vw;
+  cursor: pointer;
+}
+
+.ademsBoxTitleOne input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "ShentoxTRIAL-SmBd";
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  line-height: 1.3vw;
+  color: rgba(255, 255, 255, 0.51);
+}
+
+.ademsBoxTitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.6766vw;
+  font-weight: 700;
+}
+
+#ademsBoxTitle {
+  margin-left: 0.3646vw;
+}
+
+::placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.51);
+  font-size: 0.5208vw;
+}
+
+.activeTitleBox {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.activeTitle p {
+  color: rgba(255, 255, 255, 0.68);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.53vw;
+  font-weight: 700;
+}
+
+.activeAdemsTitle {
+  color: rgba(255, 255, 255, 0.448);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.421vw;
+  font-weight: 700;
+}
+
+.weatherForecastBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.7083vw;
+  height: 3.5938vw;
+  border-radius: 0.2956vw;
+  margin-top: 0.5729vw;
+  border: 0.0885vw solid rgba(255, 255, 255, 0.07);
+  background: radial-gradient(
+    161.01% 50% at 50% 50%,
+    rgba(61, 61, 61, 0.36) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  backdrop-filter: blur(0.3326vw);
+}
+
+.weatherForecastMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 11.0417vw;
+  height: 1.5625vw;
+}
+
+.weatherForecastClockBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.weatherForecastClockNumber {
+  color: #fff;
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.73vw;
+  font-weight: 700;
+}
+
+.weatherForecastClockTitle {
+  color: rgba(255, 255, 255, 0.46);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.73vw;
+  font-weight: 700;
+}
+
+.airTemperatureBox {
+  display: flex;
+}
+
+.airTemperatureTitle p {
+  color: #fff;
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.73vw;
+  font-weight: 700;
+}
+
+.userToolsBox {
+  display: flex;
+  align-items: center;
+  gap: 0.2354vw;
+}
+
+.userToolMenu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 2.9688vw;
+  height: 3.9583vw;
+  margin-top: 0.5208vw;
+  border-radius: 0.2956vw;
+  background: #00000030;
+}
+
+.userCarBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.9417vw;
+  height: 2.9688vw;
+  border-radius: 0.2956vw;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(102, 102, 102, 0.36) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  backdrop-filter: blur(0.3326vw);
+  cursor: pointer;
+}
+
+/* .userCarBox:hover {
+  border: 0.0887vw solid rgba(255, 255, 255, 0.55);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(153, 153, 153, 0.68) 0%,
+    rgba(255, 255, 255, 0.68) 100%
+  );
+} */
+
+.userCarNumber p {
+  color: #fff;
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.584vw;
+  font-weight: 700;
+  margin-top: 0.1563vw;
+}
+
+.userToolsLine {
+  display: flex;
+  align-items: center;
+  gap: 1.8911vw;
+  width: 10.8173vw;
+  height: 0.1576vw;
+  margin-top: 0.6005vw;
+}
+
+.ToolsLine {
+  width: 1.286vw;
+  height: 0.133vw;
+  border-radius: 0.5469vw;
+  background: rgba(0, 0, 0, 0.27);
+}
+
+.gpsBtnBox {
+  display: flex;
+  gap: 0.4135vw;
+  margin-top: 0.7813vw;
+}
+
+.connectBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.1642vw;
+  height: 2.1139vw;
+  border-radius: 0.2956vw;
+  border: 0.0887vw solid rgba(255, 255, 255, 0.19);
+  background: rgba(0, 170, 255, 0.28);
+  backdrop-filter: blur(0.3326vw);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.connectBtn p {
+  color: #0af;
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.8373vw;
+  font-weight: 700;
+}
+
+.disconnectBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.1642vw;
+  height: 2.1139vw;
+  border-radius: 0.2956vw;
+  border: 0.0887vw solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(0.3326vw);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.disconnectBtn p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.73vw;
+  font-weight: 700;
+}
+
+.gpsRightBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: auto;
+  right: 0.9635vw;
+  bottom: 4vw;
+}
+
+.gpsRightLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6165vw;
+  height: 2.6165vw;
+  border-radius: 11.069px;
+  background: #11111199;
+  border-radius: 0.2956vw;
+}
+
+.gpsRightLogoInside {
+  background: #0af;
+  border: 0.2125vw solid #161616;
+  border-radius: 0.1956vw;
+  width: 85%;
+  height: 85%;
+}
+
+.gpsMapsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.3556vw;
+  height: 1.6852vw;
+  margin-top: 0.9375vw;
+  border-radius: 0.3843vw;
+  border: 0.0443vw solid #003761;
+  background: #001221;
+  cursor: pointer;
+}
+
+.gpsMapsBox p {
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.8447vw;
+  font-weight: 700;
+  background: radial-gradient(50% 50% at 50% 50%, #002a4b 0%, #002039 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gpsSosBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.9556vw;
+  height: 1.6852vw;
+  margin-top: 0.8vw;
+  border-radius: 0.3843vw;
+  border: 0.0443vw solid rgba(0, 0, 0, 0.55);
+  background: #ff0040;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gpsSosBox p {
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.8447vw;
+  font-weight: 700;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #000 0%,
+    rgba(0, 0, 0, 0.64) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gpsMapsBoxOne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.9556vw;
+  height: 1.6852vw;
+  margin-top: 0.9375vw;
+  border-radius: 0.3843vw;
+  border-top: 0.08vw solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gpsMapsBoxOne p {
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.7447vw;
+  font-weight: 700;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(70, 70, 70, 0.24) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gpsBoxTwo {
+  width: 13.8021vw;
+  height: 18.8542vw;
+  border-radius: 0.4486vw;
+  background-color: red;
+  z-index: 999999;
+  /* background-image: url("../html/img/gtaMaps.png"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+.gpsCarBoxLogo {
+  position: absolute;
+  bottom: 13.5vw;
+  right: 10vw;
+  width: 1.2018vw;
+  height: 0.9573vw;
+  background-image: url("../html/img/Vector17.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gpsCarBoxOneLogo {
+  position: absolute;
+  bottom: 14vw;
+  right: 18vw;
+  width: 1.2018vw;
+  height: 0.9573vw;
+  background-image: url("../html/img/Vector17.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gpsMinorWeapon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gpsMinorWeaponTitleBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.gpsMinorWeaponTitle p {
+  color: rgba(255, 255, 255, 0.52);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.468vw;
+  font-weight: 700;
+}
+
+.gpsMinorWeaponDavidTitle {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.468vw;
+  font-weight: 700;
+}
+
+.gpsMinorLocationBox {
+  display: flex;
+  align-items: center;
+  gap: 0.2083vw;
+}
+
+.gpsMinorLocationMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1979vw;
+  height: 1.1979vw;
+  border-radius: 0.109vw;
+  background: rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(0.3066vw);
+}
+
+.gpsMinorClockBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2917vw;
+  height: 1.1979vw;
+  border-radius: 0.109vw;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(0.3066vw);
+  margin-right: 0.4448vw;
+}
+
+.gpsMinorClockBox p {
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.6237vw;
+  font-weight: 700;
+}
+
+.MinorCrimesBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.6928vw;
+  height: 2.0547vw;
+  background-image: url("../html/img/Rectangle-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.MinorCrimesBox p {
+  color: #fff;
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.7553vw;
+  font-weight: 700;
+}
+
+.gpsBoxFour {
+  position: absolute;
+  top: 2.5521vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.caseColorBox {
+  width: 12.7083vw;
+  height: 4.0104vw;
+  border-radius: 0.2956vw;
+  background: radial-gradient(
+    91.45% 50% at 50% 50%,
+    rgba(43, 43, 43, 0.36) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  backdrop-filter: blur(0.3326vw);
+}
+
+.caseColorTitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12.7083vw;
+  height: 1.7708vw;
+  padding: 0.7292vw 0.5729vw;
+  border-radius: 0.2956vw 0.2956vw 0vw 0vw;
+  background: radial-gradient(
+    91.45% 50% at 50% 50%,
+    rgba(43, 43, 43, 0.36) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  backdrop-filter: blur(0.3326vw);
+}
+
+.caseColorTitleMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.2031vw;
+}
+
+.caseColorTitle {
+  color: rgba(255, 255, 255, 0.68);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.6879vw;
+  font-weight: 700;
+}
+
+.caseColorBoxOne {
+  display: flex;
+  padding: 0.4167vw 0.3646vw;
+  align-items: center;
+  gap: 0.2682vw;
+}
+
+.caseBox {
+  width: 2.8759vw;
+  height: 1.4759vw;
+  border-radius: 0.2013vw;
+  border: 0.1042vw solid rgba(255, 255, 255, 0.38);
+  background: #017ef4;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#yellow {
+  border: 0.1042vw solid rgba(255, 255, 255, 0.38);
+  background: #fb0;
+}
+
+#gray {
+  border: 0.1042vw solid rgba(255, 255, 255, 0.38);
+  background: #9ebd8d;
+}
+
+#red {
+  border: 0.1042vw solid rgba(255, 255, 255, 0.38);
+  background: #be6060;
+}
+
+#green {
+  border: 0.1042vw solid rgba(255, 255, 255, 0.38);
+  background: #9ebd8d;
+}
+
+.helpBox {
+  width: 12.7083vw;
+  height: 5.8333vw;
+  border-radius: 0.2956vw;
+  background: radial-gradient(
+    91.45% 50% at 50% 50%,
+    rgba(43, 43, 43, 0.36) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  margin-top: 0.4046vw;
+  backdrop-filter: blur(0.3326vw);
+}
+
+.helpLoremBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11.5104vw;
+  height: 2.7083vw;
+  margin: 0.5208vw 0.5729vw;
+  overflow-y: scroll;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.5503vw;
+  font-weight: 700;
+}
+
+.menuSizeBox {
+  width: 12.7083vw;
+  height: 4.375vw;
+  margin-top: 0.4046vw;
+  border-radius: 0.2956vw;
+  background: radial-gradient(
+    91.45% 50% at 50% 50%,
+    rgba(43, 43, 43, 0.36) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  backdrop-filter: blur(0.3326vw);
+}
+
+.menuSizeTitle p {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.5503vw;
+  font-weight: 700;
+  line-height: 117.102%;
+}
+
+.menuSizeTitle span {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.5503vw;
+  font-weight: 700;
+  line-height: 117.102%;
+}
+
+.saveBtnBox {
+  display: flex;
+  align-items: center;
+  gap: 0.4135vw;
+  margin-top: 0.4046vw;
+}
+
+.saveBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.1642vw;
+  height: 2.1139vw;
+  border-radius: 0.2956vw;
+  border: 0.0887vw solid rgba(255, 255, 255, 0.19);
+  background: rgba(0, 170, 255, 0.28);
+  backdrop-filter: blur(0.3326vw);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.saveBox p {
+  color: #0af;
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.8373vw;
+  font-weight: 700;
+}
+
+.resetBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.1642vw;
+  height: 2.1139vw;
+  border-radius: 0.2956vw;
+  border: 0.0887vw solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(0.3326vw);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.resetBox P {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "ShentoxTRIAL-SmBd";
+  font-size: 0.73vw;
+  font-weight: 700;
+}
+
+.gpsLogoBox {
+  width: 3.2292vw;
+  height: 3.2292vw;
+  margin-top: 0.9375vw;
+  border-radius: 2.6042vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../html/img/gps-police.svg");
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.GpsBG {
+  position: absolute;
+  width: 13.7853vw;
+  height: 11.2945vw;
+  background-image: url("../html/img/gps-bg.svg");
+  background-size: cover;
+  border-radius: 1.4484vw;
+  background-repeat: no-repeat;
+}
+
+.menuSizeLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.9479vw;
+  height: 0.4167vw;
+  margin: 0.5167vw 1.4583vw;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  margin-left: 0.5vw;
+  border-radius: 0.2694vw;
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+input[type="range"]:hover {
+  opacity: 0.9;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0.3846vw;
+  height: 0.6771vw;
+  border-radius: 0.1078vw;
+  background: #fff;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  opacity: 0.85;
+}
+
+@keyframes topSide {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gpsLine:hover {
+  scale: 0.95;
+}
+
+.saveBox:hover,
+.resetBox:hover,
+.connectBtn:hover,
+.disconnectBtn:hover {
+  scale: 0.95;
+}
+
+.gpsMapsBoxOne:hover {
+  background: rgba(0, 0, 0, 0.45);
+  border-top: 0.08vw solid rgba(255, 255, 255, 0.25);
+}
+
+.gpsSosBox:hover {
+  scale: 1.05;
+}
+
+.caseBox:hover {
+  opacity: 0.7;
+}

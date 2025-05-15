@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s4-fingerprint</title>
+    <link rel="stylesheet" href="./style.css">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+ 
+    <link rel="stylesheet" href="https://res-fa-server.github.io/css/all.css">
+</head>
+    <body>
+        <div class="container">
+           
+            <img src="./ui.png" class="phone-frame">
+            <div class="invisible-area"></div>
+            <div class="phone-container phone-background">
+               
+                <div class="history">
+                    <p>Geçmiş</p>
+                    <div class="button-box" style="margin-top: 0;">
+                        <button data-src="back"><i class="fas fa-long-arrow-left"></i></button>
+                    </div>
+
+                    <div class="history-list">
+                        <!-- <button>Domuz Avcısı <p>Date xx-xx-xxxx</p></button> -->
+                    </div>
+
+                    <i class="fal fa-mouse-alt fa-shake"></i>
+
+                </div>  
+
+                <div class="wanted-why">
+                    <p>Tarih:</p>
+                    <div class="scan-box">
+                        <i class="far fa-calendar-alt"></i><input type="text" class="w-date" value="Test" disabled>
+                    </div>
+                    <p>Ad Soyad:</p>
+                    <div class="scan-box">
+                        <i class="fal fa-signature"></i><input type="text" class="w-fn" value="Test" disabled>
+                    </div>
+                    <p>Ekleyen Memur:</p>
+                    <div class="scan-box">
+                        <i class="fal fa-signature"></i><input type="text" class="w-ofc" value="Test" disabled>
+                    </div>
+                    <p>Sebep:</p>
+                    <textarea class="w-reason" disabled></textarea> 
+                    <div class="button-box">
+                        <button data-src="remove-wanted">Aranmayı Kaldır</button>
+                        <button data-src="back">Geri</button>
+                    </div>
+                </div>
+
+                <div class="wanted-reason">
+                    <p>Aranma Ekle</p>
+                    <p class="person-name"></p>
+                    <textarea></textarea>
+                    <div class="button-box">
+                        <button data-src="add-to-wanted">Arananlara Ekle</button>
+                        <button data-src="back">Geri</button>
+                    </div>
+                </div>
+                <div class="wanted-new">
+                    <p>Kişiyi Seç</p>
+                    <div class="button-box" style="margin-top: 0;">
+                        <button data-src="back"><i class="fas fa-long-arrow-left"></i></button>
+                    </div>
+                    <div class="wanted-player-list"></div>
+                    <i class="fal fa-mouse-alt fa-shake"></i>
+                </div>
+                <div class="wanted-list">
+                    <p>Arananlar Listesi</p>
+                    <div class="button-box" style="margin-top: 0;">
+                        <button data-src="back"><i class="fas fa-long-arrow-left"></i></button>
+                    </div>
+                    <div class="wanted-player-list">
+
+                    </div>
+                    <i class="fal fa-mouse-alt fa-shake"></i>
+                </div>
+                <div class="wanted-menu">
+                    <img src="./logo.png" class="logo" />
+                    <p>Aranma Menüsü</p>
+                    <div class="button-box">
+                        <button data-src="wanted-list">Aranma Listesi</button>
+                        <button data-src="new-wanted">Yeni Aranma Kaydı</button>
+                        <button data-src="back"><i class="fas fa-long-arrow-left"></i></button>
+                    </div>
+                </div>
+                <div class="main">
+                    <img src="./logo.png" class="logo" />
+                    <img src="./logo.png" class="logox"/>
+
+                    <p>Suç Soruşturma Dairesi</p>
+                    <div class="button-box">
+                        <button data-src="scan">Yeni Tarama</button>
+                        <button data-src="wanted">Aranma Menüsü</button>
+                        <button data-src="history">Geçmiş</button>
+                        <button data-src="close">Kapat</button>
+                    </div>
+                </div>
+                <div class="scanning">
+                    <div class="space"></div>
+                    <img src="./scan.gif" class="sc-logo" />
+                    <p>Taranıyor...</p>
+                    <div class="button-box">
+                        <button class="refuse-scan" data-src="refuse">Reddet</button>
+                        <button class="cancel-scan" data-src="cancel">İptal</button>
+                    </div>
+                 
+                </div>
+                <div class="scan">
+                    <img src="./logo.png" class="logox"/>
+                    <p>ID:</p>
+                    <div class="scan-box">
+                        <i class="fal fa-id-card-alt"></i><input type="text" class="a-id" value="Test" disabled>
+                    </div>
+                    <p>Ad Soyad:</p>
+                    <div class="scan-box">
+                        <i class="fal fa-signature"></i><input type="text" class="a-fn" value="Test" disabled>
+                    </div>
+                    <p>Cinsiyet:</p>
+                    <div class="scan-box">
+                        <i class="fal fa-venus-mars"></i><input type="text" class="a-g" value="Test" disabled>
+                    </div>
+                    <p>Doğum tarihi:</p>
+                    <div class="scan-box">
+                        <i class="fal fa-birthday-cake"></i><input type="text"  class="a-bd" value="Test" disabled>
+                    </div>
+                    <p>Aranma Durumu:</p>
+                    <div class="scan-box">
+                        <i class="fad fa-siren"></i><input type="text"  class="a-wtd" value="No Data" disabled>
+                    </div>
+                    <p>Barut Durumu:</p>
+                    <div class="scan-box">
+                        <i class="fad fa-siren"></i><input type="text"  class="a-gshot" value="No Data" disabled>
+                    </div>
+                    <!-- <button data-src="gunshot">Gunshot Residue Test</button> -->
+                    <button data-src="back"><i class="fas fa-long-arrow-left"></i></button>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <script src="./s4.js"></script>
+    </body>
+</html>

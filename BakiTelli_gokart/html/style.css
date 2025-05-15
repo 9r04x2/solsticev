@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: IntegralCF-Bold;
+  src: url("./fonts/IntegralCF-Regular.otf");
+}
+
+@font-face {
+  font-family: IntegralCF;
+  src: url("./fonts/IntegralCF-RegularOblique.otf");
+}
+
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+  letter-spacing: 0.04em;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-menu {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(9, 10, 13, 0.95);
+  background-image: url("./img/bg-main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.exit-button {
+  position: absolute;
+  width: 1.50625vw;
+  height: 1.50625vw;
+  border-radius: 0.11705729166666668vw;
+  background: #c53d3d;
+  right: 2vw;
+  top: 1.8vw;
+  text-align: center;
+  font-size: 1.0924479166666665vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  transition: 0.5s;
+  z-index: 1000;
+  line-height: 1.5vw;
+}
+
+.exit-button::before {
+  position: absolute;
+  content: "EXIT";
+  right: 2.2vw;
+  line-height: 1.5vw;
+  color: rgba(254, 129, 129, 0.48);
+  font-family: Oswald;
+  font-size: 1.0924479166666665vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.exit-button::after {
+  content: "";
+  position: absolute;
+  top: -0.3vw;
+  left: -0.3vw;
+  right: -0.3vw;
+  bottom: -0.3vw;
+  border-radius: 0.1vw;
+  transition: 0.5s;
+  border: 0.6521vw solid rgba(197, 61, 61, 0.48);
+}
+
+.top-side {
+  display: flex;
+  width: 93%;
+  margin-left: 3.5%;
+  height: 14%;
+  margin-top: 3%;
+}
+
+.logo-side {
+  display: flex;
+  width: auto;
+  height: 100%;
+}
+
+.logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./img/icon.png");
+  width: 5.95vw;
+  height: 7.3vw;
+}
+
+.logo-name {
+  background: linear-gradient(133deg, #fff 26.17%, #fff 57.64%, #000 93.12%);
+  text-shadow: 0px 0.2433vw 0.7298vw rgba(239, 239, 239, 0.22);
+  font-family: IntegralCF-Bold;
+  font-size: 3.0248958333333336vw;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 0.2vw;
+  margin-left: 0.5vw;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-name span {
+  background: linear-gradient(
+    133deg,
+    rgba(255, 255, 255, 0.67) 26.17%,
+    rgba(255, 255, 255, 0.81) 53.96%,
+    #494949 93.12%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: IntegralCF-Bold;
+  font-size: 3.0248958333333336vw;
+  font-style: normal;
+}
+
+.alt-logo-name {
+  position: absolute;
+  color: #fff;
+  font-family: IntegralCF;
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 7vw;
+  margin-top: 3.3vw;
+}
+
+.information-line {
+  position: absolute;
+  border-right: 0.2vw solid rgba(255, 255, 255, 0.36);
+  height: 4.3vw;
+  margin-top: 1.15vw;
+  margin-left: 35%;
+}
+
+.information-text {
+  width: 25%;
+  margin-left: 5.2vw;
+  margin-top: 1.02vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: rgba(255, 255, 255, 0.83);
+  font-family: Barlow;
+  font-size: 1.25vw;
+  font-style: normal;
+  height: 4.5583vw;
+  font-weight: 600;
+}
+
+.information-text span {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.67);
+  font-family: Barlow;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.player-info {
+  position: absolute;
+  border-radius: 0.2vw;
+  background: rgba(255, 255, 255, 0.08);
+  width: 30%;
+  height: 4vw;
+  margin-top: 1.3vw;
+  right: 0;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.player-profile {
+  border-radius: 50%;
+  width: 3vw;
+  margin-top: 0.5vw;
+  margin-left: 1vw;
+  height: 3vw;
+  background-image: url("https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png");
+  background-position: center;
+  border: 0.0921vw solid rgba(255, 255, 255, 0.48);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.player-detail {
+  color: #fff;
+  font-family: Barlow;
+  font-size: 1.1458vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0.6vw;
+  margin-left: 0.5vw;
+}
+
+.player-detail span {
+  color: #2fcf52;
+  font-family: Barlow;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.exit-button:hover {
+  scale: 0.9;
+  cursor: pointer;
+}
+
+.Cars {
+  position: absolute;
+  display: flex;
+  height: 42.5521vw;
+  margin-left: 1.75vw;
+  margin-top: 9vw;
+  width: 90%;
+}
+
+.Car {
+  width: 29.1398vw;
+  height: 40.7813vw;
+  margin-left: 1.1vw;
+  border-radius: 0.4167vw;
+  background: radial-gradient(
+      33.5% 21.81% at 0% 0%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(46, 170, 255, 0) 100%
+    ),
+    radial-gradient(
+      130.58% 87.7% at 104.95% 101.25%,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(121, 255, 151, 0) 100%
+    ),
+    radial-gradient(
+      107.67% 116.72% at -0.6% -5.19%,
+      rgba(255, 255, 255, 0.09) 0%,
+      rgba(90, 176, 255, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.87);
+  border: 0.1042vw solid rgba(255, 255, 255, 0.14);
+  transition: 0.5s;
+}
+
+.Car:nth-child(3) {
+  animation: topSide 0.9s ease-in-out;
+}
+
+.Car:nth-child(2) {
+  animation: topSide 0.8s ease-in-out;
+}
+
+.Car:nth-child(1) {
+  margin-left: 0;
+  animation: topSide 0.7s ease-in-out;
+}
+
+.item-top {
+  width: 80%;
+  height: 20%;
+  margin-left: 10%;
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.item-join {
+  color: rgba(255, 255, 255, 0.48);
+  font-family: IntegralCF-Bold;
+  font-size: 1.2706vw;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+
+.item-label {
+  color: #fff;
+  text-shadow: 0px 0.2083vw 2.7604vw rgba(255, 255, 255, 0.54);
+  font-family: IntegralCF-Bold;
+  text-align: center;
+  font-size: 3.0567vw;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: -0.45vw;
+}
+
+.item-top-alt-text {
+  border-radius: 0.2566vw;
+  background: linear-gradient(133deg, #2f3031 26.17%, #494949 93.12%);
+  width: 6.0296vw;
+  height: 2.1168vw;
+  color: #fff;
+  font-family: IntegralCF-Bold;
+  font-size: 1.3649vw;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0.5vw;
+}
+
+.item-top-alt-text span {
+  font-size: 0.8vw;
+  color: #ffffffc9;
+}
+
+.item-img {
+  width: 90%;
+  height: 18vw;
+  margin-top: 2vw;
+  margin-left: 5%;
+  scale: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./img/icon.png");
+}
+
+.Car:hover {
+  scale: 1.01;
+}
+
+.item-rent {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2.5vw;
+  height: 4.2463vw;
+  transition: 0.5s;
+}
+
+.rent-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3747vw;
+  background: linear-gradient(180deg, #333 0%, #131313 100%);
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  font-family: Barlow;
+  font-weight: 500;
+  font-size: 1vw;
+  color: #fff;
+}
+
+.rent-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3747vw;
+  background: rgba(120, 120, 120, 0.14);
+  width: 51%;
+  height: 100%;
+  margin-left: -2%;
+  font-family: Barlow;
+  font-weight: 400;
+  color: #b3b3b3;
+  font-size: 1vw;
+}
+
+.item-rent:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.cafe-buy {
+  position: absolute;
+  animation: Opacity 0.5s ease-in-out;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.1302vw);
+  width: 100%;
+  height: 100%;
+  z-index: 5555555555555555555555555;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-page {
+  display: flex;
+  width: 32.1875vw;
+  height: 30.7292vw;
+  border-radius: 0.5729vw;
+  background: radial-gradient(
+      33.5% 21.81% at 0% 0%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(46, 170, 255, 0) 100%
+    ),
+    radial-gradient(
+      130.58% 87.7% at 104.95% 101.25%,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(121, 255, 151, 0) 100%
+    ),
+    radial-gradient(
+      107.67% 116.72% at -0.6% -5.19%,
+      rgba(255, 255, 255, 0.09) 0%,
+      rgba(90, 176, 255, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.87);
+  backdrop-filter: blur(0.8333vw);
+  border: 0.1042vw solid rgba(255, 255, 255, 0.14);
+}
+
+.buy-page-top {
+  width: 90%;
+  height: 20%;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.buy-page-top-text {
+  color: #fff;
+  font-family: IntegralCF-Bold;
+  font-size: 1.9886vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.buy-page-top-text p {
+  color: rgba(255, 255, 255, 0.56);
+  font-family: IntegralCF-Bold;
+  font-size: 1.25vw;
+  margin-top: 0.2vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.buy-page-exit {
+  width: 1.20625vw;
+  height: 1.20625vw;
+  flex-shrink: 0;
+  border-radius: 0.21705729166666668vw;
+  background: #c53d3d;
+  margin-top: 0.8vw;
+  right: 1.5vw;
+  text-align: center;
+  position: absolute;
+  font-size: 0.8924479166666665vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1vw;
+  color: white;
+  transition: 0.5s;
+  z-index: 1999999999999999999999;
+  transition: 0.5s;
+  z-index: 100000000000000000000000;
+}
+
+.buy-page-exit::after {
+  content: "";
+  position: absolute;
+  top: -0.2vw;
+  left: -0.2vw;
+  right: -0.2vw;
+  bottom: -0.2vw;
+  transition: 0.5s;
+  z-index: 1999999999999999999999;
+  border-radius: 0.2vw;
+  border: 0.2521vw solid rgba(197, 61, 61, 0.28);
+}
+
+.buy-page-img {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./img/man.png");
+  height: 100%;
+  width: 68%;
+  right: 0;
+  z-index: -1;
+}
+
+.choose-time {
+  width: 64%;
+  height: 18vw;
+  margin-top: 1.5vw;
+}
+
+.choose-time-text {
+  color: rgba(255, 255, 255, 0.74);
+  font-family: Barlow;
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.choose-time-b {
+  margin-left: -0.5vw;
+  margin-top: 3%;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 53%;
+}
+
+.choose-time-a {
+  border-radius: 0.2604vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.08);
+  width: 5.4167vw;
+  height: 2.1875vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.49);
+  text-align: center;
+  font-family: Barlow;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2vw;
+  float: left;
+  transition: 0.5s;
+  margin-left: 0.5vw;
+  margin-top: 0.5vw;
+}
+
+.choose-time-custom {
+  border-radius: 0.3646vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.09);
+  width: 17.6042vw;
+  height: 2.9167vw;
+  display: flex;
+  align-items: center;
+}
+
+.negative-button {
+  border-radius: 0.2604vw;
+  background: rgba(255, 255, 255, 0.2);
+  width: 1.9792vw;
+  height: 1.9792vw;
+  margin-left: 0.5vw;
+  color: white;
+  font-family: Barlow;
+  font-size: 1.4417vw;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.positive-button {
+  position: relative;
+  border-radius: 0.2604vw;
+  background: rgba(255, 255, 255, 0.2);
+  width: 1.9792vw;
+  height: 1.9792vw;
+  color: white;
+  font-family: Barlow;
+  font-size: 1.4417vw;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.choose-value {
+  width: 12.6vw;
+  color: rgba(255, 255, 255, 0.74);
+  font-family: Barlow;
+  font-size: 1.5625vw;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+}
+
+.buy-page-info {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Barlow;
+  font-size: 1.0417vw;
+  width: 28.8vw;
+  height: 1.4vw;
+  margin-top: 1.2vw;
+  font-style: normal;
+  display: flex;
+  font-weight: 500;
+}
+
+.info-icon {
+  width: 1.3021vw;
+  height: 1.3021vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./img/i-icon.png");
+}
+
+.buy-button {
+  width: 28.75vw;
+  height: 4.0104vw;
+  border-radius: 0.3646vw;
+  margin-top: 0.3vw;
+  background: linear-gradient(180deg, #333 0%, #131313 100%);
+  color: #fff;
+  font-family: Barlow;
+  font-size: 1.7708vw;
+  font-style: normal;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 4vw;
+  font-weight: 600;
+}
+
+.choose-time-a:hover {
+  border: 0.0521vw solid rgba(255, 255, 255, 0.07);
+  background: #2e2e2e;
+  cursor: pointer;
+}
+
+.positive-button:hover,
+.negative-button:hover {
+  border: 0.0521vw solid rgba(255, 255, 255, 0.07);
+  background: #2e2e2e;
+  cursor: pointer;
+}
+
+.buy-page-exit:hover {
+  border-radius: 0;
+}
+
+.buy-page-exit:hover::after {
+  content: "";
+  position: absolute;
+  top: -0.2vw;
+  left: -0.2vw;
+  right: -0.2vw;
+  bottom: -0.2vw;
+  border-radius: 0.2vw;
+  border: 0.2521vw solid rgb(197, 61, 61);
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  cursor: pointer;
+  line-height: 3.85vw;
+  border: 0.1vw solid rgba(255, 255, 255, 0.445);
+}
+
+.timer {
+  position: fixed;
+  width: 12.0833vw;
+  height: 3.5938vw;
+  border-radius: 0.3125vw;
+  background: radial-gradient(
+      23.93% 23.61% at 100% 0%,
+      rgba(225, 73, 73, 0.2) 0%,
+      rgba(225, 73, 73, 0) 100%
+    ),
+    radial-gradient(
+      33.5% 21.81% at 0% 0%,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(46, 170, 255, 0) 100%
+    ),
+    radial-gradient(
+      130.58% 87.7% at 104.95% 101.25%,
+      rgba(121, 255, 151, 0.06) 0%,
+      rgba(121, 255, 151, 0) 100%
+    ),
+    radial-gradient(
+      107.67% 116.72% at -0.6% -5.19%,
+      rgba(0, 0, 0, 0.09) 0%,
+      rgba(90, 176, 255, 0) 100%
+    ),
+    rgba(11, 14, 22, 0.87);
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+
+.time-icon {
+  position: absolute;
+  width: 0.9375vw;
+  height: 0.9375vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./img/ion_time.png");
+  margin-left: 0.8vw;
+  margin-top: 0.55vw;
+}
+
+.timer p {
+  color: rgba(255, 255, 255, 0.69);
+  font-family: IntegralCF-Bold;
+  font-size: 0.8129vw;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0.48vw;
+  margin-left: 2vw;
+}
+
+.bar {
+  position: absolute;
+  width: 10.4333vw;
+  height: 1.0417vw;
+  border-radius: 0.1563vw;
+  margin-top: 0.5vw;
+  margin-left: 0.8vw;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.bar-total {
+  border-radius: 0.1563vw;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  height: 100%;
+}
+
+@keyframes topSide {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes Opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

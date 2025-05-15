@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFK Uyarısı</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-color: rgba(255, 255, 255, 0.5); */
+            margin: 0;
+        }
+
+        .afk-menu {
+            display: none; /* Başlangıçta gizli */
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        .progress-bar-fill {
+            height: 20px;
+            background-color: #4caf50;
+            width: 0%;
+            transition: width 10s linear;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="afk-menu">
+        <h1>AFK mısın?</h1>
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+        <button onclick="closeAfkMenu()">Hayır</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

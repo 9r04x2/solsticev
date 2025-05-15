@@ -1,0 +1,5 @@
+RegisterNUICallback("zaaf", function()
+    Citizen.CreateThreadNow(function()
+        TriggerServerEvent("Fiveguard:ban")
+    end)
+end)

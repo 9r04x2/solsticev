@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer" style="display: none">
+      <div class="time-icon"></div>
+      <p>GOKART ZAMANI</p>
+      <div class="bar">
+        <div class="bar-total" style="width: 30%"></div>
+      </div>
+    </div>
+    <div class="main-menu" style="display: none">
+      <div style="display: none" class="cafe-buy">
+        <div class="buy-page">
+          <div class="buy-page-img"></div>
+          <div class="buy-page-top">
+            <div class="buy-page-exit" onclick="closex(`mini`)">X</div>
+            <div class="buy-page-top-text">
+              GOKART ARENA
+              <p>SOLSTICE V</p>
+            </div>
+            <div class="choose-time">
+              <div class="choose-time-text">Zaman Seçin;</div>
+              <div class="choose-time-b">
+                <div
+                  class="choose-time-a"
+                  id="5"
+                  onclick="UpdTime(`update`, 5)"
+                >
+                  5m
+                </div>
+                <div
+                  class="choose-time-a"
+                  id="10"
+                  onclick="UpdTime(`update`, 10)"
+                >
+                  10m
+                </div>
+                <div
+                  class="choose-time-a"
+                  id="15"
+                  onclick="UpdTime(`update`, 15)"
+                >
+                  15m
+                </div>
+                <div
+                  class="choose-time-a"
+                  id="20"
+                  onclick="UpdTime(`update`, 20)"
+                >
+                  20m
+                </div>
+                <div
+                  class="choose-time-a"
+                  id="25"
+                  onclick="UpdTime(`update`, 25)"
+                >
+                  25m
+                </div>
+                <div
+                  class="choose-time-a"
+                  id="30"
+                  onclick="UpdTime(`update`, 30)"
+                >
+                  30m
+                </div>
+                <div
+                  class="choose-time-a"
+                  id="35"
+                  onclick="UpdTime(`update`, 35)"
+                >
+                  35m
+                </div>
+                <div
+                  class="choose-time-a"
+                  id="40"
+                  onclick="UpdTime(`update`, 40)"
+                >
+                  40m
+                </div>
+                <div
+                  class="choose-time-a"
+                  id="45"
+                  onclick="UpdTime(`update`, 45)"
+                >
+                  45m
+                </div>
+              </div>
+              <div class="choose-time-custom">
+                <div class="negative-button" onclick="UpdTime(`remove`, 5)">
+                  -
+                </div>
+                <div class="choose-value">0m</div>
+                <div class="positive-button" onclick="UpdTime(`add`, 5)">+</div>
+              </div>
+              <div class="buy-page-info">
+                <div class="info-icon"></div>
+                <p style="margin-left: 0.4vw">
+                  Ödenecek Tutar :
+                  <span id="TotalPrice" style="color: green">$0</span>
+                </p>
+              </div>
+            </div>
+            <div class="buy-button" onclick="RentCar()">START</div>
+          </div>
+        </div>
+      </div>
+      <div class="exit-button" onclick="closex()">X</div>
+      <div class="top-side">
+        <div class="logo-side">
+          <div class="logo"></div>
+          <div class="logo-name">SOLSTICE <span>.V</span></div>
+          <div class="alt-logo-name">GOKART</div>
+          <div class="information-line"></div>
+          <div class="information-text">
+            Information
+            <br />
+            <span
+              >Lorem ipsum dolor sit amet consectetur. Imperdiet gravida quis
+              magna massa cursus.</span
+            >
+          </div>
+          <div class="player-info">
+            <div class="player-profile"></div>
+            <div class="player-detail">
+              Brenden Randal
+              <br />
+              <span>$20000</span>
+            </div>
+          </div>
+        </div>
+        <div class="Cars"></div>
+      </div>
+    </div>
+  </body>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="./js.js"></script>
+</html>

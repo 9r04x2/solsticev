@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ShopVehicleDataArray>
+	<Vehicles>
+	<Item>
+		<lockHash>CU_23TOURING_VEH</lockHash>
+		<modelNameHash>23touring</modelNameHash>
+		<cost value="100"/>
+		<textLabel>23TOURING</textLabel>
+		<textLabel></textLabel>
+	</Item>
+	</Vehicles>
+</ShopVehicleDataArray>

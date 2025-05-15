@@ -1,0 +1,310 @@
+@import url('https://fonts.cdnfonts.com/css/barlow');
+
+input {border:0;outline:0;}
+input:focus {outline:none!important;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.3vw;
+    background-color: #222222;
+    padding-right: 0.35vw;
+}
+  
+
+  
+::-webkit-scrollbar-thumb {
+    background: rgba(217, 217, 217, 0.55);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(217, 217, 217, 0.75);
+}
+
+.typesscroll::-webkit-scrollbar {
+	width: 0.15vw;
+	height: 0.15vw;
+	border-radius: 0.932px;
+	background: rgba(217, 217, 217, 0.15);
+}
+
+.typesscroll::-webkit-scrollbar-thumb {
+    border-radius: 0.932px;
+    background: rgba(255, 255, 255, 0.70);
+}
+
+.typesscroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 1.0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ShopScreen {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marketlabel {
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 1.875vw;
+    font-style: normal;
+    font-weight: 700;
+    text-align: start;
+}
+
+.moneytext {
+    color: #3CE393;
+    text-align: right;
+    font-family: Barlow;
+    font-size: 1.117vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.5%; /* 20.914px */
+    text-align: start;
+}
+
+.typetext{
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-family: Barlow;
+    font-size: 0.938vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 16.2px */
+    text-align: center;
+}
+
+.typetext:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+.input-search {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	background-color: transparent;
+	width: 89%;
+	height: 100%;
+
+    color: rgba(255, 255, 255, 0.42);
+    font-family: Oswald;
+    font-size: 1.146vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 19.8px */
+}
+
+.uruntext {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 0.9vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%; /* 18px */
+}
+
+.addbaskettext {
+    display: none; align-items: center; justify-content: center;
+    color: rgba(0, 0, 0, 0.54);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 0.833vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%; /* 14.4px */
+}
+
+.pricetext {
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(0, 0, 0, 0.54);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 0.833vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%; /* 14.4px */
+}
+
+.baskettextadded {
+    color: #000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 0.833vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%; /* 14.4px */
+}
+
+/* .addbaskettext:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.pricetext:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    display: none;
+} */
+
+.baskettext {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Oswald;
+    font-size: 0.938vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 16.2px */
+}
+
+.input-basket {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	background-color: transparent;
+	width: 89%;
+	height: 100%;
+
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 21.6px */
+}
+
+.piecetext {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Oswald;
+    font-size: 0.938vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 16.2px */
+}
+
+.totaltext {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Oswald;
+    font-size: 1.042vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 18px */
+}
+
+.paytext {
+    color: rgba(0, 0, 0, 0.54);
+    text-align: center;
+    font-family: Oswald;
+    font-size: 0.938vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%; /* 16.2px */
+}
+
+.paytext:hover {
+    cursor: pointer;
+	transform: scale(1.1);
+}
+
+.carttext {
+    color: #FFF;
+    text-align: right;
+    font-family: Oswald;
+    font-size: 1.875vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.touch:hover {
+    cursor: pointer;
+	transform: scale(1.1);
+}
+
+@keyframes menuAnimation {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes menuAnimationTers {
+	0% {
+		opacity: 0;
+		transform: translateY(-10);
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(3%);
+	}
+}
+
+
+@keyframes buttonAnimation {
+	0% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.container:hover .pricetext {
+    display: none;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.container:hover .addbaskettext {
+    display: flex;
+    color: black;
+}

@@ -1,0 +1,30 @@
+-- local QBCore = exports['qb-core']:GetCoreObject()
+
+-- RegisterNetEvent('carTransfer:client')
+-- AddEventHandler('carTransfer:client', function(person, opponent, plaka)
+--     local ped = PlayerPedId()
+--     local veh = GetVehiclePedIsIn(ped)
+--     local sofor = GetPedInVehicleSeat(veh, -1)
+--     local plate = GetVehicleNumberPlateText(veh)
+--     local model = veh
+--     local Player, Distance = QBCore.Functions.GetClosestPlayer()
+-- 	if veh then
+-- 		if plaka == plate then
+-- 			if sofor == ped then
+-- 				  if Player ~= -1 and Distance < 5 and GetPlayerServerId(Player) == opponent.PlayerData.source then  
+-- 					TriggerServerEvent("carTransfer:server", person, opponent, plate, model)
+-- 					TriggerEvent('vehiclekeys:client:SetOwner', person, opponent)
+-- 				else
+-- 					QBCore.Functions.Notify('Kişi yakınında olmalı!', 'error')
+-- 				end
+-- 			else	
+-- 				QBCore.Functions.Notify('Şöför koltuğunda olman gerekiyor!', 'error')
+-- 			end
+-- 		else
+-- 			QBCore.Functions.Notify('Plaka bulunamadı!', 'error')
+-- 		end
+-- 	else	
+-- 		QBCore.Functions.Notify('Araçta olman gerekiyor!', 'error')
+-- 	end
+-- end)
+

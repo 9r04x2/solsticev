@@ -1,0 +1,81 @@
+-- local Functions = require 'functions'
+
+-- RegisterCommand('ropeeditor', function()
+--     local firstobject, secondobject
+--     CreateThread(function()
+--         while true do
+--             local Toch, Coords, Entity = Functions.RayCastGamePlayCamera(100.0)
+--             local pCoords = GetEntityCoords(PlayerPedId())
+--             local Color = { r = 0, g = 255, b = 0, a = 200 }
+--             if Toch then
+--                 DrawLine(pCoords.x, pCoords.y, pCoords.z, Coords.x, Coords.y, Coords.z, Color.r, Color.g, Color.b,
+--                     Color.a)
+--                 DrawMarker(28, Coords.x, Coords.y, Coords.z, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.1, 0.1, 0.1, Color.r,
+--                     Color.g, Color.b, Color.a, false, true, 2, nil, nil, false)
+--                 if IsDisabledControlJustPressed(0, 47) then -- G
+--                     if not firstobject then
+--                         firstobject = Entity
+--                     elseif not secondobject and firstobject then
+--                         secondobject = Entity
+--                     end
+--                 end
+--             end
+--             if firstobject and secondobject then
+--                 rodObject = firstobject
+--                 veh = secondobject
+--                 local rodCoords = GetEntityCoords(rodObject, false)
+--                 local canCoords = GetEntityCoords(veh, false)
+--                 -- TriggerServerEvent('qb-atmrobbery:createRopeForAll', canCoords, rodCoords)
+--                 local bsn = math.random(1, 100)
+--                 rope = AddRope(rodCoords, canCoords, 30.0, 6, 6.0, 1.0, 1.0, false, false, false, 0.0, false)
+--                     canCoords[2], canCoords[3] + 0.8)
+--                 AttachEntitiesToRope(rope, rodObject, veh, rodCoords[1], rodCoords[2], rodCoords[3] + 0.8, canCoords[1],
+--                     canCoords[2], canCoords[3], 5, true, true, 18905, 18905)
+--                 RopeLoadTextures()
+--                 StartRopeWinding(rope)
+--                 RopeForceLength(rope, 5)
+--                 break
+--             end
+--             Wait(0)
+--         end
+--     end)
+-- end)
+
+-- RegisterCommand('ropeme', function()
+--     local firstobject
+--     local roped = false
+--     CreateThread(function()
+--         while true do
+--             local Toch, Coords, Entity = Functions.RayCastGamePlayCamera(100.0)
+--             local pCoords = GetEntityCoords(PlayerPedId())
+--             local Color = { r = 0, g = 255, b = 0, a = 200 }
+--             if Toch then
+--                 DrawLine(pCoords.x, pCoords.y, pCoords.z, Coords.x, Coords.y, Coords.z, Color.r, Color.g, Color.b,
+--                     Color.a)
+--                 DrawMarker(28, Coords.x, Coords.y, Coords.z, 0.0, 0.0, 0.0, 0.0, 180.0, 0.0, 0.1, 0.1, 0.1, Color.r,
+--                     Color.g, Color.b, Color.a, false, true, 2, nil, nil, false)
+--                 if IsDisabledControlJustPressed(0, 47) then -- G
+--                     if not firstobject then
+--                         firstobject = Entity
+--                     end
+--                 end
+--             end
+--             if firstobject then
+--                 rodObject = PlayerPedId()
+--                 veh = firstobject
+--                 -- SetEntityVisible(veh, false, 0)
+--                 local rodCoords = GetEntityCoords(rodObject, false)
+--                 local canCoords = GetEntityCoords(veh, false)
+--                 -- TriggerServerEvent('qb-atmrobbery:createRopeForAll', canCoords, rodCoords)
+--                 local bsn = math.random(1, 100)
+--                 rope = AddRope(rodCoords, canCoords, 30.0, 6, 6.0, 1.0, 1.0, false, false, false, 0.0, false)
+--                     canCoords[2], canCoords[3] + 0.8)
+--                 AttachEntitiesToRope(rope, rodObject, veh, rodCoords[1], rodCoords[2], rodCoords[3] + 0.8, canCoords[1],
+--                     canCoords[2], canCoords[3], 5, true, true, 18905, 18905)
+--                 RopeLoadTextures()
+--                 break
+--             end
+--             Wait(0)
+--         end
+--     end)
+-- end)

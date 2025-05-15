@@ -1,0 +1,21 @@
+{
+    "keys_title": "Tuş Mini Oyunu",
+    "keys_description": "Tuşları doğru sırayla basın!",
+    "lockpick_title": "Kilit Açma Mini Oyunu",
+    "lockpick_description": "Her bir kilidi ayrı ayrı açın",
+    "lockpick_left": "Sola döndür",
+    "lockpick_right": "Sağa döndür",
+    "lockpick_unlock": "Aç",
+    "pincracker_title": "Pim Kırma Mini Oyunu",
+    "pincracker_description": "Doğru kombinasyonu bulun",
+    "pincracker_crack": "Kır",
+    "sort_title": "Sıralama Mini Oyunu",
+    "sort_description": "Rakamları artan sırayla tıklayın",
+    "terminal_title": "Terminal Mini Oyunu",
+    "terminal_description": "Gösterilen diziyi tekrarlayın",
+    "words_title": "Kelime Mini Oyunu",
+    "words_description": "Görüntülenen kelimeleri ezberleyin",
+    "words_seen": "Görüldü",
+    "words_new": "Yeni"
+  }
+  

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>savana.tebex.io</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="main">
+				<div class="main-page pages page-main">
+					<img class="background" src="images/bg.png" />
+					<img class="icon" src="images/icon.png" />
+
+					<p class="title">PUBLIC</p>
+					<p class="subtitle">SYSTEM</p>
+
+					<p class="info">Information</p>
+					<p class="descrption">Lorem ipsum dolor sit amet consectetur. ntesque ullamcorper ultricies nisl</p>
+
+					<div class="profile">
+						<img class="circle" src="images/profile.png" />
+						<img class="pp profilePicture" src="images/pp.jpg" />
+
+						<p class="name pName">Baran Kaya</p>
+						<p class="grade pGrade">Chief</p>
+					</div>
+
+					<div class="locations">
+						<div class="location location-central">
+							<img class="image" src="images/locations/central.png" />
+
+							<div class="title-area">
+								<p class="loc-title">CENTRAL PARK</p>
+								<p class="loc-subtitle">LOCATION</p>
+							</div>
+							<div class="informationTextArea">
+								<p class="İnformationText">Information</p>
+								<p class="informationDetailsText">Lorem ipsum dolor sit amet consectetur. Auctor etiam lobortis et nc at. Massa sit gravida pellente.</p>
+							</div>
+							<div onclick="selectLocation('central')" class="selectArea">
+								<img class="tickBox" src="images/tick.svg" />
+								<p class="selectText">Select</p>
+							</div>
+							<div class="difficuityBox box-central">
+								<p class="difficuityText">Difficuity;</p>
+								<div class="levelSelectArea">
+									<div onclick="selectDifficulty('Easy')" class="selectLevel">
+										<p class="EasyText">Easy</p>
+									</div>
+									<div onclick="selectDifficulty('Medium')" class="selectLevel">
+										<p class="EasyText">Medium</p>
+									</div>
+									<div onclick="selectDifficulty('Hard')" class="selectLevel">
+										<p class="EasyText">Hard</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="location location-mirror">
+							<img class="image" src="images/locations/mirror.png" />
+
+							<div class="title-area">
+								<p class="loc-title">MIRROR PARK</p>
+								<p class="loc-subtitle">LOCATION</p>
+							</div>
+							<div class="informationTextArea">
+								<p class="İnformationText">Information</p>
+								<p class="informationDetailsText">Lorem ipsum dolor sit amet consectetur. Auctor etiam lobortis et nc at. Massa sit gravida pellente.</p>
+							</div>
+							<div onclick="selectLocation('mirror')" class="selectArea">
+								<img class="tickBox" src="images/tick.svg" />
+								<p class="selectText">Select</p>
+							</div>
+							<div class="difficuityBox box-mirror">
+								<p class="difficuityText">Difficuity;</p>
+								<div class="levelSelectArea">
+									<div onclick="selectDifficulty('Easy')" class="selectLevel">
+										<p class="EasyText">Easy</p>
+									</div>
+									<div onclick="selectDifficulty('Medium')" class="selectLevel">
+										<p class="EasyText">Medium</p>
+									</div>
+									<div onclick="selectDifficulty('Hard')" class="selectLevel">
+										<p class="EasyText">Hard</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="location location-mine">
+							<img class="image" src="images/locations/mine.png" />
+
+							<div class="title-area">
+								<p class="loc-title">MINE</p>
+								<p class="loc-subtitle">LOCATION</p>
+							</div>
+							<div class="informationTextArea">
+								<p class="İnformationText">Information</p>
+								<p class="informationDetailsText">Lorem ipsum dolor sit amet consectetur. Auctor etiam lobortis et nc at. Massa sit gravida pellente.</p>
+							</div>
+							<div onclick="selectLocation('mine')" class="selectArea">
+								<img class="tickBox" src="images/tick.svg" />
+								<p class="selectText">Select</p>
+							</div>
+							<div class="difficuityBox box-mine">
+								<p class="difficuityText">Difficuity;</p>
+								<div class="levelSelectArea">
+									<div onclick="selectDifficulty('Easy')" class="selectLevel">
+										<p class="EasyText">Easy</p>
+									</div>
+									<div onclick="selectDifficulty('Medium')" class="selectLevel">
+										<p class="EasyText">Medium</p>
+									</div>
+									<div onclick="selectDifficulty('Hard')" class="selectLevel">
+										<p class="EasyText">Hard</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="medicalArea">
+					<img class="medicalBox" src="images/box.png" />
+					<div class="medicalDepartmentArea">
+						<p class="MedicalText">MEDICAL</p>
+						<p class="departmentText">Department</p>
+						<p class="easyBox">Easy</p>
+					</div>
+					<div class="addBoxArea"></div>
+					<input class="value" type="text" placeholder="Amount..." />
+					<div onclick="send()" class="enterBox">
+						<p class="enterText">Enter</p>
+					</div>
+				</div>
+				<div class="publicPage pages page-dashboard">
+					<img class="backgroundImages" src="images/background.png" />
+					<div class="titleOtherPage">
+						<img class="iconOtherPage" src="images/icon.png" />
+						<p class="BoldTitle">PUBLIC</p>
+						<p class="lightText">DASHBOARD</p>
+						<p class="infoText">Information</p>
+						<p class="infoDetail">Lorem ipsum dolor sit amet consectetur. Blandit hendrerit adipiscing nam est risus.</p>
+						<div class="profileSet">
+							<img class="profileCircle" src="images/profile.png" />
+							<img class="myFoto profilePicture" src="images/pp.jpg" />
+							<p class="myName pName">Baran Kaya</p>
+							<p class="myJob pGrade">Chief</p>
+						</div>
+					</div>
+					<div class="historyPage">
+						<div class="historyInput">
+							<input class="history-input" placeholder="Player Name..." />
+							<img src="images/search.svg" />
+						</div>
+						<div class="historyArea">
+							<img class="timeIcon" src="images/time.png" />
+							<p class="historyText">History</p>
+						</div>
+						<div class="historyConteiner">
+							<div class="conteinerPeople history"></div>
+						</div>
+					</div>
+					<div class="historyPage">
+						<div class="historyInput">
+							<input class="ongoing-input" placeholder="Player Name..." />
+							<img src="images/search.svg" />
+						</div>
+						<p onclick="release(undefined, 'all')" class="release">Release All</p>
+						<div class="historyArea">
+							<img class="timeIcon" src="images/polygon.png" />
+							<p class="historyText">Ongoing</p>
+						</div>
+						<div class="historyConteiner">
+							<div class="conteinerPeople ongoing"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rightTopBox">
+			<img class="rightTheme" src="images/rightBox.png" />
+			<div class="rightSizeBox">
+				<p class="MedicalRightText">Medical</p>
+				<p class="departmentRightText">Department</p>
+				<p class="rightTextBox">25</p>
+				<p class="rightTextEasy">Easy</p>
+			</div>
+			<div class="textBottom">
+				<p class="progressbarText">Progress Bar</p>
+				<p class="elevenText">11 <span class="otherText">/25</span></p>
+			</div>
+			<div class="stickBar">
+				<div class="stickLoadingBar"></div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

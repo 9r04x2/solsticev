@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleModelInfoVariation>
+  <variationData>
+    
+    <Item>
+      <modelName>npolraptor</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+            1
+            134
+            1
+            1
+            1
+            1
+          </indices>
+          <liveries>
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>4033_npolraptor_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities />
+      </plateProbabilities>
+      <sirenSettings value="40344" />
+      <lightSettings value="540427" />
+    </Item>
+  </variationData>
+</CVehicleModelInfoVariation>

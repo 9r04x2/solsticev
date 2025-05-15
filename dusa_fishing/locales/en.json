@@ -1,0 +1,28 @@
+{
+"no_water": "Önünüzde su olması gerekiyor.",
+"cancel": "[E] - İptal",
+"catch_failed": "Balığı yakalamak için yeterli gücünüz yoktu.",
+"amount": "Miktar",
+"fisherman": "Balıkçılık Şirketi",
+"open_fisherman": "Balıkçılık Menüsünü Aç",
+"no_bait": "Balık tutmak için bir yem bulundurmanız gerekiyor.",
+"level_upgraded": "Seviye %s'ye yükseldiniz!",
+"notify_not_enough_level": "Bu eşyayı kullanmak için en az %s seviyesinde olmanız gerekiyor.",
+"equip_rod_firstly": "Önce bir balık oltası takmanız gerekiyor.",
+"caught_fish": "Bir balık yakaladınız!",
+"failed_caught_fish": "Balık yakalamayı başaramadınız!",
+"task_completed": "Görev tamamlandı! %s XP kazandınız.",
+"items_bought": "Eşyalar için %s $ harcadınız.",
+"not_enought_money": "Yeterli paranız yok.",
+"sold_items": "Eşyaları %s $ karşılığında sattınız.",
+"added_xp": "%s deneyim eklendi!",
+"already_used_bait": "Zaten yem kullandınız.",
+"you_already_max_level": "Zaten maksimum seviyedesiniz.",
+"already_max_xp": "Zaten maksimum deneyime sahipsiniz! Seviyenizi yükseltin.",
+
+"place_tackle": "[E] Takımı yerleştir",
+"cancel_tackle": "[Q] İptal",
+"open_tackle": "Takımı Aç",
+"pick_tackle": "Takımı Al",
+"picking_up": "Alınıyor..."
+}

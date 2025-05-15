@@ -1,0 +1,248 @@
+
+@font-face {
+    font-family: "Bebas Nue";
+    src: url("/web/MarlinGeoSQ-SemiLight.ttf") format("truetype");
+    font-weight: 700
+}
+
+* {
+    outline: none;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: none;
+}
+ 
+.disableSelection{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+.invisible-area {
+    position: absolute;
+    width: 25vh;
+    height: 18vh;
+    bottom: 46vh;
+    right: 0;
+    margin: 5vh;
+    z-index: 1500;
+}
+
+.container {
+    position: absolute;
+    bottom: 0%;
+    right: 5vh;
+}
+
+.phone-frame {
+    position: absolute;
+    width: 25vh;
+    bottom: 0;
+    right: 0;
+    margin: 5vh;
+    z-index: 150;
+    pointer-events: none;
+}
+
+
+.phone-container {
+    height: 61.7vh;
+    width: 29vh;
+    bottom: 1vh;
+    border-radius: 3vh;
+    right: 0.5vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.phone-background {
+    height: 41.7vh;
+    width: 24vh;
+    bottom: 1vh;
+    border-radius: 6vh;
+    border-bottom-left-radius: 14vh;
+    border-bottom-right-radius: 14vh;
+    right: 0.5vh;
+    margin: 5vh;
+    overflow: hidden;
+    position: absolute;
+ 
+    overflow: hidden;
+    padding-top: 1vh;
+    box-sizing: border-box;
+    padding-right: 3.5vh;
+    padding-left: 3.5vh;
+    padding-bottom: 5vh;
+    background: linear-gradient(45deg, black, #444444);
+}
+
+
+.logo {
+    width: 8vh;
+}
+
+.main, .scanning, .scan, .wanted-menu, .wanted-new, .wanted-reason, .wanted-list
+,.wanted-why, .history {
+ display: none;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Bebas Nue";
+}
+
+ 
+.space {
+    width: -webkit-fill-available;
+    height: 5vh;
+}
+
+.sc-logo  { width: 16vh;}
+
+.main button, .scan button, .wanted-menu button, .wanted-new button, .wanted-reason button, .wanted-list button,
+.wanted-why button, .history button {
+    color: white;
+    width: -webkit-fill-available;
+    font-size: 1.7vh;
+    border-radius: 0.5vh;
+    border: 1px solid #5ddcae63;
+    background: #5ddcae63;
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    font-weight: 100;
+    transition: .2s;
+    margin-bottom: 1vh;
+}
+
+.scanning button {
+    display: none;
+    color: white;
+    width: -webkit-fill-available;
+    font-size: 1.7vh;
+    border-radius: 0.5vh;
+    border: 1px solid #dc5d5d63;
+    background: #dc5d5d63;
+    padding-top: 0.4vh;
+    padding-bottom: 0.4vh;
+    font-weight: 100;
+    transition: .2s;
+    margin-bottom: 1vh;
+}
+
+.wanted-player-list button {
+    border: 1px solid #dc5d5d63!important;
+    background: #dc5d5d63!important;
+}
+.wanted-player-list button:hover {
+    background: #dc5d5d!important;
+}
+
+.scanning button:hover {
+    background: #dc5d5d;
+}
+
+
+.scan button {
+    margin-top: 1vh;
+    margin-bottom: 0;
+    font-size: 1.4vh;
+}
+
+.main button:hover, .scan button:hover, .wanted-menu button:hover, .wanted-new button:hover,  .wanted-reason button:hover
+, .wanted-list button:hover, .wanted-why button:hover, .history button:hover {
+    background: #5ddcae;
+}
+
+.button-box {
+    margin-top: 4vh;
+}
+
+.scan-box {
+    background: #464646;
+    border-radius: 2px;
+    display: flex;
+    overflow: hidden;
+    z-index: 100;
+    position: relative;
+}
+
+.scan-box i {
+    padding: 0.5vh;
+}
+
+.scan-box input {
+    color: white;
+    padding: 0.5vh;
+    background: #606060;
+    font-family: 'Bebas Nue';
+    border: 1px solid #606060;
+}
+
+.scan p, .wanted-why p {
+    text-align: left;
+    font-size: 1vh;
+    margin: 0;
+    margin-top: 0.5vh;
+    margin-bottom: 0.2vh;
+}
+
+.wanted-player-list, .history-list {
+    height: 22.5vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.wanted-player-list::-webkit-scrollbar, .history-list::-webkit-scrollbar {
+   display: none;
+}
+
+.wanted-reason textarea {
+    resize: none;
+    background: #424242;
+    color: white;
+    text-align: left;
+    border-radius: 0.2vh;
+    height: 10vh;
+    font-family: 'Bebas Nue';
+    padding: 1vh;
+}
+
+.wanted-why textarea {
+    color: white;
+    padding: 0.5vh;
+    background: #606060;
+    font-family: 'Bebas Nue';
+    border: 1px solid #606060;
+    width: -webkit-fill-available;
+    height: 7vh;
+    margin-bottom: 0;
+    resize: unset;
+}
+ .wanted-why .button-box {
+    margin-top: 1vh;
+}
+
+.history-list button p {
+    font-size: 1vh;
+}
+
+.logox {
+    pointer-events: none;
+    width: 30vh;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    opacity: 0.1;
+}

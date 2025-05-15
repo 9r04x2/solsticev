@@ -1,0 +1,698 @@
+{
+    "hayesdepo": {
+      "coord": { "x": -1429.18, "y": -457.81, "z": 35.9 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "hayes",
+      "private": true,
+      "job": "akbay"
+    },
+    "saspdepo": {
+      "coord": { "x": 833.99, "y": -1297.0, "z": 24.32 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "Ranger",
+      "private": true,
+      "job": "sasp"
+    },
+    "kisiseldepo09": {
+      "coord": { "x": -800.01, "y": 177.02, "z": 72.83 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "Kisisel Depo 09",
+      "private": true,
+      "job": "all"
+    },
+    "lscustoms": {
+      "coord": { "x": -310.93, "y": -137.4, "z": 39.01 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "Kisisel Depo 10",
+      "private": true,
+      "job": "all"
+    },
+    "gang1": {
+      "coord": { "x": -123.01, "y": -1591.2, "z": 34.21 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gang1",
+      "private": true,
+      "job": "all"
+    },
+    "gang3": {
+      "coord": { "x": -180.33, "y": -1534.49, "z": 34.36 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gang3",
+      "private": true,
+      "job": "all"
+    },
+    "gang4": {
+      "coord": { "x": 83.51, "y": -1973.93, "z": 20.93 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gang4",
+      "private": true,
+      "job": "all"
+    },
+    "bennysmechanicdepo": {
+      "coord": { "x": -206.57, "y": -1331.45, "z": 34.89 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "bennysmechanicdepo",
+      "private": true,
+      "job": "m6"
+    },
+    "uwudepo": {
+      "coord": { "x": -596.04, "y": -1067.34, "z": 22.35 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "uwudepo",
+      "private": true,
+      "job": "uwu"
+    },
+    "gang5": {
+      "coord": { "x": 227.96, "y": -1767.07, "z": 28.7 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gang5",
+      "private": true,
+      "job": "all"
+    },
+    "ekip1": {
+      "coord": { "x": 1391.56, "y": 1158.79, "z": 114.34 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip1",
+      "private": true,
+      "job": "all"
+    },
+    "ekip2": {
+      "coord": { "x": -911.72, "y": -442.13, "z": 115.4 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip2",
+      "private": true,
+      "job": "all"
+    },
+    "gang6": {
+      "coord": { "x": -62.39, "y": -1532.55, "z": 34.24 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gang6",
+      "private": true,
+      "job": "all"
+    },
+    "cripsstash": {
+      "coord": { "x": -107.59, "y": -1473.43, "z": 33.82 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "cripsstash",
+      "private": true,
+      "job": "all"
+    },
+    "ekip3": {
+      "coord": { "x": -796.26, "y": 336.2, "z": 153.79 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip3",
+      "private": true,
+      "job": "all"
+    },
+    "ekip4": {
+      "coord": { "x": -1287.58, "y": 455.55, "z": 90.29 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip4",
+      "private": true,
+      "job": "all"
+    },
+    "ekip5": {
+      "coord": { "x": 118.47, "y": 543.39, "z": 180.5 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip5",
+      "private": true,
+      "job": "all"
+    },
+    "emlakdepo1": {
+      "coord": { "x": -82.33, "y": -810.18, "z": 243.39 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "emlakdepo1",
+      "private": true,
+      "job": "all"
+    },
+    "emlakdepo2": {
+      "coord": { "x": -128.07, "y": -633.64, "z": 168.82 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "emlakdepo2",
+      "private": true,
+      "job": "all"
+    },
+    "ekip6": {
+      "coord": { "x": -1498.13, "y": 123.63, "z": 55.67 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip6",
+      "private": true,
+      "job": "all"
+    },
+    "luxclub": {
+      "coord": { "x": -307.24, "y": 209.25, "z": 145.32 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "luxclub",
+      "private": true,
+      "job": "all"
+    },
+    "emlak1": {
+      "coord": { "x": -1380.76, "y": -466.6, "z": 72.04 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "emlak1",
+      "private": true,
+      "job": "all"
+    },
+    "ekip7": {
+      "coord": { "x": -887.1, "y": -447.86, "z": 120.33 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip7",
+      "private": true,
+      "job": "all"
+    },
+    "ekip8": {
+      "coord": { "x": -1886.54, "y": 2062.36, "z": 140.98 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip8",
+      "private": true,
+      "job": "all"
+    },
+    "emsortak": {
+      "coord": { "x": 303.66, "y": -600.7, "z": 43.28 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "emsortak",
+      "private": false,
+      "job": "ambulance"
+    },
+    "ekip9": {
+      "coord": { "x": -776.41, "y": 324.07, "z": 196.09 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip9",
+      "private": true,
+      "job": "all"
+    },
+    "lsdojstash": {
+      "coord": { "x": -541.47, "y": -196.24, "z": 38.22 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "lsdojstash",
+      "private": true,
+      "job": "all"
+    },
+    "gunshop1": {
+      "coord": { "x": 22.4, "y": -1104.71, "z": 29.8 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gunshop1",
+      "private": true,
+      "job": "all"
+    },
+    "gunshop2": {
+      "coord": { "x": 254.27, "y": -51.1, "z": 69.94 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gunshop2",
+      "private": true,
+      "job": "all"
+    },
+    "gunshop3": {
+      "coord": { "x": -662.02, "y": -932.98, "z": 21.83 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gunshop3",
+      "private": true,
+      "job": "all"
+    },
+    "gunshop4": {
+      "coord": { "x": 842.74, "y": -1035.89, "z": 28.19 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gunshop4",
+      "private": true,
+      "job": "all"
+    },
+    "stash124": {
+      "coord": { "x": 485.52, "y": -3383.62, "z": 6.07 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash124",
+      "private": true,
+      "job": "all"
+    },
+    "ekip10": {
+      "coord": { "x": -771.81, "y": 326.58, "z": 176.81 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip10",
+      "private": true,
+      "job": "all"
+    },
+    "stash123": {
+      "coord": { "x": 1396.85, "y": 3605.16, "z": 38.94 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash123",
+      "private": true,
+      "job": "all"
+    },
+    "ekip11": {
+      "coord": { "x": -25.83, "y": -587.73, "z": 90.12 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip11",
+      "private": true,
+      "job": "all"
+    },
+    "ekip12": {
+      "coord": { "x": -765.08, "y": 327.38, "z": 211.4 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip12",
+      "private": true,
+      "job": "all"
+    },
+    "m8depo": {
+      "coord": { "x": 146.45, "y": -3007.52, "z": 7.04 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "m8depo",
+      "private": true,
+      "job": "all"
+    },
+    "emlakstash2": {
+      "coord": { "x": -1006.93, "y": -766.61, "z": 65.69 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "emlakstash2",
+      "private": true,
+      "job": "all"
+    },
+    "clup77": {
+      "coord": { "x": 250.03, "y": -3155.7, "z": 3.33 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "clup77",
+      "private": true,
+      "job": "all"
+    },
+    "stash129": {
+      "coord": { "x": 725.43, "y": -1066.72, "z": 28.31 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash129",
+      "private": true,
+      "job": "all"
+    },
+    "stash132": {
+      "coord": { "x": 809.54, "y": -2159.6, "z": 29.62 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash131",
+      "private": true,
+      "job": "all"
+    },
+    "ekip13": {
+      "coord": { "x": -899.63, "y": -441.81, "z": 121.62 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip13",
+      "private": true,
+      "job": "all"
+    },
+    "ekip14": {
+      "coord": { "x": -784.42, "y": 330.72, "z": 207.62 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip14",
+      "private": true,
+      "job": "all"
+    },
+    "stash135": {
+      "coord": { "x": 1538.92, "y": 3595.09, "z": 38.77 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash135",
+      "private": true,
+      "job": "all"
+    },
+    "stash136": {
+      "coord": { "x": -1510.55, "y": 839.23, "z": 181.6 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash136",
+      "private": true,
+      "job": "all"
+    },
+    "ekip15": {
+      "coord": { "x": -1537.39, "y": 119.62, "z": 56.78 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip15",
+      "private": true,
+      "job": "all"
+    },
+    "ekip16": {
+      "coord": { "x": -773.78, "y": 325.12, "z": 223.27 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip16",
+      "private": true,
+      "job": "all"
+    },
+    "stash139": {
+      "coord": { "x": 1532.02, "y": 1728.13, "z": 109.92 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash139",
+      "private": true,
+      "job": "all"
+    },
+    "gunshop122": {
+      "coord": { "x": 2568.5, "y": 291.9, "z": 108.73 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "gunshop122",
+      "private": true,
+      "job": "all"
+    },
+    "stash140": {
+      "coord": { "x": 972.26, "y": -98.33, "z": 74.87 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash140",
+      "private": true,
+      "job": "all"
+    },
+    "m9": {
+      "coord": { "x": 886.27, "y": -2097.29, "z": 34.89 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "m9",
+      "private": true,
+      "job": "all"
+    },
+    "m10": {
+      "coord": { "x": 1188.7, "y": 2639.89, "z": 38.4 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "m10",
+      "private": true,
+      "job": "all"
+    },
+    "stash145": {
+      "coord": { "x": -1303.33, "y": -394.05, "z": 36.7 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash145",
+      "private": true,
+      "job": "all"
+    },
+    "ekip17": {
+      "coord": { "x": 369.02, "y": 407.69, "z": 142.1 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip17",
+      "private": true,
+      "job": "all"
+    },
+    "ekip18": {
+      "coord": { "x": 327.94, "y": 429.9, "z": 145.57 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "ekip18",
+      "private": true,
+      "job": "all"
+    },
+    "stash151": {
+      "coord": { "x": -1119.55, "y": 2700.05, "z": 18.55 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash151",
+      "private": true,
+      "job": "all"
+    },
+    "stash153": {
+      "coord": { "x": 105.83, "y": -1312.95, "z": 35.59 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash153",
+      "private": true,
+      "job": "all"
+    },
+    "stash154": {
+      "coord": { "x": -1911.1, "y": -569.72, "z": 19.1 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash154",
+      "private": true,
+      "job": "all"
+    },
+    "stash155": {
+      "coord": { "x": -586.78, "y": -722.86, "z": 116.81 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash155",
+      "private": true,
+      "job": "all"
+    },
+    "stash156": {
+      "coord": { "x": -468.3, "y": 1133.28, "z": 318.08 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash156",
+      "private": true,
+      "job": "all"
+    },
+    "stash160": {
+      "coord": { "x": -467.02, "y": -2824.61, "z": 7.3 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash160",
+      "private": true,
+      "job": "all"
+    },
+    "stash166": {
+      "coord": { "x": -599.53, "y": -719.8, "z": 116.8 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash166",
+      "private": true,
+      "job": "all"
+    },
+    "stash167": {
+      "coord": { "x": 118.43, "y": -1951.41, "z": 20.74 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash167",
+      "private": false,
+      "job": "ballas"
+    },
+    "stash168": {
+      "coord": { "x": -57.56, "y": -1532.25, "z": 34.36 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash168",
+      "private": true,
+      "job": "all"
+    },
+    "stash171": {
+      "coord": { "x": -1469.42, "y": -31.4, "z": 54.75 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash171",
+      "private": true,
+      "job": "all"
+    },
+    "stash172": {
+      "coord": { "x": -3337.83, "y": 543.64, "z": 17.44 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash172",
+      "private": true,
+      "job": "all"
+    },
+    "stash175": {
+      "coord": { "x": -110.12, "y": 2810.54, "z": 53.16 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash175",
+      "private": true,
+      "job": "all"
+    },
+    "stash176": {
+      "coord": { "x": -287.64, "y": 2535.68, "z": 75.69 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash176",
+      "private": true,
+      "job": "all"
+    },
+    "pdkisiseldepo": {
+      "coord": { "x": 447.84, "y": -996.18, "z": 30.69 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "pdkisiseldepo",
+      "private": true,
+      "job": "police"
+    },
+    "pdkanitdepo1": {
+      "coord": { "x": 472.63, "y": -994.02, "z": 26.27 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "pdkanitdepo1",
+      "private": false,
+      "job": "police"
+    },
+    "pdkanitdepo2": {
+      "coord": { "x": 474.51, "y": -994.1, "z": 26.27 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "pdkanitdepo2",
+      "private": false,
+      "job": "police"
+    },
+    "vinewoodkisiseldepo": {
+      "coord": { "x": 551.2, "y": 26.7, "z": 69.36 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "vinewoodkiseldepo",
+      "private": true,
+      "job": "police"
+    },
+    "vinewoodkanitdepo1": {
+      "coord": { "x": 564.37, "y": 1.71, "z": 69.36 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "vinewoodkanitdepo1",
+      "private": false,
+      "job": "police"
+    },
+    "vinewoodkanitdepo2": {
+      "coord": { "x": 565.0, "y": 7.06, "z": 69.36 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "vinewoodkanitdepo2",
+      "private": false,
+      "job": "police"
+    },
+    "stash178": {
+      "coord": { "x": 97.68, "y": -1296.13, "z": 29.21 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash178",
+      "private": true,
+      "job": "all"
+    },
+    "stash179": {
+      "coord": { "x": 427.59, "y": -1515.38, "z": 29.29 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash179",
+      "private": true,
+      "job": "all"
+    },
+    "stash181": {
+      "coord": { "x": -103.56, "y": 984.21, "z": 240.84 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash181",
+      "private": true,
+      "job": "all"
+    },
+    "stash182": {
+      "coord": { "x": 1272.36, "y": -1714.79, "z": 54.77 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash182",
+      "private": true,
+      "job": "all"
+    },
+    "stash183": {
+      "coord": { "x": -1458.17, "y": -531.92, "z": 56.94 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash183",
+      "private": true,
+      "job": "all"
+    },
+    "stash184": {
+      "coord": { "x": -1561.72, "y": -568.97, "z": 108.52 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash184",
+      "private": true,
+      "job": "all"
+    },
+    "jonesortak": {
+      "coord": { "x": -1881.61, "y": 2060.83, "z": 140.98 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "jonesortak",
+      "private": false,
+      "job": "jones"
+    },
+    "stash185": {
+      "coord": { "x": 0.15, "y": 526.69, "z": 170.62 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash185",
+      "private": true,
+      "job": "all"
+    },
+    "stash186": {
+      "coord": { "x": 344.72, "y": -2028.86, "z": 22.35 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash186",
+      "private": true,
+      "job": "all"
+    },
+    "stash187": {
+      "coord": { "x": -520.22, "y": -2876.78, "z": 7.47 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash187",
+      "private": true,
+      "job": "all"
+    },
+    "hsdkanitdepo": {
+      "coord": { "x": 1826.33, "y": 3660.76, "z": 30.31 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "hsdkanitdepo",
+      "private": false,
+      "job": "sheriff"
+    },
+    "stash188": {
+      "coord": { "x": 1722.21, "y": 3302.87, "z": 41.22 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash188",
+      "private": true,
+      "job": "all"
+    },
+    "stash189": {
+      "coord": { "x": -1595.97, "y": -60.53, "z": 56.48 },
+      "maxweight": 30000,
+      "slots": 200,
+      "label": "stash189",
+      "private": true,
+      "job": "all"
+    }
+}

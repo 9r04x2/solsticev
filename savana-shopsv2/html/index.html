@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://db.onlinewebfonts.com/c/4b0ee045520eff904c5fa778c4545547?family=Opinion+Pro+Condensed+W05+Bold" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="ShopScreen">
+      <!-- <div style="width: 100%; height: 100%; position: absolute; background-image: url(./img/back.png); background-size: 100% 100%; z-index: -1;"></div> -->
+      <div style="animation: menuAnimation 1s ease-in-out; width: 80.5%; height: 79%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+        <div style="background: rgba(15, 20, 24, 0.92); width: 65.7%; height: 100%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+          <div style="width: 100%; height: 14.7%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+            <div style="width: 100%; height: 22%;"></div>
+            <div style="width: 100%; height: 78%; display: flex; align-items: flex-start; justify-content: flex-start; flex-direction: row;">
+              <div style="width: 5%; height: 100%;"></div>
+              <div style="width: 43%; height: 78%; background: linear-gradient(90deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%); display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+                <div style="width: 3.3%; height: 10%;"></div>
+                <div style="width: 11.8%; height: 62%; border-radius: 4.229px; border: 1.208px solid rgba(255, 255, 255, 0.29); background: rgba(255, 255, 255, 0.24); display: flex; align-items: center; justify-content: center;">
+                  <div style="width: 100%; height: 100%; background-image: url(./img/basket.png); background-position: center; background-repeat: no-repeat; background-size: 70% 70%;"></div>
+                </div>
+                <div style="width: 2.5%; height: 10%;"></div>
+                <div id="marketlabel" class="marketlabel" style="width: 81%; height: 65%;">MARKET 17</div>
+              </div>
+              <div style="width: 34%; height: 79%;"></div>
+              <div style="width: 17.5%; height: 100%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+                <div style="width: 10%; height: 18%; ;"></div>
+                <div style="width: 100%; height: 20%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+                  <div style="width: 2%; height: 100%;"></div>
+                  <div style="width: 11%; height: 100%; background-image: url(./img/bank.png); background-position: center; background-repeat: no-repeat; background-size: 100% 100%;"></div>
+                  <div style="width: 4%; height: 100%;"></div>
+                  <div id="cashmoney" class="moneytext" style="width: 82%; height: 100%;">$ 56,000,000</div>
+                </div>
+                <div style="width: 10%; height: 10%;"></div>
+                <div style="width: 100%; height: 20%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+                  <!-- <div style="width: 2%; height: 100%;"></div> -->
+                  <div style="width: 14%; height: 120%; background-image: url(./img/cash.png); background-position: center; background-repeat: no-repeat; background-size: 100% 100%;"></div>
+                  <div style="width: 4%; height: 100%;"></div>
+                  <div id="bankmoney" class="moneytext" style="width: 80%; height: 100%;">$ 56,000,000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="width: 100%; height: 4.2%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+            <div style="width: 5%; height: 100%;"></div>
+            <div id="typesscroll" class="typesscroll" style="overflow-y: hidden; overflow-x: auto; gap: 1%; width: 55.8%; height: 100%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+              <div class="typetext" style="min-width: 19%; width: 19%; height: 100%; background: rgba(217, 217, 217, 0.05); display: flex; align-items: center; justify-content: center;">AUDI</div>
+              <div class="typetext" style="min-width: 19%; width: 19%; height: 100%; background: rgba(217, 217, 217, 0.05); display: flex; align-items: center; justify-content: center;">ACURA</div>
+              <div class="typetext" style="min-width: 19%; width: 19%; height: 100%; background: rgba(217, 217, 217, 0.05); display: flex; align-items: center; justify-content: center;">BMW</div>
+              <div class="typetext" style="min-width: 19%; width: 19%; height: 100%; background: rgba(217, 217, 217, 0.05); display: flex; align-items: center; justify-content: center;">LEXUS</div>
+              <div class="typetext" style="min-width: 19%; width: 19%; height: 100%; background: rgba(217, 217, 217, 0.05); display: flex; align-items: center; justify-content: center;">AUDI</div>
+            </div>
+            <div style="width: 0.5%; height: 10%;"></div>
+            <div style="width: 34%; height: 100%; border: 1px solid rgba(255, 255, 255, 0.20); background: rgba(255, 255, 255, 0.10); display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+              <div style="width: 2%; height: 1%;"></div>
+              <input type="text" id="input-search" class="input-search" placeholder="Search..." />
+              <div style="width: 1%; height: 100%;"></div>
+              <div style="width: 7%; height: 100%; background-image: url(./img/search.png); background-position: center; background-repeat: no-repeat; background-size: 70% auto;"></div>
+            </div>
+          </div>
+          <div style="width: 10%; height: 1%;"></div>
+          <div style="width: 100%; height: 75.6%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+            <div style="width: 5%; height: 10%;"></div>
+            <div id="items" class="items" style="flex-wrap: wrap; overflow: auto; gap: 0% 1.5%; width: 92.5%; height: 100%; display: grid; grid-template-columns: repeat(4, 11.394vw); grid-auto-rows: 11.394vw; align-items: flex-start; justify-content: flex-start; flex-direction: row;">
+              <div style="border: 0.055vw solid rgba(255, 255, 255, 0.17); background: rgba(255, 255, 255, 0.03); width: 100%; height: 96%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+                <div style="width: 100%; height: 8%;"></div>
+                <div class="uruntext" style="width: 100%; height: 11%; display: flex; align-items: center; justify-content: center;">ADVANCED REPAIRKIT</div>
+                <div style="width: 100%; height: 66%; display: flex; align-items: center; justify-content: center; background-image: url(./img/orange.png); background-position: center; background-repeat: no-repeat; background-size: 50% auto;"></div>
+                <div class="addbaskettext" style="width: 100%; height: 15%; background: #42EA7B; display: flex; align-items: center; justify-content: center;">Sepete Ekle</div>
+              </div>
+              <div style="border: 0.055vw solid rgba(255, 255, 255, 0.17); background: rgba(255, 255, 255, 0.03); width: 100%; height: 96%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+                <div style="width: 100%; height: 8%;"></div>
+                <div class="uruntext" style="width: 100%; height: 11%; display: flex; align-items: center; justify-content: center;">ADVANCED REPAIRKIT</div>
+                <div style="width: 100%; height: 66%; display: flex; align-items: center; justify-content: center; background-image: url(./img/orange.png); background-position: center; background-repeat: no-repeat; background-size: 50% auto;"></div>
+                <div class="baskettextadded" style="width: 100%; height: 15%; background: #42EA7B; display: flex; align-items: center; justify-content: center;">ADDED</div>
+              </div>
+              <div style="border: 0.055vw solid rgba(255, 255, 255, 0.17); background: rgba(255, 255, 255, 0.03); width: 100%; height: 96%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+                <div style="width: 100%; height: 8%;"></div>
+                <div class="uruntext" style="width: 100%; height: 11%; display: flex; align-items: center; justify-content: center;">ADVANCED REPAIRKIT</div>
+                <div style="width: 100%; height: 66%; display: flex; align-items: center; justify-content: center; background-image: url(./img/orange.png); background-position: center; background-repeat: no-repeat; background-size: 50% auto;"></div>
+                <div class="addbaskettext" style="width: 100%; height: 15%; background: #42EA7B; display: flex; align-items: center; justify-content: center;">Sepete Ekle</div>
+              </div>
+              <div style="border: 0.055vw solid rgba(255, 255, 255, 0.17); background: rgba(255, 255, 255, 0.03); width: 100%; height: 96%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+                <div style="width: 100%; height: 8%;"></div>
+                <div class="uruntext" style="width: 100%; height: 11%; display: flex; align-items: center; justify-content: center;">ADVANCED REPAIRKIT</div>
+                <div style="width: 100%; height: 66%; display: flex; align-items: center; justify-content: center; background-image: url(./img/orange.png); background-position: center; background-repeat: no-repeat; background-size: 50% auto;"></div>
+                <div class="baskettextadded" style="width: 100%; height: 15%; background: #42EA7B; display: flex; align-items: center; justify-content: center;">ADDED</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="width: 1.52%; height: 100%;"></div>
+        <div style="background: rgba(15, 20, 24, 0.92); width: 32.78%; height: 100%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+          <div style="width: 10%; height: 3.4%;"></div>
+          <div style="width: 100%; height: 9%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+            <div style="width: 12%; height: 10%;"></div>
+            <div style="width: 85.6%; height: 100%; background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.10) 100%); display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+              <div style="width: 85%; height: 100%; display: flex; align-items: center; justify-content: flex-end; flex-direction: row;">
+                <div id="carttext" class="carttext" style="width: 90%; height: 100%; display: flex; align-items: center; justify-content: flex-end;">SHOPPING CART</div>
+                <div style="width: 3%; height: 100%;"></div>
+              </div>
+              <div style="width: 12.2%; height: 70%; border-radius: 4.229px; border: 1.208px solid rgba(255, 255, 255, 0.29); background: rgba(255, 255, 255, 0.24); background-image: url(./img/basket.png); background-position: center; background-repeat: no-repeat; background-size: 70% auto;"></div>
+            </div>
+          </div>
+          <div style="width: 100%; height: 2.3%;"></div>
+          <div class="basket" id="basket" style="overflow-x: hidden; overflow-y: scroll; gap: 1.8%; width: 100%; height: 64.3%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+            <div style="width: 89.7%; height: 18.3%; min-height: 18.3%; border: 1.063px solid rgba(255, 255, 255, 0.17); background: rgba(255, 255, 255, 0.03); display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+              <div style="width: 3%; height: 100%;"></div>
+              <div class="baskettext" style="opacity: 0.7; width: 37%; height: 100%; background-image: url(./img/orange.png); background-position: left center; background-repeat: no-repeat; background-size: 50% auto; display: flex; align-items: center; justify-content: center; padding-right: 11%">Orange</div>
+              <div style="width: 0.7%; height: 10%;"></div>
+              <div style="width: 28.5%; height: 35%; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.20); background: rgba(255, 255, 255, 0.10); display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+                <div style="width: 12%; height: 100%;"></div>
+                <div class="touch" style="width: 15%; height: 100%; background-image: url(./img/minus.png); background-position: center; background-repeat: no-repeat; background-size: auto 100%;"></div>
+                <input style="width: 43%; height: 100%; display: flex; align-items: center; justify-content: center;" type="number" value="33" class="input-basket" placeholder="33" />
+                <div class="touch" style="width: 15%; height: 100%; background-image: url(./img/plus.png); background-position: center; background-repeat: no-repeat; background-size: auto 100%;"></div>
+              </div>
+              <div style="width: 5%; height: 10%;"></div>
+              <div class="piecetext" style="width: 25.5%; height: 30%; display: flex; align-items: center; justify-content: flex-start;">Piece: $750</div>
+            </div>
+            <div style="width: 89.7%; height: 18.3%; min-height: 18.3%; border: 1.063px solid rgba(255, 255, 255, 0.17); background: rgba(255, 255, 255, 0.03); display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+              <div style="width: 3%; height: 100%;"></div>
+              <div class="baskettext" style="opacity: 0.7; width: 37%; height: 100%; background-image: url(./img/orange.png); background-position: left center; background-repeat: no-repeat; background-size: 50% auto; display: flex; align-items: center; justify-content: center; padding-right: 11%">Orange</div>
+              <div style="width: 0.7%; height: 10%;"></div>
+              <div style="width: 28.5%; height: 35%; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.20); background: rgba(255, 255, 255, 0.10); display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+                <div style="width: 12%; height: 100%;"></div>
+                <div class="touch" style="width: 15%; height: 100%; background-image: url(./img/minus.png); background-position: center; background-repeat: no-repeat; background-size: auto 100%;"></div>
+                <input style="width: 43%; height: 100%; display: flex; align-items: center; justify-content: center;" type="number" value="33" class="input-basket" placeholder="33" />
+                <div class="touch" style="width: 15%; height: 100%; background-image: url(./img/plus.png); background-position: center; background-repeat: no-repeat; background-size: auto 100%;"></div>
+              </div>
+              <div style="width: 5%; height: 10%;"></div>
+              <div class="piecetext" style="width: 25.5%; height: 30%; display: flex; align-items: center; justify-content: flex-start;">Piece: $750</div>
+            </div>
+          </div>
+          <div style="width: 10%; height: 1.3%;"></div>
+          <div style="border: 1.063px solid rgba(255, 255, 255, 0.52); background: rgba(255, 255, 255, 0.10); width: 89.7%; height: 15.2%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">
+            <div style="width: 2.8%; height: 10%;"></div>
+            <div style="width: 60%; height: 100%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+              <div style="width: 100%; height: 16%;"></div>
+              <div id="totalcategories" class="totaltext" style="width: 100%; height: 17%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">Total Product Type: 0x</div>
+              <div style="width: 100%; height: 5%;"></div>
+              <div id="totaltype" class="totaltext" style="width: 100%; height: 17%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">Total Product Amount: 0x</div>
+              <div style="width: 100%; height: 5%;"></div>
+              <div id="totalprice" class="totaltext" style="width: 100%; height: 17%; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;">Total Price: $0</div>
+            </div>
+            <div style="width: 5.4%; height: 100%;"></div>
+            <div style="width: 29%; height: 61%; display: flex; align-items: center; justify-content: flex-start; flex-direction: column;">
+              <div id="paycash" class="paytext" style="width: 100%; height: 40%; background: #42EA7B; display: flex; align-items: center; justify-content: center;">PAY CASH</div>
+              <div style="width: 100%; height: 20%;"></div>
+              <div id="paybank" class="paytext" style="width: 100%; height: 40%; background: #42EA7B; display: flex; align-items: center; justify-content: center;">PAY BANK</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

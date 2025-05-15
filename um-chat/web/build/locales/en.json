@@ -1,0 +1,56 @@
+{
+    "cchat": {
+        "input": "Fareyi etkinleştirmek için ALT tuşuna basın 🖱️"
+    },
+    "gchat": {
+        "title": "Genel Sohbet",
+        "input": "💬 bir şeyler yaz...",
+        "wait": "🛑 lütfen bekleyin...",
+        "time": {
+            "null": "Bilinmeyen",
+            "invdate": "Geçersiz tarih",
+            "now": "Şimdi",
+            "minutes": "dakika önce",
+            "hours": "saat önce",
+            "days": "gün önce",
+            "invformat": "Geçersiz tarih formatı"
+        },
+        "profileSettings": {
+            "title": "Profil Resmi",
+            "placeholder": "Resmin URL'si",
+            "save": "Profil resmi başarıyla kaydedildi",
+            "warning": "Lütfen geçerli bir resim URL'si girin. URL .jpg veya .png ile bitmelidir"
+        }
+    },
+    "settings": {
+        "title": "Ayarlar",
+        "settings1": {
+            "title": "Konumlandırma",
+            "desc": "Düğmeye bastığınızda konumlandırma etkinleştirilir ve sohbeti tutup sürükleyebilirsiniz, istediğiniz yere konumlandırdıktan sonra düğmeye tekrar basın"
+        },
+        "settings2": {
+            "title": "Renk Paleti",
+            "desc": "Varsayılan renkleri değiştirmek için renk paletini kullanabilirsiniz"
+        },
+        "settings3": {
+            "title": "Bildirimler",
+            "desc": "Sohbet penceresi bildirimlerini almak istemiyorsanız, bunu kapatabilirsiniz"
+        },
+        "settings4": {
+            "title": "Sesler",
+            "desc": "Yazma sesi ve diğer sesleri kapatabilirsiniz"
+        },
+        "settings5": {
+            "title": "Spoiler Modu",
+            "desc": "Tüm gifleri spoiler olarak görmek istiyorsanız bunu işaretleyin, böylece sürpriz yaşamazsınız"
+        },
+        "settings6": {
+            "title": "Ayarları Sıfırla",
+            "desc": "Tüm ayarları geri al ve sıfırla"
+        },
+        "settings7": {
+            "title": "Ölçek Ayarı",
+            "desc": "Buradan sohbetin ölçeğini kendinize göre ayarlayabilirsiniz"
+        }
+    }
+}

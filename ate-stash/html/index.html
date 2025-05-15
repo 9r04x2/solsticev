@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Depo Yönetim Sistemi</title>
+		<link rel="stylesheet" href="index.css" />
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	</head>
+
+	<body>
+		<div class="notify-area"></div>
+
+		<div class="main-container">
+			<div class="circle-3"></div>
+
+			<div class="top-bar">
+				<p class="clock">9:41</p>
+				<p class="month">Mon Jun 6</p>
+			</div>
+
+			<div class="left-menu">
+				<div class="circle-1"></div>
+				<div class="circle-2"></div>
+
+				<img src="public/logo.png" class="noodle" />
+				<p class="tworst">STASH</p>
+				<p class="managment">STYSEM</p>
+				<p class="menu-category-text">Kategoriler</p>
+
+				<div class="create-storage-btn" onclick="openCreateStorage()">
+					<i class="fas fa-plus"></i>
+					Yeni Depo Oluştur
+				</div>
+
+				<div class="menu-buttons-container">
+					<div onclick="selectCategory('all')" class="menu-button allCategory active">Tüm Depolar</div>
+					<div onclick="selectCategory('job')" class="menu-button">Meslek Depoları</div>
+					<div onclick="selectCategory('gang')" class="menu-button">Çete Depoları</div>
+					<div onclick="selectCategory('personal')" class="menu-button">Kişisel Depolar</div>
+				</div>
+			</div>
+
+			<div class="serach-item-box">
+				<img src="public/search-icon.svg" class="serach-icon" />
+				<input class="search-input" type="text" placeholder="Depo Ara..." />
+			</div>
+
+			<div class="storage-container">
+			</div>
+			
+			<div class="center details-popup">
+				<div class="storage-details">
+					<div class="close-btn" onclick="$('.details-popup').fadeOut(300)">
+						<i class="fas fa-times"></i>
+					</div>
+					<h2 class="storage-title">Depo Detayları</h2>
+					<div class="storage-info">
+						<div class="info-row">
+							<span>Depo İsmi:</span>
+							<span id="storage-name"></span>
+						</div>
+						<div class="info-row">
+							<span>Depo Tipi:</span>
+							<span id="storage-type"></span>
+						</div>
+						<div class="info-row">
+							<span>Meslek:</span>
+							<span id="storage-job"></span>
+						</div>
+						<div class="info-row">
+							<span>Çete:</span>
+							<span id="storage-gang"></span>
+						</div>
+						<div class="info-row">
+							<span>Kapasite:</span>
+							<span id="storage-size"></span>
+						</div>
+						<div class="info-row">
+							<span>Koordinatlar:</span>
+							<span id="storage-coords"></span>
+						</div>
+					</div>
+					<div class="storage-actions">
+						<button onclick="teleportToStorage()" class="action-btn">
+							<i class="fas fa-location-dot"></i>
+							Depoya Git
+						</button>
+						<button onclick="deleteStorage()" class="action-btn delete">
+							<i class="fas fa-trash"></i>
+							Depoyu Sil
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="center create-popup">
+			</div>
+
+		</div>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="main.js" defer></script>
+	</body>
+</html>

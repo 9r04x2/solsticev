@@ -1,0 +1,1031 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../fonts/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url("../fonts/Gilroy-Black.ttf");
+}
+
+@font-face {
+  font-family: "Arame-Mono";
+  src: url("../fonts/Arame-Mono.ttf");
+}
+
+@keyframes scoreboardSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(12.3438vw);
+  }
+}
+
+@keyframes minigameDisappear {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(2.0833vw) scale(0.95);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+  font-family: "Arial", sans-serif;
+}
+
+.minigame {
+  cursor: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+@keyframes minigameAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(2.0833vw) scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-0.5208vw) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.minigameSide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52.1875vw;
+  height: 6.3021vw;
+  flex-shrink: 0;
+  border-radius: 0.6771vw;
+  background: rgb(0 0 0 / 35%);
+  bottom: 3.0208vw;
+  animation: minigameAppear 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.minigameInside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50.625vw;
+  height: 4.2708vw;
+  border-radius: 0.2083vw;
+  background: radial-gradient(
+    213.35% 50% at 50% 50%,
+    rgba(72, 114, 73, 0.89) 0%,
+    rgba(27, 60, 28, 0.89) 100%
+  );
+}
+
+.arenaImgLeft {
+  position: absolute;
+  transform: rotate(180deg);
+  width: 4.1821vw;
+  height: 3.8183vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/arena.svg");
+  left: 0.835vw;
+}
+
+.arenaImgRight {
+  position: absolute;
+  width: 4.1821vw;
+  height: 3.8183vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/arena.svg");
+  right: 0.835vw;
+}
+
+.hoop {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  margin-top: -0.64vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/hoop.svg");
+}
+
+.ball {
+  position: absolute;
+  width: 3.6458vw;
+  height: 3.6458vw;
+  z-index: 9;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/ball.png");
+  transition: margin-left 0.05s linear;
+  margin-left: 0vw;
+}
+
+@keyframes slideScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(0.5208vw);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.BuyPage {
+  width: 58.3854vw;
+  height: 35.7813vw;
+  border-radius: 0.8333vw;
+  background: #191a1b;
+  overflow: hidden;
+  opacity: 0;
+  animation: slideScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: opacity 0.5s ease-out, transform 0.2s ease-out;
+}
+
+.BuyPage[style*="display: none"] {
+  opacity: 0;
+  transform: scale(0.7) translateY(0.5208vw);
+}
+
+.PageInsideBlur {
+  width: 34.3229vw;
+  height: 17.2396vw;
+  border-radius: 50%;
+  margin-left: -15vw;
+  margin-top: -15vw;
+  background: rgba(186, 155, 143, 0.34);
+  filter: blur(10.4922vw);
+}
+
+.PageInsideCloseBlur {
+  width: 185px;
+  height: 5.4167vw;
+  flex-shrink: 0;
+  background: rgba(231, 69, 69, 0.16);
+  filter: blur(3.9063vw);
+  margin-left: 53vw;
+  margin-top: -5vw;
+}
+
+.PageInside {
+  position: fixed;
+  width: 58.3854vw;
+  height: 35.7813vw;
+  border-radius: 0.8333vw;
+}
+
+.TopSide {
+  display: flex;
+  width: 56.5931vw;
+  height: 2.8125vw;
+  margin-top: 0.8854vw;
+  margin-left: 0.8508vw;
+}
+
+.BasketIconBG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 2.8125vw;
+  border-radius: 0.4688vw;
+  border: 0.1542vw solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.BasketIconBG > div {
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/ball2.png");
+  border-radius: 50%;
+}
+
+.BasketIconText {
+  color: #fff;
+  font-family: Arame-Mono;
+  font-size: 1.2083vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 0.651vw;
+}
+
+.BasketIconText > p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.2083vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -0.2vw;
+  letter-spacing: 0.2 471vw;
+}
+
+.CloseArea {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  right: 0.8vw;
+  width: 7vw;
+  height: 2.8125vw;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.CloseText {
+  width: 100%;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.47);
+  font-family: Arame-Mono;
+  font-size: 0.5642vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 0.3802vw;
+  transition: all 0.3s ease-out;
+}
+
+.CloseText > p {
+  color: rgba(255, 255, 255, 0.37);
+  font-family: Arame-Mono;
+  font-size: 0.4514vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1042vw;
+  transition: all 0.3s ease-out;
+}
+
+.CloseBar {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5542vw;
+  height: 1.3542vw;
+  border-radius: 0.1195vw;
+  background: radial-gradient(50% 50% at 50% 50%, #8f1a1a 0%, #f52c2c 100%);
+  box-shadow: 0vw 0vw 0.7767vw 0vw rgba(245, 44, 44, 0.4);
+  color: #fff;
+  font-size: 0.7vw;
+  line-height: 80%;
+  font-weight: 400;
+  transition: all 0.3s ease-out;
+}
+
+.CloseArea:hover .CloseText {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.CloseArea:hover .CloseText > p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.CloseArea:hover .CloseBar {
+  background: radial-gradient(50% 50% at 50% 50%, #a82020 0%, #ff3636 100%);
+  box-shadow: 0vw 0vw 1vw 0vw rgba(245, 44, 44, 0.6);
+  transform: rotate(90deg);
+}
+
+.Pages {
+  display: flex;
+  margin-left: 0.8854vw;
+  margin-top: 1.0938vw;
+}
+
+.PageLeft {
+  width: 41.25vw;
+  height: 29.4792vw;
+}
+
+.PageRight {
+  width: 14.5313vw;
+  height: 29.4792vw;
+  margin-left: 0.8333vw;
+  overflow: hidden;
+}
+
+.RightDec {
+  width: 100%;
+  height: 7.6042vw;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.RightDecBigT {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Gilroy-SemiBold;
+  font-size: 0.975vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.4688vw;
+  margin-top: 0.5729vw;
+}
+
+.RightDecBigT > t {
+  color: #ff8d49;
+  font-family: Gilroy-Black;
+}
+
+.RightDecT {
+  color: rgba(255, 255, 255, 0.44);
+  font-family: Gilroy-Regular;
+  font-size: 0.7813vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 13.5417vw;
+  margin-left: 0.4688vw;
+  margin-top: 0.1563vw;
+  height: 5vw;
+  overflow: scroll;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.RightCharacterBG {
+  width: 100%;
+  height: 21.0417vw;
+  margin-top: 0.8333vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/character.png");
+}
+
+.leaderboard {
+  width: 100%;
+  height: 13.125vw;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.leftbottomPages {
+  display: flex;
+  width: 100%;
+  height: 15.5208vw;
+  margin-top: 0.8333vw;
+}
+
+.GameSelection {
+  width: 21.875vw;
+  height: 100%;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.leftDec {
+  width: 18.5417vw;
+  height: 15.5208vw;
+  margin-left: 0.8333vw;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.leadetboarText {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Gilroy-SemiBold;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.625vw;
+  margin-top: 0.5729vw;
+}
+
+.leadetboarText > t {
+  color: #ff8d49;
+  font-family: Gilroy-Black;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.leaders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5208vw;
+  margin-top: 0.5208vw;
+  width: 40.2083vw;
+  height: 3.125vw;
+  border-radius: 0.3125vw;
+}
+
+.one {
+  margin-top: 0.4vw;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 168, 29, 0.18) 0%,
+    rgba(255, 168, 29, 0) 100%
+  );
+}
+
+.two > .leaderlist,
+.two > .leaderbasket {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.two {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 115, 29, 0.1) 0%,
+    rgba(255, 115, 29, 0) 100%
+  );
+}
+
+.three > .leaderlist,
+.three > .leaderbasket {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.three {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.ProfileDetail {
+  position: absolute;
+  display: flex;
+  left: 2.1vw;
+}
+
+.Profile {
+  width: 2.2151vw;
+  height: 2.2151vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/profile.png");
+  border-radius: 0.1229vw;
+}
+
+.ProfileName {
+  color: #fff;
+  font-family: Gilroy-SemiBold;
+  font-size: 0.8614vw;
+  margin-left: 0.5458vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  scale: 0.9;
+}
+
+.ProfileName > p {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Gilroy-Medium;
+  font-size: 0.8614vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.leaderlist {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Gilroy-SemiBold;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.leaderbasket {
+  position: absolute;
+  right: 17.4vw;
+  width: 5vw;
+  text-align: right;
+  color: #fff;
+  font-family: Arame-Mono;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.GameST {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Gilroy-SemiBold;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.625vw;
+  margin-top: 0.5729vw;
+}
+
+.GameST > t {
+  color: #ff8d49;
+  font-family: Gilroy-Black;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.GameSelectBars {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 20.625vw;
+  height: 4.4191vw;
+  margin-left: 0.625vw;
+  margin-top: 0.5729vw;
+}
+
+.GameSelectBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.375vw;
+  height: 1.7668vw;
+  border-radius: 0.2103vw;
+  border: 0.0421vw solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.49);
+  text-align: center;
+  font-family: Gilroy-Medium;
+  font-size: 0.8414vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  margin-left: 1.0117vw;
+  margin-top: 0.8054vw;
+  transition: 0.5s;
+}
+
+.GameSelectBar:hover {
+  cursor: pointer;
+  background: #ff8d49;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.GameSelectBars > .active {
+  background: #ff8d49;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.GameSelectBar:nth-child(1),
+.GameSelectBar:nth-child(2),
+.GameSelectBar:nth-child(3),
+.GameSelectBar:nth-child(4) {
+  margin-top: 0;
+}
+
+.GameSelectBar:nth-child(1),
+.GameSelectBar:nth-child(5) {
+  margin-left: 0;
+}
+
+.YouSelectBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20.625vw;
+  height: 2.3958vw;
+  margin-top: 0.8411vw;
+  margin-left: 0.625vw;
+  border-radius: 0.2945vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.YouSelectBar > t {
+  color: rgba(255, 255, 255, 0.74);
+  font-family: Gilroy-Medium;
+  font-size: 1.262vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+}
+
+.add,
+.remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 1.5985vw;
+  height: 1.5985vw;
+  border-radius: 0.2103vw;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-out;
+}
+
+.add {
+  margin-left: 18vw;
+}
+
+.remove {
+  left: 2.05vw;
+}
+
+.add:hover,
+.remove:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0.5208vw rgba(255, 255, 255, 0.2);
+}
+
+.balldec {
+  display: flex;
+  width: 20.5vw;
+  overflow: hidden;
+  margin-left: 0.625vw;
+  margin-top: 0.6771vw;
+}
+
+.balldec > t {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Gilroy-Regular;
+  font-size: 0.804vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* .8683rem */
+  margin-left: 0.2344vw;
+}
+
+.GameButtons {
+  display: flex;
+  width: 20.625vw;
+  height: 2.3958vw;
+  margin-left: 0.625vw;
+  margin-top: 0.6094vw;
+}
+
+.GameStart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17.1875vw;
+  height: 100%;
+  border-radius: 0.2945vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Arame-Mono;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.GameStart:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease-out, height 0.6s ease-out;
+}
+
+.GameStart:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0.2604vw 0.5208vw rgba(0, 0, 0, 0.2);
+}
+
+.GameStart:hover:before {
+  width: 25vw;
+  height: 25vw;
+}
+
+.GamePrice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.2188vw;
+  height: 100%;
+  border-radius: 0.2945vw;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(153, 153, 153, 0) 81.48%
+  );
+  color: #9fff55;
+  font-family: Arame-Mono;
+  font-size: 0.9896vw;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 90%; /* 1.0688rem */
+}
+
+.LeftDecImg {
+  position: absolute;
+  width: 2.2396vw;
+  height: 11.9271vw;
+  margin-top: 2.2396vw;
+  margin-left: 0.625vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../imgs/left-dec.png");
+}
+
+.LeftDecText {
+  color: rgba(255, 255, 255, 0.65);
+  font-family: Gilroy-SemiBold;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.5729vw;
+  margin-left: 0.625vw;
+}
+
+.LeftDecText > t {
+  color: #ff8d49;
+  font-family: Gilroy-Black;
+  font-size: 0.9375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.LeftDecTextOne {
+  width: 14.6875vw;
+  height: 2.8125vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: rgba(255, 255, 255, 0.44);
+  font-family: Gilroy-Regular;
+  font-size: 0.7813vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 3.3854vw;
+  margin-top: 0.5988vw;
+}
+
+.LeftDecTextTwo {
+  width: 14.6875vw;
+  height: 4.8438vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: rgba(255, 255, 255, 0.44);
+  font-family: Gilroy-Regular;
+  font-size: 0.7813vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 3.3854vw;
+  margin-top: 1.0417vw;
+}
+
+.LeftDecTextThree {
+  width: 14.6875vw;
+  height: 2.9167vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: rgba(255, 255, 255, 0.44);
+  font-family: Gilroy-Regular;
+  font-size: 0.7813vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 3.3854vw;
+  margin-top: 1.0417vw;
+}
+
+@keyframes scoreboardSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(12.3438vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.YourScoreBoard {
+  width: 12.3438vw;
+  height: 12.2396vw;
+  position: absolute;
+  z-index: 9999;
+  border-radius: 0.8854vw 0 0 0.8854vw;
+  background: #191a1b;
+  right: 0;
+  margin-top: 15vw;
+  overflow: hidden;
+  opacity: 0;
+  animation: scoreboardSlide 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.YourScoreBoardShadow {
+  width: 3.2292vw;
+  height: 3.2292vw;
+  margin-left: 1vw;
+  filter: blur(3.3682vw);
+  background-color: #e68646;
+}
+
+.YourScoreBoardSide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.YourScoreTop {
+  display: flex;
+  width: 10.8563vw;
+  height: 2.8125vw;
+  margin-left: 0.7813vw;
+  margin-top: 0.7292vw;
+}
+
+.YourScoreLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8125vw;
+  height: 100%;
+  border-radius: 0.4688vw;
+  border: 0.1042vw solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.YourScoreLogo > div {
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/ball2.png");
+  border-radius: 50%;
+}
+
+.YourScoreText {
+  margin-left: 0.7521vw;
+  color: #fff;
+  font-family: Arame-Mono;
+  font-size: 1.2083vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.YourScoreText > p {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: Arame-Mono;
+  font-size: 1.2083vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2471vw;
+}
+
+.YourScoreDec {
+  width: 10.8333vw;
+  height: 2.4479vw;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Gilroy-Medium;
+  font-size: 0.625vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.7813vw;
+  margin-top: 0.6771vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.YourScoreSide {
+  display: flex;
+  align-items: center;
+  width: 10.8333vw;
+  height: 1.7708vw;
+  margin-left: 0.7813vw;
+  margin-top: 0.3771vw;
+}
+
+.YourScoreSide > t {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Gilroy-Medium;
+  font-size: 0.8854vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 15.3px */
+}
+
+.YourScore {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8646vw;
+  height: 1.7708vw;
+  border-radius: 0.2945vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.74);
+  font-family: Arame-Mono;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 18px */
+  right: 0.75vw;
+}
+
+.RemainingSide {
+  display: flex;
+  align-items: center;
+  width: 10.8333vw;
+  height: 1.7708vw;
+  margin-left: 0.7813vw;
+  margin-top: 0.6771vw;
+}
+
+.RemainingSide > t {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Gilroy-Medium;
+  font-size: 0.8854vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 15.3px */
+}
+
+.RemainingScore {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8646vw;
+  height: 1.7708vw;
+  border-radius: 0.2945vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.74);
+  font-family: Arame-Mono;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 18px */
+  right: 0.75vw;
+}

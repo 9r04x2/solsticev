@@ -1,0 +1,1 @@
+var r=()=>window.GetParentResourceName!==void 0?GetParentResourceName():"";async function o(e,t){try{return(await fetch(`https://${r()}/${e}`,{method:"POST",headers:{"Content-Type":"application/json; charset=UTF-8"},body:JSON.stringify(t)})).json()}catch{return null}}export{o as a};

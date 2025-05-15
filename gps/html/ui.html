@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="gpsLeftBox" style="display: none">
+        <div class="gpsLeftIconsBox">
+          <div class="gpsLeftIconsLogo"></div>
+        </div>
+        <div class="gpsLeftMenu">
+          <div class="entryAndExitBox"></div>
+        </div>
+      </div>
+      <div class="gpsBox" id="gpsBox" style="display: none; scale: 1">
+        <div class="gpsLogiTitleBox" style="display: none">
+          <div class="GpsBG"></div>
+          <div class="gpsLoginMenu">
+            <div class="gpsLoginClockBox">
+              <div class="chargingBox">
+                <div class="chargingNumber"><p>%90</p></div>
+                <div class="chargingLogo"></div>
+              </div>
+              <div class="clockNumberTitle"><p>5:35</p></div>
+            </div>
+            <div class="gpsLoginCodeBox"><p>0000</p></div>
+            <div class="gpsNotificationBox">
+              <div class="noticationOneBox"></div>
+              <div class="noticationTwoBox">
+                <div class="notificationTitleBox">
+                  <div class="sirenBox">
+                    <div class="sirenLogoBox"></div>
+                  </div>
+                  <div class="sirenTitleMenu">
+                    <div class="sirenMinorTitle"><p>HAZIR MISIN?</p></div>
+                    <div class="sirenDavidTitle">
+                      <p>Bugün Los Santos'a hizmet etmeye hazır mısınız?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="notificationClockBox"><p>TODAY</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="gpsLine" onclick="Click(`GpsLine`)"></div>
+        </div>
+        <div class="gpsDataBox" style="display: none">
+          <div class="gpsBoxOne" style="display: none">
+            <div class="gpsActiveAdemsBox">
+              <div class="gpsOfficerBox">
+                <div class="gpsOfficerLogoBox">
+                  <div class="gpsOfficerLogoMenu"></div>
+                  <div class="gpsOfficerTitleBox">
+                    <div class="gpsOfficerTitle"><p>DANIEL GARCIA</p></div>
+                    <div class="officerActiveTitle">
+                      <div class="userEntryMenuLogo" id="PolygonOpen"></div>
+                      <div class="officerTitle"><p>DURUM</p></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="weaponLogo"></div>
+              </div>
+              <div class="activeStatusBox">
+                <div class="gpsClockAdemsBoxOne">
+                  <div class="ademsBoxTitleOne">
+                    <input
+                      type="text"
+                      onkeyup="Click(`ChangeCode`, this.value)"
+                      onchange="Click(`SaveCode`, this.value)"
+                      placeholder="Kodunuzu Girin"
+                    />
+                  </div>
+                </div>
+                <div class="activeTitleBox">
+                  <div class="activeTitle"><p>AKTIF DURUM KODU</p></div>
+                  <div class="activeAdemsTitle"><p>000</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="weatherForecastBox">
+              <div class="weatherForecastMenu">
+                <div class="weatherForecastClockBox">
+                  <div class="weatherForecastClockNumber"><p>7:64</p></div>
+                  <div class="weatherForecastClockTitle">
+                    <p>Wed, June 05</p>
+                  </div>
+                </div>
+                <div class="airTemperatureBox">
+                  <div class="airTemperatureTitle"><p>28°</p></div>
+                  <div class="airTemperatureImg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="userToolsBox">
+              <div class="userToolMenu">
+                <div class="userCarBox">
+                  <div class="userCarBoxLogo"></div>
+                </div>
+                <div class="userCarNumber" id="BoatNumber"><p>12</p></div>
+              </div>
+              <div class="userToolMenu">
+                <div class="userCarBox">
+                  <div class="userCarBoxLogoOne"></div>
+                </div>
+                <div class="userCarNumber" id="Helinumber"><p>12</p></div>
+              </div>
+              <div class="userToolMenu">
+                <div class="userCarBox">
+                  <div class="userCarBoxLogoTwo"></div>
+                </div>
+                <div class="userCarNumber" id="CarNumber"><p>12</p></div>
+              </div>
+              <div class="userToolMenu">
+                <div class="userCarBox">
+                  <div class="userCarBoxLogoTre"></div>
+                </div>
+                <div class="userCarNumber" id="WalkingNumber"><p>12</p></div>
+              </div>
+            </div>
+            <div class="userToolsLine">
+              <div class="ToolsLine"></div>
+              <div class="ToolsLine"></div>
+              <div class="ToolsLine"></div>
+              <div class="ToolsLine"></div>
+            </div>
+            <div class="gpsBtnBox">
+              <div class="connectBtn" onclick="Click(`Connect`)">
+                <p>BAGLAN</p>
+              </div>
+              <div class="disconnectBtn" onclick="Click(`Disconnect`)">
+                <p>AYRIL</p>
+              </div>
+            </div>
+          </div>
+          <div class="gpsBoxFour" style="display: none">
+            <div class="caseColorBox">
+              <div class="caseColorTitleBox">
+                <div class="caseColorTitleMenu">
+                  <div class="caseLogo"></div>
+                  <div class="caseColorTitle"><p>KASA RENGI</p></div>
+                </div>
+                <div class="starLogo"></div>
+              </div>
+              <div class="caseColorBoxOne">
+                <div
+                  class="caseBox"
+                  onclick="Click(`SetColor`, this.id)"
+                  id="blue"
+                ></div>
+                <div
+                  class="caseBox"
+                  onclick="Click(`SetColor`, this.id)"
+                  id="yellow"
+                ></div>
+                <div
+                  class="caseBox"
+                  onclick="Click(`SetColor`, this.id)"
+                  id="red"
+                ></div>
+                <div
+                  class="caseBox"
+                  onclick="Click(`SetColor`, this.id)"
+                  id="green"
+                ></div>
+              </div>
+              <div class="menuSizeBox">
+                <div class="caseColorTitleBox">
+                  <div class="caseColorTitleMenu">
+                    <div class="caseLogo"></div>
+                    <div class="caseColorTitle"><p>MENU BOYUTU</p></div>
+                  </div>
+                </div>
+                <div class="menuSizeLine">
+                  <input
+                    onchange="Click(`SetMenuSize`, this.value)"
+                    type="range"
+                    min="0"
+                    value="3"
+                    max="3"
+                  />
+                </div>
+                <div class="menuSizeTitle">
+                  <p>Menu Boyutu : <span>100%</span></p>
+                </div>
+              </div>
+              <div class="helpBox">
+                <div class="caseColorTitleBox">
+                  <div class="caseColorTitleMenu">
+                    <div class="caseLogo"></div>
+                    <div class="caseColorTitle"><p>YARDIM</p></div>
+                  </div>
+                </div>
+                <div class="helpLoremBox">
+                  <p>
+                  </p>
+                </div>
+              </div>
+              <div class="saveBtnBox">
+                <div onclick="Click(`SaveReset`, `Save`)" class="saveBox">
+                  <p>KAYDET</p>
+                </div>
+                <div onclick="Click(`SaveReset`, `Reset`)" class="resetBox">
+                  <p>SIFIRLA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gpsRightBox">
+          <div class="gpsRightLogo">
+            <div class="gpsRightLogoInside" style="opacity: 0.65"></div>
+          </div>
+          <div class="gpsMapsBoxOne" onclick="Click(`MainPage`)">
+            <p>ANA MENu</p>
+          </div>
+          <div class="gpsMapsBoxOne" onclick="Click(`SettingsPage`)">
+            <p>AYARLAR</p>
+          </div>
+          <div class="gpsLogoBox"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  <script src="./js.js"></script>
+</html>

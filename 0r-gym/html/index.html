@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./src/scripts/vue.global.js"></script>
+    <script src="./src/scripts/vuex.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="w-full h-[100vh]" style="background-size: 100% 100%;">
+        <div class="absolute flex flex-col gap-y-[0.5vw] justify-start items-center w-full h-full p-[0.5vw] z-[-1238127381273]" v-if="keybind">
+            <div class="w-[6.7292vw] h-[2.5926vh] flex gap-x-[0.5vw]">
+                <div class="w-[1.4583vw] h-[2.5926vh] shrink-0 [background:rgba(14,14,14,0.88)] rounded-[.1719vw] text-[#fff] [font-family:Gilroy-Medium] text-[.661vw] flex justify-center items-center">K</div>
+                <div class="flex justify-center items-center text-[#fff] [font-family:Gilroy-Medium] text-[.661vw] whitespace-nowrap">Ağırlık Seç</div>
+            </div>
+            <div class="w-[6.7292vw] h-[2.5926vh] flex gap-x-[0.5vw]">
+                <div class="w-[1.4583vw] h-[2.5926vh] shrink-0 [background:rgba(14,14,14,0.88)] rounded-[.1719vw] text-[#fff] [font-family:Gilroy-Medium] text-[.661vw] flex justify-center items-center">
+                    <img src="./src/images/mouse.png" class="h-[1.3889vh]">
+                </div>
+                <div class="flex justify-center items-center text-[#fff] [font-family:Gilroy-Medium] text-[.661vw] whitespace-nowrap">/mouse</div>
+            </div>
+            <div class="w-[6.7292vw] h-[2.5926vh] flex gap-x-[0.5vw]">
+                <div class="w-[1.4583vw] h-[2.5926vh] shrink-0 [background:rgba(14,14,14,0.88)] rounded-[.1719vw] text-[#fff] [font-family:Gilroy-Medium] text-[.661vw] flex justify-center items-center">J</div>
+                <div class="flex justify-center items-center text-[#fff] [font-family:Gilroy-Medium] text-[.661vw] whitespace-nowrap">Serbest Egzersiz</div>
+            </div>
+           
+            <div class="w-[6.7292vw] h-[2.5926vh] flex gap-x-[0.5vw]">
+                <div class="w-[1.4583vw] h-[2.5926vh] shrink-0 [background:rgba(14,14,14,0.88)] rounded-[.1719vw] text-[#fff] [font-family:Gilroy-Medium] text-[.661vw] flex justify-center items-center">Puan</div>
+                <div class="flex justify-center items-center text-[#fff] [font-family:Gilroy-Medium] text-[.661vw] whitespace-nowrap">/points</div>
+            </div>
+        </div>
+        <div class="absolute flex justify-center items-center w-full h-full p-[0.5vw]" v-if="freeMenu">
+            <div class="w-[9.9917vw] h-[17.4074vh] gap-y-[0.7407vh] gap-x-[.4167vw] justify-start items-start flex flex-wrap" >
+                <div class="flex justify-center items-center cursor-pointer w-[4.6875vw] h-[8.2407vh] shrink-0 [background:rgba(14,14,14,0.88)] rounded-[.1719vw]" @click="freeExercise('yoga')">
+                    <img src="./src/images/yoga.png" class="h-[4.7222vh]">
+                </div>
+                <div class="flex justify-center items-center cursor-pointer w-[4.6875vw] h-[8.2407vh] shrink-0 [background:rgba(14,14,14,0.88)] rounded-[.1719vw]" @click="freeExercise('jump')">
+                    <img src="./src/images/jump.png" class="h-[4.7222vh]">
+                </div>
+                <div class="flex justify-center items-center cursor-pointer w-[4.6875vw] h-[8.2407vh] shrink-0 [background:rgba(14,14,14,0.88)] rounded-[.1719vw]" @click="freeExercise('pushups')">
+                    <img src="./src/images/pushup.png" class="h-[4.7222vh]">
+                </div>
+                <div class="flex justify-center items-center cursor-pointer w-[4.6875vw] h-[8.2407vh] shrink-0 [background:rgba(14,14,14,0.88)] rounded-[.1719vw]" @click="freeExercise('situps')">
+                    <img src="./src/images/situps.png" class="h-[4.7222vh]">
+                </div>
+            </div>
+        </div>
+        <div class="absolute w-full h-full p-[0.5vw] flex justify-end items-end" v-if="taskPage">
+            <div class="w-[17.8125vw] h-full space-y-[0.5407vh]" >
+                <p class="text-white [font-family:Gilroy-Bold] text-[.6016vw]">Görevler</p>
+                <div class="flex w-full h-[3.4259vh] [background:rgba(14,14,14,0.88)] rounded-[.1719vw] rounded-[.1719vw]" v-for="(task, index) in tasks" :key="index" @click="startTask(index)">
+                    <div class="flex justify-start items-center px-[.5604vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">{{ task.taskDescription }}</div>
+                    <div class="flex justify-end items-center px-[1vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">+{{ task.taskReward }} puan</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="flex justify-center items-center w-full h-full absolute" v-if="weightSelect">
+            <div class="w-[18.0729vw] h-[13.7037vh] shrink-0 ">
+                <div class="w-full h-[40%] ">
+                    <div class="flex justify-center items-center  w-full h-[40%]  text-white [font-family:Gilroy-Extrabold] text-[1.6524vw] uppercase">SELECT WEIGHT</div>
+                    <div class="flex justify-center items-end text-center  w-full h-[60%] text-[rgba(255,255,255,0.40)] [font-family:Gilroy-Medium] text-[.661vw] leading-[1.1vh]"></div>
+                </div>
+                <div class="flex justify-center items-center w-full h-[20%]  text-white [font-family:Gilroy-Bold] text-[0.708vw]">{{selectedWeight}} lbs</div>
+                <div class="flex justify-center items-center w-full h-[10%] ">
+                    <input type="range" class="slider w-[18.0729vw] h-[0.7407vh] cursor-pointer" v-model="selectedWeight">
+                </div>
+                <div class="flex justify-center items-center w-full h-[30%] ">
+                    <div class="flex justify-center items-center w-[18.0729vw] h-[2.9074vh] shrink-0 [background:rgba(14,14,14,0.88)] text-white [font-family:Gilroy-Bold] text-[0.708vw] cursor-pointer" @click="selectWeight()">Confirm</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-start items-center w-full h-full px-[0.7vw] py-[1.8vh]" v-if="skillsPage" style="background-size: 100% 100%;" >
+            
+            <div class="w-[17.8125vw] h-[24.2593vh] [background:rgba(14,14,14,0.88)] rounded-[.1719vw]">
+                <div class="flex justify-end items-end w-full h-[2%]  "></div>
+                <div  v-for="(item, index) in skills" :key="index" class="flex justify-end items-end w-full h-[18%]">
+                    <div class="w-full h-[3.3612vh]">
+                        <div class="flex px-[.599vw] justify-between items-center w-full h-[30%] text-white [font-family:Gilroy-Bold] text-[.6016vw]"> {{ item.name }} 
+                            <div class="flex justify-center items-center w-[2.5vw] h-[0.95vh] [background:#FF3838] p-[0.35vw] text-white [font-family:Gilroy-Light] text-[.4016vw] whitespace-nowrap" @click="selectSkills(item.name, item.pts)">Upgrade</div>
+                        </div>
+                        <div class="flex px-[.599vw] justify-start items-center w-full h-[30%] text-white [font-family:Gilroy-Medium] text-[.4297vw]">  {{ item.description }}</div>
+                        <div class="flex px-[.599vw] justify-start items-end w-full h-[40%]  ">
+                            <div class="w-[16.4688vw] h-[0.7639vh] shrink-0 [background:rgba(217,217,217,0.10)]">
+                                <div class="w-[50%] h-full shrink-0 [background:#FF3838]" :style="{ width: item.current + '%'}"></div>
+                            </div>
+                            <div class="w-[4%] h-full"></div>
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center items-center w-full h-full absolute" v-if="buyPopUp">
+                <div class="w-[18.0729vw] h-[13.7037vh] shrink-0 ">
+                    <div class="w-full h-[40%] ">
+                        <div class="flex justify-center items-center  w-full h-[40%]  text-white [font-family:Gilroy-Extrabold] text-[1.6524vw] uppercase">EMIN MISINIZ?</div>
+                        <div class="flex justify-center items-end text-center  w-full h-[60%] text-[rgba(255,255,255,0.40)] [font-family:Gilroy-Medium] text-[.661vw] leading-[1.1vh]">{{selectedSkill}} becerinizi {{selectedPrice}} puan karşılığında %1 oranında artıracaksınız</div>
+                    </div>
+                    <div class="flex justify-center items-center w-full h-[20%]  text-white [font-family:Gilroy-Bold] text-[0.708vw]">{{selectedPercent}} %</div>
+                    <div class="flex justify-center items-center w-full h-[10%] ">
+                        <input type="range" class="slider w-[18.0729vw] h-[0.7407vh] cursor-pointer" v-model="selectedPercent">
+                    </div>
+                    <div class="flex justify-center items-center w-full h-[30%] gap-x-[4%]">
+                        <div class="flex justify-center items-center w-[48%] h-[2.9074vh] shrink-0 [background:rgba(14,14,14,0.88)] text-white [font-family:Gilroy-Bold] text-[0.708vw] cursor-pointer" @click="closePopUp()">İptal</div>
+                        <div class="flex justify-center items-center w-[48%] h-[2.9074vh] shrink-0 [background:#FF3838] text-white [font-family:Gilroy-Bold] text-[0.708vw] cursor-pointer" @click="buyPointsNow()">Onayla </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <Transition  enter-active-class="slide-in-bottom-enter-active"
+        leave-active-class="slide-in-bottom-leave-active">
+            <div class="absolute flex justify-center items-end py-[9vh] w-full h-full"  style="background-size: 100% 100%;" v-if="notificationShowNormal">
+                <div class="w-[7.9167vw] h-[7.6852vh]   ">
+                    <div class="w-full h-[60%] flex justify-center items-center">
+                        <img src="./src/images/up.png" class="h-[5.1852vh]">
+                    </div>
+                    <div class="w-full h-[20%]  flex justify-center items-center text-white [font-family:Gilroy-Bold] text-[.8333vw] whitespace-nowrap">KAZANILAN DENEYİM</div>
+                    <div class="w-full h-[20%]  flex justify-center items-center text-white [font-family:Gilroy-Medium] text-[.5729vw] whitespace-nowrap">{{gainedSkillAmount}} Kazanılan deneyim puanı</div>
+                </div>
+            </div>
+        </Transition>
+
+        <transition name="fade">
+        <div class="flex justify-center items-center w-full h-full relative" style="background-size: 100% 100%;" v-if="minigamePage" > <!--v-if="minigamePage" -->
+            <!-- <div class="absolute w-full h-full p-[0.5vw] flex justify-end items-end">
+                <div class="flex flex-col flex-justify-end items-end w-[5vw] h-[2vh]">
+                    <div class="w-[4.3229vw] h-[0.7639vh] shrink-0 [background:rgba(14,14,14,0.78)]">
+                        <div class="w-[50%] h-full bg-[#FF3838]" :style="{ width: barWidth }"></div>
+                    </div>
+                    <p class="text-white [font-family:Gilroy-Medium] text-[.5729vw] whitespace-nowrap">Failure</p>
+                </div>
+            </div> -->
+            <div class="absolute w-full h-full p-[0.5vw]">
+                <div class="w-[17.8125vw] h-[7.5926vh] space-y-[0.5407vh]" v-if="isNormalWorkout">
+                    <div class="flex w-full h-[3.4259vh] [background:rgba(14,14,14,0.88)] rounded-[.1719vw] rounded-[.1719vw]">
+                        <div class="flex justify-start items-center px-[.5604vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">Tekrarla</div>
+                        <div class="flex justify-end items-center px-[1vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">{{currentRepeat}}</div>
+                    </div>
+                    <div class="flex w-full h-[3.4259vh] [background:rgba(14,14,14,0.88)] rounded-[.1719vw]">
+                        <div class="flex justify-start items-center px-[.5604vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">Ağırlık</div>
+                        <div class="flex justify-end items-center px-[1vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">{{selectedWeight}}lbs</div>
+                    </div>
+                </div>
+                <div class="w-[17.8125vw] h-[7.5926vh] space-y-[0.5407vh]" v-if="isTreadmill">
+                    <div class="flex w-full h-[3.4259vh] [background:rgba(14,14,14,0.88)] rounded-[.1719vw] rounded-[.1719vw]">
+                        <div class="flex justify-start items-center px-[.5604vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">Mesafe</div>
+                        <div class="flex justify-end items-center px-[1vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">{{currentRepeat}} metre</div>
+                    </div>
+                    <div class="flex w-full h-[3.4259vh] [background:rgba(14,14,14,0.88)] rounded-[.1719vw]">
+                        <div class="flex justify-start items-center px-[.5604vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">Kalori</div>
+                        <div class="flex justify-end items-center px-[1vw] w-[50%] h-full text-white [font-family:Gilroy-Bold] text-[.6016vw]">{{estimatedCalorie }}kcal</div>
+                    </div>
+                </div>
+            </div>
+            <Transition  enter-active-class="slide-in-bottom-enter-active"
+            leave-active-class="slide-in-bottom-leave-active">
+                <div class="absolute flex justify-center items-end py-[9vh] w-full h-full"  style="background-size: 100% 100%;" v-if="notificationShow">
+                    <div class="w-[7.9167vw] h-[7.6852vh]   ">
+                        <div class="w-full h-[60%] flex justify-center items-center">
+                            <img src="./src/images/up.png" class="h-[5.1852vh]">
+                        </div>
+                        <div class="w-full h-[20%]  flex justify-center items-center text-white [font-family:Gilroy-Bold] text-[.8333vw] whitespace-nowrap">KAZANILAN DENEYİM</div>
+                        <div class="w-full h-[20%]  flex justify-center items-center text-white [font-family:Gilroy-Medium] text-[.5729vw] whitespace-nowrap">{{gainedSkillAmount}} Kazanılan deneyim puanı</div>
+                    </div>
+                </div>
+            </Transition>
+
+            <div class="w-[1.6667vw] h-[35.5556vh] mb-[0vh] ml-[32vw] space-y-[0.7407vh]">
+                <div class="flex justify-center items-center text-[#fff] text-[.7292vw] font-[Gilroy-Medium] w-full h-[4.537vh]  [background:rgba(14,14,14,0.88)]">{{ Key }}</div>
+                <div class="flex justify-center items-center w-full h-[25vh] [background:rgba(14,14,14,0.88)]">
+                    <div class="w-[1.1458vw] h-[24.0741vh]  bg-[#1A1A1AE0] relative ">
+                        <div class="absolute w-full h-[0.463vh] bg-[#fff] z-[10]"ref="line"></div>
+                        <div class="w-full h-[10%] bg-[#FF3838]" ref="red1"></div>
+                        <div class="w-full h-[10%]"  ref="green1"></div>
+                        <div class="w-full h-[70%]"></div>
+                        <div class="w-full h-[10%] bg-[#6CFF38]" ref="green2"></div>
+                        <div class=" w-full h-[0%]  " ref="green1"></div>
+                    </div>
+                    
+                </div>
+                <div class="flex flex-col justify-center items-center leading-[1vh]  w-full h-[4.537vh]  [background:rgba(14,14,14,0.88)]">
+                <p class="text-[#fff] text-[.7292vw] font-[Gilroy-Medium]">{{currentRepeat}}</p>
+                <p class="text-[#fff] text-[.5292vw] font-[Gilroy-Medium]">tekrar</p>
+                </div>
+            </div>
+
+            
+            
+        </div>
+        </transition>
+    </div>
+    <script src="./src/scripts/main.js"></script>
+    <script src="./src/scripts/progress.js"></script>
+</body>
+</html>

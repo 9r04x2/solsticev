@@ -1,0 +1,314 @@
+{
+  "label_race_start_track_type_sprint": "Sprint",
+  "label_race_start_track_type_circuit": "Pist",
+  "label_race_start_checkpoints": "kontrol noktaları",
+  "label_race_start_lap_amount_singular": "tur",
+  "label_race_start_lap_amount_plural": "turlar",
+  "label_race_start_competition": "~r~YARIŞMA",
+  "label_race_start_participation_fee": "Katılım ücreti",
+  "label_race_start_vehicle_class": "Araç sınıfı",
+  "label_race_start_starts": "Yaris basliyor",
+  "label_race_start_start_time": " saniye içinde",
+  "label_race_start_press": "Katılmak icin",
+  "label_join_button": "E",
+  "label_race_start_press_to_join": "bas",
+  "label_race_start_waiting": "Başlangıç için bekleniyor..",
+
+  "label_track_creation_point": "Nokta",
+  "label_track_creation_object": "Nesne",
+
+  "text_track_preview_race_start": "Başlangıç",
+  "text_track_preview_race_finish": "Bitiş",
+
+  "notification_chat_race_end": "Katıldığınız yarış sona erdi!",
+  "notification_chat_race_end_competition_participants": "Yarışma başlatılamadı çünkü minimum katılımcı sayısı sağlanamadı.",
+
+  "notification_tablet_minimum_laps_required": "Bir pist yarışı başlatırken, minimum tur sayısı en az iki olmalıdır.",
+  "notification_tablet_negative_participation_fee": "Katılım ücreti negatif olamaz.",
+  "notification_tablet_competition_class": "Bir yarışma başlatırken, sınıf seçilmelidir.",
+  "notification_tablet_race_starting": "Yeni yarış oluşturuldu, başlangıç %d saniye içinde.",
+
+  "notification_tablet_error_track_points": "Yeni bir pist oluşturmak için en az üç nokta yerleştirilmelidir.",
+  "notification_tablet_error_track_name_length": "Pist adı 5 - 40 karakter uzunluğunda olmalıdır.",
+  "notification_tablet_error_track_desc_length": "Pist açıklaması 10 - 50 karakter uzunluğunda olmalıdır.",
+  "notification_tablet_error_track_invalid_start": "Başlangıç zamanı en az %s dakika olmalıdır.",
+  "notification_tablet_error_type_missing": "Pisti oluşturmak için tip seçilmelidir.",
+  "notification_tablet_info_track_created": "Yeni pist '%s' başarıyla oluşturuldu.",
+  "notification_tablet_info_track_verified": "Pist '%s' otomatik yarışma oluşturucu için doğrulandı.",
+  "notification_tablet_info_track_de_verified": "Pist '%s' doğrulaması kaldırıldı.",
+  "notification_tablet_info_track_favorited": "Pist '%s' favorilere eklendi.",
+  "notification_tablet_info_track_unfavorited": "Pist '%s' favorilerden çıkarıldı.",
+
+  "notification_tablet_info_color_changed": "Renk başarıyla değiştirildi.",
+  "notification_tablet_error_no_vehicle_for_class": "Araç sınıfını belirlemek için bir araç içinde olmalısınız.",
+  "notification_tablet_info_vehicle_class": "Mevcut aracınız '%s' sınıfına aittir.",
+
+  "time_weeks_singular": "hafta",
+  "time_weeks_plural": "hafta",
+
+  "time_days_singular": "gün",
+  "time_days_plural": "gün",
+
+  "time_hours_singular": "saat",
+  "time_hours_plural": "saat",
+
+  "text_chat_notification_join_not_allowed": "Yarışa katılmanıza izin verilmiyor.",
+  "text_chat_notification_finished_race": "Yarış sona erdi, bitiş pozisyonunuz için $%d kazandınız.",
+  "text_chat_notification_finished_race_as_winner": "Yarışın kazananısınız ve $%d kazandınız!",
+  "text_chat_notification_not_enough_money": "Yarışa katılmak için yeterli paranız yok!",
+  "text_chat_notification_wrong_class": "Yarışa katılmak için gereken sınıf aracınız yok!",
+  "text_chat_notification_not_identifier": "Yarış tableti üzerinden kendinizi tanımlamadınız!",
+  "text_chat_notification_countdown_started": "Geri sayım başladı, yarışa katılamazsınız.",
+  "text_chat_notification_track_creation_vehicle": "Pist oluşturma sadece bir araçtayken mümkündür!",
+  "text_chat_notification_phasing_end": "Faz geçişi sona ermek üzere!",
+  "text_chat_notification_you_finished": "Bitirdiniz [%s]",
+  "text_chat_notification_other_finished": "%s bitirdi [%s]",
+
+  "text_tablet_event_competition_won": "Yarışma kazananı: '%s' pistinde",
+  "text_tablet_event_new_rating_tier": "Yeni bir puan seviyesine ulaştınız (%s)",
+  "text_tablet_event_new_track": "Yeni bir pist '%s' oluşturuldu",
+
+  "text_tablet_deleted_track_title": "SİLİNMİŞ PİST",
+  "text_tablet_deleted_track_description": "Pist yazar tarafından silindi.",
+  "text_tablet_time_ago": "önce",
+
+  "text_profile_default_name": "Sürücü %s",
+
+  "text_tablet_driver_level_1": "Gezgin",
+  "text_tablet_driver_level_1400": "Acemi",
+  "text_tablet_driver_level_1500": "Sürücü",
+  "text_tablet_driver_level_1600": "Yarışçı",
+  "text_tablet_driver_level_1700": "Ev Sahibi",
+  "text_tablet_driver_level_1850": "Yabancı",
+  "text_tablet_driver_level_2000": "Süperstar",
+  "text_tablet_driver_level_2100": "Tanrı Seviyesi",
+
+
+  "notification_tablet_error_name_length": "İsim uzunluğu 3 - 15 karakter arasında olmalıdır.",
+  "notification_tablet_error_picture_format": "Girilen URL formatı izin verilen formatta değil. Önerilen resim yükleme sitesine gitmek için 'Yükle' butonuna tıklayın.",
+
+  "notification_tablet_info_name_changed": "İsim başarıyla değiştirildi.",
+  "notification_tablet_info_picture_changed": "Profil resmi başarıyla değiştirildi.",
+  "notification_tablet_info_track_preview": "Pist önizlemesi GPS'inizde 20 saniye işaretlendi.",
+  "notification_tablet_info_track_start_point": "Pist başlangıç noktası GPS'inizde işaretlendi.",
+  "notification_tablet_info_track_deleted": "Pist '%s' silindi.",
+
+  "notification_tablet_competition_starting": "Yarışma oluşturuldu, başlangıç %d dakika içinde.",
+  "notification_tablet_competition_not_enough_money": "Ödül havuzunu oluşturmak için yeterli paranız yok ($%s).",
+  "notification_tablet_competition_no_result": "Yarışma oluşturulamaz. Pist '%s' üzerinde '%s' sınıfı sonuçları bulunmuyor (DNF zamanlayıcısını hesaplamak için).",
+  "notification_tablet_competition_invalid_lap_amount": "Pist '%s' geçersiz tur sayısına sahip. Tur sayısı %d-%d arasında olmalıdır.",
+  "notification_tablet_competition_not_verified": "Yarışma oluşturulamaz. Pist '%s' doğrulanmamış.",
+
+  "notification_discord_competition_title": "%s tarafından yeni yarışmalar oluşturuldu!",
+  "notification_discord_competition_title_error": "Yarışmalar oluşturulamadı!",
+  "notification_discord_competition_description": "Yarış Sistemi",
+  "notification_discord_competition_description_error": "Sistem, yarışmalar oluşturmak için yeterli sonuca sahip değil. Yardım için dokümantasyon sitemizi ziyaret edin: https://docs.rahe.dev/",
+  "notification_discord_competition_class": "sınıf",
+
+  "track_creation_title": "PİST KAYDI",
+
+  "track_creation_point_placement": "Nokta yerleştirme",
+  "track_creation_object_placement": "Nesne yerleştirme",
+  "track_creation_object_distance": "Nesne mesafesi",
+  "track_creation_object_rotation": "Nesne dönüşü",
+  "track_creation_object_change": "Nesne değişikliği",
+  "track_creation_object_deletion": "Sil",
+
+  "race_position": "Poz",
+  "race_lap": "Tur",
+  "race_cp": "Nokta",
+  "race_time": "Zaman",
+
+  "race_current_lap": "Geçerli tur",
+  "race_best_lap": "En iyi tur",
+  "race_total_time": "Toplam zaman",
+
+  "general_header_home": "Ana Sayfa",
+  "general_header_tracks": "Pistler",
+  "general_header_races": "Yarışlar",
+  "general_header_leaderboard": "Lider Tablosu",
+  "general_header_profile": "Kullanıcı Profili",
+  "general_header_leave": "Yarışı Terket",
+
+  "home_tab_competitions": "Yarışmalar",
+  "home_tab_competitions_day": "Her gün saat 19:00'da yarışmalar!",
+
+  "home_tab_welcome_text": "Hoş geldiniz,",
+  "home_tab_summary_first": "Son olarak bir yarışmaya katıldınız",
+  "home_tab_summary_second": "gün",
+  "home_tab_summary_third": "önce, burada pozisyon",
+  "home_tab_summary_fourth": "",
+  "home_tab_summary_fifth": "Toplamda",
+  "home_tab_summary_sixth": "kez yarıştınız",
+  "home_tab_summary_seventh": "ve bir puan elde ettiniz",
+
+  "home_tab_events_header": "Son Etkinlikler",
+  "home_tab_events_none": "Gösterilecek etkinlik yok.",
+  "home_tab_event_hours_ago": "saat önce",
+  "home_tab_event_rating": "Puan ",
+
+
+
+  "tracks_tab_tracks": "Pistler",
+  "tracks_tab_personal_tracks": "Kişisel",
+  "tracks_tab_favorite_tracks": "Favoriler",
+  "tracks_tab_verified_tracks": "Doğrulanmış",
+  "tracks_tab_found_tracks": "Bulunan",
+  "tracks_tab_found_tracks_amount": "pist",
+  "tracks_tab_search_track": "Pist / yaratıcı adı..",
+
+  "tracks_tab_track_information": "Pist bilgileri",
+  "tracks_tab_new_race": "Yeni yarış",
+  "tracks_tab_legendary_tag": "Efsanevi",
+  "tracks_tab_new_tag": "Yeni",
+  "tracks_tab_popular_tag": "Popüler",
+
+  "tracks_tab_details_track_information": "Pist bilgileri",
+  "tracks_tab_details_points": "nokta",
+  "tracks_tab_details_objects": "nesne",
+  "tracks_tab_details_sprint": "Sprint",
+  "tracks_tab_details_circuit": "Pist",
+
+  "tracks_tab_details_times_driven": "Sürülen zamanlar",
+  "tracks_tab_details_finish_percentage": "Bitiş yüzdesi",
+  "tracks_tab_details_people_finished": "Bitiren insanlar",
+
+  "tracks_tab_details_filter_best_results": "Pistin en iyi sonuçları",
+  "tracks_tab_details_filter_all": "TÜM",
+
+  "tracks_tab_details_deletion_modal_title": "Uyarı",
+  "tracks_tab_details_deletion_modal_description": "Pisti silmek istediğinizden emin misiniz?",
+  "tracks_tab_details_deletion_modal_confirm": "Sil",
+  "tracks_tab_details_deletion_modal_cancel": "İptal",
+
+  "tracks_tab_details_configuration_modal_title": "Yapılandır",
+  "tracks_tab_details_configuration_modal_description": "Pist için istenen parametreleri seçin.",
+  "tracks_tab_details_configuration_modal_laps": "Tur sayısı",
+  "tracks_tab_details_configuration_modal_confirm": "Kaydet",
+  "tracks_tab_details_configuration_modal_cancel": "İptal",
+
+  "tracks_tab_new_page_header": "Yeni pist oluşturma",
+  "tracks_tab_new_info_header": "1. Pist bilgileri",
+  "tracks_tab_new_info_description": "Pist için bir isim ve açıklama girin, böylece diğer sürücüler ne bekleyeceklerini bilirler.",
+  "tracks_tab_new_info_name_input": "Pist adı..",
+  "tracks_tab_new_info_description_input": "Pist açıklaması..",
+  "tracks_tab_new_info_track_type_sprint": "Sprint",
+  "tracks_tab_new_info_track_type_circuit": "Pist",
+  "tracks_tab_new_race_type": "Yarış türü",
+  "tracks_tab_new_race_type_normal": "Normal",
+  "tracks_tab_new_race_type_competition": "Yarışma",
+  "tracks_tab_new_object_header": "2. Pist noktaları ve nesneler",
+  "tracks_tab_new_object_description": "Etrafı dolaşın ve sisteme noktalar ve nesneler ekleyin. Her şeyin yarışçılar için mantıklı bir şekilde yerleştirildiğinden emin olun.",
+  "tracks_tab_new_object_delete_1": "Noktaları sil ",
+  "tracks_tab_new_object_delete_2": "ve nesneleri",
+  "tracks_tab_new_object_mode_start": "Pist oluşturma modunu aç",
+  "tracks_tab_new_object_mode_pause": "Pist oluşturma modunu duraklat",
+  "tracks_tab_new_create_button": "Pisti oluştur",
+
+  "tracks_tab_race_title": "Yarış oluşturma",
+  "tracks_tab_race_header": "Yarış ayarları",
+  "tracks_tab_race_description": "Yarış için istenen ayarları girin. Pist uzunluğunu ve diğer parametreleri dikkate alın.",
+  "tracks_tab_race_start_time": "Başlama süresi (sn)",
+  "tracks_tab_race_dnf_time": "Kazanan sonrası DNF zamanlayıcısı (sn)",
+  "tracks_tab_laps": "Tur sayısı",
+  "tracks_tab_race_fee": "Giriş ücreti ($)",
+  "tracks_tab_race_prize_pool": "Toplam ödül ($)",
+  "tracks_tab_race_competition_start_time": "Başlama zamanı",
+  "tracks_tab_race_class": "Gerekli sınıf",
+  "tracks_tab_race_class_none": "Yok",
+  "tracks_tab_race_create_button": "Yarışı oluştur",
+  "tracks_tab_found_races": "Son",
+  "tracks_tab_found_races_amount": "yarış",
+  "tracks_tab_search_race": "Pist ara..",
+
+
+  "tracks_tab_race_comp_header": "Yarışma serileri",
+  "tracks_tab_race_comp_description": "Bir seferde birden fazla yarışma oluşturun.",
+  "tracks_tab_race_approximate_start": "Yaklaşık başlangıç",
+  "tracks_tab_race_estimated_duration": "Tahmini süre",
+  "tracks_tab_race_estimated_duration_minutes": "dk",
+  "tracks_tab_race_add_race": "Seriye başka bir yarış ekle..",
+  "tracks_tab_race_search": "Pist ara..",
+  "tracks_tab_race_results_hidden_pre": "Sadece altı pist aynı anda gösterilebilir.",
+  "tracks_tab_race_results_hidden_aft": "pistler şu anda gizli.",
+  "tracks_tab_race_results_hidden_disclaimer": "Daha iyi sonuçlar için daha spesifik bir arama terimi deneyin..",
+
+  "races_tab_header_competitions": "Organize edilen yarışmalar",
+  "races_tab_competitions_none": "Şu anda mevcut yarışma yok.",
+  "races_tab_comp_table_information": "PİST BİLGİLERİ",
+  "races_tab_comp_table_start": "BAŞLAMA ZAMANI",
+  "races_tab_comp_table_prizepool": "ÖDÜL HAVUZU",
+  "races_tab_comp_table_class": "ARAÇ SINIFI",
+  "races_tab_comp_table_organizer": "DÜZENLEYİCİ",
+
+  "races_tab_header_races": "Tamamlanan yarışlar",
+  "races_tab_header_my_races": "Yarışlarım",
+
+  "races_tab_race_table_information": "PİST BİLGİLERİ",
+  "races_tab_race_table_top": "SIRALAMA",
+  "races_tab_race_table_organizer": "DÜZENLEYİCİ",
+  "races_tab_race_table_participation": "KATILIM",
+
+  "races_tab_race_table_drivers": "sürücü",
+  "races_tab_race_table_finished": "bitirdi",
+
+  "races_tab_race_details_header": "Yarış sonuçları",
+  "races_tab_race_details_table_driver": "Sürücü",
+  "races_tab_race_details_table_time": "Zaman",
+  "races_tab_race_details_table_vehicle": "Araç",
+  "races_tab_race_details_table_rating": "Puan",
+  "races_tab_race_details_table_money": "Para",
+  "races_tab_race_details_table_class": "sınıf",
+
+
+  "leader_tab_header_leaderboard": "Sürücü lider tablosu",
+  "leader_tab_header_rating": "PUAN",
+
+  "leader_tab_table_driver": "SÜRÜCÜ",
+  "leader_tab_table_rating": "ELO PUANI",
+  "leader_tab_normal_races": "NORMAL YARIŞLAR",
+  "leader_tab_comp_races": "YARIŞMALAR",
+  "leader_tab_avg_pos": "ORTALAMA POZİSYON",
+
+  "profile_tab_header_driver": "Sürücü",
+  "profile_tab_member_since": "Başvuru kullanıcısı olarak",
+
+  "profile_tab_button_name": "İsmi değiştir",
+  "profile_tab_picture_name": "Resmi değiştir",
+  "profile_tab_new_name_placeholder": "Yeni isim..",
+  "profile_tab_new_picture_placeholder": "Resim adresi..",
+  "profile_tab_save": "Kaydet",
+  "profile_tab_upload": "Yükle",
+
+  "profile_tab_checkpoint_color": "Kontrol noktası rengi",
+  "profile_tab_gps_color": "GPS rengi",
+
+
+  "profile_tab_faq_title": "Sıkça Sorulan Sorular",
+  "profile_tab_faq_desc": "Uygulama hakkında sorularınız varsa veya daha fazla bilgi edinmek istiyorsanız, aşağıdaki yanıtlanmış soruları okuyabilirsiniz.",
+
+  "profile_tab_faq_1_q": "Puanımı nasıl artırabilirim?",
+  "profile_tab_faq_1_a": "Puanınızı yalnızca resmi yarışmalara katılarak artırabilirsiniz.\nNormal yarışlarda puan kazanamazsınız. Yarışmalarda elinizden gelenin en iyisini yapmalısınız, çünkü kötü bir sonuç\npuanınızı da düşürebilir.",
+
+  "profile_tab_faq_2_q": "Puan nasıl hesaplanır?",
+  "profile_tab_faq_2_a": "Sistem, bir yarışmadaki her katılımcı için ELO ilkesine göre puan değişimini hesaplar.\nBu, nihai pozisyonunuzun yanı sıra diğer oyuncuların ve onların puanlarının da dikkate alındığı anlamına gelir.",
+
+  "profile_tab_faq_3_q": "Yarışmalar ne zaman yapılır?",
+  "profile_tab_faq_3_a": "Her gün bir anonim kişi yarışmalar düzenler, bu yarışmalar 19:00 - 22:00 saatleri arasında gerçekleşir. Bu kişi ayrıca her yarışı bir ödülle destekler.\nYarışmalar her gün 14:00'te uygulamaya eklenir.",
+
+  "profile_tab_faq_4_q": "Yarışmalar için pistler nasıl seçilir?",
+  "profile_tab_faq_4_a": "Anonim kişi seçim yaparken rastgele seçer. Bir pist belirli bir sınıf yarışması için yalnızca, belirli sınıfa ait bir araçla en az bir kez tamamlanmışsa nitelendirilebilir.",
+
+  "profile_tab_faq_5_q": "Yarışmalara nasıl katılırım?",
+  "profile_tab_faq_5_a": "Yarışmalar için önceden kayıt olmanız gerekmez. Başlangıçtan yaklaşık bir dakika önce\nbaşlangıç noktası açılır ve herkes katılabilir. Aynı sınıftan bir aracınızın olması gerektiğini unutmamalısınız.",
+
+  "profile_tab_faq_6_q": "Kendi yarışmalarımı düzenleyebilir miyim?",
+  "profile_tab_faq_6_a": "Normal yarışlar herkes tarafından başlatılabilirken, yarışmalar düzenlemek tüm kullanıcılar için mevcut değildir.\nBu seçenek yalnızca en az 1700 puan almış sürücüler için mevcuttur.",
+
+  "profile_tab_faq_7_q": "Yüksek bir pozisyon elde ettim, ama yine de puan kaybettim. Neden?",
+  "profile_tab_faq_7_a": "ELO sistemi başka faktörleri de dikkate alır. İyi bir pozisyon elde ettiyseniz ve ELO kazanamadıysanız, muhtemelen genel seviye düşüktü ve sistem sizin için daha iyi bir pozisyon tahmin etti.",
+
+  "profile_tab_faq_8_q": "Sprint ve devre arasında ne fark var?",
+  "profile_tab_faq_8_a": "Bir sprint yarışı oluşturduğunuzda, turların sayısını belirleme şansınız olmayacaktır. Devre yarışlarında ise turların sayısını seçmeniz zorunludur.\nMinimum tura sayısı en az iki olmalıdır."
+
+}

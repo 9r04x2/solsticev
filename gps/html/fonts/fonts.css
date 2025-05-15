@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "ShentoxTRIAL-Md";
+  src: url(../fonts/ShentoxTRIAL-Md.otf);
+}
+
+@font-face {
+  font-family: "ShentoxTRIAL-ThIt";
+  src: url(../fonts/ShentoxTRIAL-ThIt.otf);
+}
+
+@font-face {
+  font-family: "ShentoxTRIAL-bd";
+  src: url(../fonts/shentoxtrial-bd.otf);
+}
+
+@font-face {
+  font-family: "ShentoxTRIAL-BdIt";
+  src: url(../fonts/ShentoxTRIAL-BdIt.otf);
+}
+
+@font-face {
+  font-family: "ShentoxTRIAL-SmBd";
+  src: url(../fonts/ShentoxTRIAL-SmBd.otf);
+}
+
+@font-face {
+  font-family: "SenticDisplayLight";
+  src: url(../fonts/SenticTextMedium.otf);
+}

@@ -1,0 +1,6 @@
+RegisterKeyMapping('menu', Config.KeyBinds['menu'].description, 'KEYBOARD', Config.KeyBinds['menu'].key)
+RegisterKeyMapping('cancel_progressbar', Config.KeyBinds['cancel_progressbar'].description, 'KEYBOARD', Config.KeyBinds['cancel_progressbar'].key)
+RegisterKeyMapping('aio_menu', Config.KeyBinds['aio_menu'].description, 'KEYBOARD', Config.KeyBinds['aio_menu'].key)
+RegisterKeyMapping('toggle_cinematic', Config.KeyBinds['cinematic_mode'].description, 'KEYBOARD', Config.KeyBinds['cinematic_mode'].key)
+RegisterKeyMapping('toggle_cinematic_focus', Config.KeyBinds['cinematic_focus'].description, 'KEYBOARD', Config.KeyBinds['cinematic_focus'].key)
+RegisterKeyMapping('+hidden_content', Config.KeyBinds['3d_perspective'].description, 'KEYBOARD', Config.KeyBinds['3d_perspective'].key)

@@ -1,0 +1,854 @@
+:root {
+  --color: #000000;
+}
+
+@import url('https://kit-pro.fontawesome.com/releases/v6.2.0/css/pro.min.css');
+
+@font-face {
+  font-family: BebasNeueBold;
+  src: url(BebasNeueBold.ttf);
+}
+
+*{
+	user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+html {
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	display: none;
+	color: #a8a8aa;
+}
+
+::-webkit-scrollbar
+{
+	width: 4px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+.radio-container {
+	width: 28.4%;
+	height: 14%;
+	background-color: rgba(25, 25, 25, 1.0);
+	margin: 0;
+	position: absolute;
+	top: 45%;
+	left: 70%;
+	overflow: hidden;
+	z-index: 9999;
+	display: none;
+	transform: scale(1.0);	 
+	transform-origin: 0 0;
+}
+
+.radiourl-container {
+	width: 20%;
+	height: 20%;
+	background-color: rgba(25, 25, 25, 1.0);
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 999999;
+	display: none;
+	border-bottom: 3px solid var(--color);
+}
+
+.radioplaylist-container {
+	width: 20%;
+	height: 50%;
+	background-color: rgba(25, 25, 25, 1.0);
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 999999;
+	display: none;
+	border-bottom: 3px solid var(--color);
+}
+
+.radioedit-container {
+	width: 25%;
+	height: 25%;
+	background-color: rgba(25, 25, 25, 1.0);
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 99999;
+	display: none;
+	border-bottom: 3px solid var(--color);
+}
+
+.radiosettings {
+	width: 29%;
+	height: 100%;
+	background-color: rgba(43, 43, 43, 1.0);
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 85.5%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 9999999;
+	display: block;
+}
+
+.turnoffradio {
+	position: absolute;
+	margin: 0;
+	top: 16%;
+	left: 85%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.radiosettingsbutton {
+	position: absolute;
+	margin: 0;
+	top: 16%;
+	left: 15%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	filter: invert(100%) sepia(1%) saturate(1403%) hue-rotate(156deg) brightness(116%) contrast(100%);
+}
+
+.radiomp3button {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 50%;
+	left: 18%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 28px;
+	color: #5D5D5D;
+	text-align:center;
+	font-family: BebasNeueBold;
+}
+
+.radiomp3button:hover {
+	color: var(--color);
+	text-decoration: none;	
+}
+
+.radiofmbutton {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 28px;
+	color: #5D5D5D;
+	text-align:center;
+	font-family: BebasNeueBold;
+}
+
+.radiofmbutton:hover {
+	color: var(--color);
+	text-decoration: none;	
+}
+
+.radioytbutton {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 50%;
+	left: 82%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 28px;
+	color: #5D5D5D;
+	text-align:center;
+	font-family: BebasNeueBold;
+}
+
+.radioytbutton:hover {
+	color: var(--color);
+	text-decoration: none;	
+}
+
+.radioplaylistbutton {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 80%;
+	left: 20%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 20px;
+	color: #ffffff;
+	text-align:center;
+	font-family: BebasNeueBold;
+	display: none;
+}
+
+.radioplaylistbutton:hover {
+	color: var(--color);
+	text-decoration: none;	
+}
+
+.radioloopbutton {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 80%;
+	left: 80%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 20px;
+	color: #ffffff;
+	text-align:center;
+	font-family: BebasNeueBold;
+	display: none;
+}
+
+.radioloopbutton:hover {
+	color: var(--color);
+	text-decoration: none;	
+}
+
+.radiopausebutton {
+	position: absolute;
+	margin: 0;
+	top: 80%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.leftbutton {
+	position: absolute;
+	margin: 0;
+	top: 80%;
+	left: 20%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.rightbutton {
+	position: absolute;
+	margin: 0;
+	top: 80%;
+	left: 80%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+.radiologo {
+	position: absolute;
+	margin: 0;
+	top: 15%;
+	left: 10%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.musicdurationtext {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 80%;
+	left: 62%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 18px;
+	color: var(--color);
+	text-align:center;
+	font-family: Bahnschrift;
+	font-weight: bold;
+}
+
+.musicdurationmain {
+	width: 71%;
+	height: 5%;
+	background-color: rgba(71, 71, 71, 1.0);
+	margin: 0;
+	position: absolute;
+	top: 97.2%;
+	left: 35.4%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 9999999;
+	display: none;
+}
+
+.musicdurationmaindata {
+	width: 100%;
+	height: 100%;
+	background-color: var(--color);
+	z-index: 9999999;
+}
+
+.musiclabelmain {
+	width: 65%;
+	height: 35%;
+	background-color: rgba(0, 0, 0, 0.0);
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 35.5%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 9999999;
+	display: block;
+}
+
+.musictextmain {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 10s linear infinite;
+}
+
+.musictextlabel {
+	float: left;
+	width: 50%;
+	text-decoration: none;
+	font-size: 32px;
+	color: var(--color);
+	font-family: Bahnschrift;
+	font-weight: bold;
+	white-space: nowrap;	
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+.musicvolumeicon {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 75%;
+	left: 8%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 20px;
+	color: var(--color);
+	text-align:center;
+	font-family: BebasNeueBold;
+	display: none;
+}
+
+.volumeslider {
+	-webkit-appearance: none;
+	appearance: none;	
+	position: absolute;
+	margin: 0;
+	background-color: rgba(71, 71, 71, 1.0);
+	color: #ffffff;
+	font-size: 35px;
+	text-decoration: none;
+	text-align: center;
+	top: 75%;
+	left: 20%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 9999999;
+	width: 17%;
+	height: 2.7%;
+	font-family: BebasNeueBold;
+	outline: none;
+	display: none;
+}
+
+    
+input.volumeslider[type='range']::-webkit-slider-thumb {
+  width: 1px;
+  -webkit-appearance: none;
+  height: 1px;
+  background-color: #ffffff;
+  box-shadow: -80px 0 0 80px #ffffff;
+}
+
+.closeradiourl {
+	position: absolute;
+	margin: 0;
+	top: 10%;
+	left: 92%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.closeradioplaylist {
+	position: absolute;
+	margin: 0;
+	top: 5%;
+	left: 92%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.musicinput {
+	position: absolute;
+	margin: 0;
+	background-color: rgba(43, 43, 43, 1.0);
+	border-bottom: 2px solid var(--color);
+	color: #ffffff;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	text-align: center;
+	top: 45%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 9999999;
+	width: 75%;
+	font-family: Bahnschrift;
+	font-weight: bold;		
+}
+
+#musicinputdata {
+    border: none;
+    outline: none;
+    font-size: 15px;
+	color: #ffffff;
+	border-bottom: 2.5px solid var(--color);
+	font-family: Bahnschrift;
+	font-weight: bold;		
+}
+
+.radiourlmaintext {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 15%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 20px;
+	color: var(--color);
+	text-align:center;
+	font-family: Bahnschrift;
+	font-weight: bold;
+}
+
+.radioplaylistmaintext {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 5%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 20px;
+	color: var(--color);
+	text-align:center;
+	font-family: Bahnschrift;
+	font-weight: bold;
+}
+
+.buttonplayradionewurl {
+	position: absolute;
+	margin: 0;
+	background-color: rgba(43, 43, 43, 1.0);
+	border-bottom: 3px solid var(--color);
+	color: #ffffff;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	text-align: center;
+	top: 80%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 99999999;
+	width: 40%;
+	font-family: Bahnschrift;
+	font-weight: bold;	
+}
+
+.buttonplayradionewurl:hover {
+	background: var(--color);
+	text-decoration: none;	
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder { 
+	color: #ffffff;
+	font-family: Bahnschrift;
+	font-weight: bold;	
+}
+
+.closeradioedit {
+	position: absolute;
+	margin: 0;
+	top: 10%;
+	left: 94%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.radioeditmaintext {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 10%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 20px;
+	color: var(--color);
+	text-align:center;
+	font-family: Bahnschrift;
+	font-weight: bold;
+}
+
+.radioeditscaletext {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 25%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 18px;
+	color: #ffffff;
+	text-align:center;
+	font-family: Bahnschrift;
+	font-weight: bold;
+}
+
+#color-picker {
+	font-family: BebasNeueBold;
+	background-color: rgba(43, 43, 43, 1.0);
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center; 
+	outline: none;
+	border: none;
+	border-bottom: 2px solid var(--color);
+	z-index: 999999;  
+}
+
+.colorchanger {
+	position: absolute;
+	color: white;
+	top: 60%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(43, 43, 43, 1.0);
+	overflow: hidden;
+	z-index: 999999;  
+	font-family: Bahnschrift;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 50px;
+	text-decoration: none;
+	text-align: center;	
+	outline: none;
+	border: none;
+}
+
+.scaleslidercontainer {
+	position: absolute;
+	margin: 0;
+	background-color: rgba(43, 43, 43, 1.0);
+	border-bottom: 3px solid var(--color);
+	color: #ffffff;
+	font-size: 35px;
+	text-decoration: none;
+	text-align: center;
+	top: 40%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 999999;
+	width: 60%;
+	height: 12%;
+	font-family: BebasNeueBold;
+}
+
+.scaleslider {
+	-webkit-appearance: none;
+	appearance: none;	
+	position: absolute;
+	margin: 0;
+	background-color: rgba(255, 255, 255, 0.0);
+	color: #ffffff;
+	font-size: 35px;
+	text-decoration: none;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 999999;
+	width: 85%;
+	height: 40%;
+	font-family: BebasNeueBold;
+	outline: none;
+}
+
+.scaleslideline {
+	-webkit-appearance: none;
+	appearance: none;	
+	position: absolute;
+	margin: 0;
+	background-color: rgba(255, 255, 255, 1.0);
+	color: #ffffff;
+	font-size: 35px;
+	text-decoration: none;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 999999;
+	width: 85%;
+	height: 6%;
+	font-family: BebasNeueBold;
+	outline: none;
+}
+
+.scaleslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: var(--color);
+}
+
+.scaleslider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: var(--color);
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+.buttonradioeditreset {
+	position: absolute;
+	margin: 0;
+	background-color: rgba(43, 43, 43, 1.0);
+	border-bottom: 3px solid var(--color);
+	color: #ffffff;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	text-align: center;
+	top: 80%;
+	left: 30%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 99999999;
+	width: 35%;
+	font-family: Bahnschrift;
+	font-weight: bold;	
+}
+
+.buttonradioeditreset:hover {
+	background: var(--color);
+	text-decoration: none;	
+}
+
+.buttonradioeditsave {
+	position: absolute;
+	margin: 0;
+	background-color: rgba(43, 43, 43, 1.0);
+	border-bottom: 3px solid var(--color);
+	color: #ffffff;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-decoration: none;
+	text-align: center;
+	top: 80%;
+	left: 70%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 99999999;
+	width: 35%;
+	font-family: Bahnschrift;
+	font-weight: bold;	
+}
+
+.buttonradioeditsave:hover {
+	background: var(--color);
+	text-decoration: none;	
+}
+
+.radioplaylistsmain {
+	width: 98%;
+	height: 90%;
+	background-color: rgba(0, 0, 0, 0.0);
+	margin: 0;
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 9999999;
+	overflow-x: hidden;
+	overflow-y: scroll;	
+}
+
+.radioplaylists {
+	width: 100%;
+	left: 50%;
+	overflow: auto;
+	display: flex;
+	flex-wrap: wrap;		
+	font-family: Bahnschrift;
+	font-weight: bold;	
+}
+
+.radioplaylist {
+	position: relative;
+	background-color: rgba(25, 25, 25, 1.0);
+	width: 100%;
+	text-align:center;
+	margin-top: 1%;
+	padding-top: 4%;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 4%;
+	margin-bottom: 1%;
+	margin-left: 0.5%;
+	z-index: 999999999;
+}
+
+.radioplaylistduration {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 50%;
+	left: 8%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 15px;
+	font-family: Bahnschrift;
+	font-weight: bold;	
+	color: var(--color);
+	text-align:center;
+	z-index: 99999999;
+}
+
+.radioplaylistlabel {
+	position: absolute;
+	margin: 0;
+	width: 80%;
+	text-decoration: none;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 15px;
+	font-family: Bahnschrift;
+	font-weight: bold;	
+	color: #ffffff;
+	text-align:center;
+	z-index: 99999999;
+}
+
+.radioplaylistremove {
+	position: absolute;
+	margin: 0;
+	text-decoration: none;
+	text-align: center;
+	top: 50%;
+	left: 92%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);	
+	font-size: 15px;
+	font-family: Bahnschrift;
+	font-weight: bold;	
+	color: var(--color);
+	text-align:center;
+	z-index: 99999999;
+}
+
+.radioplaylistremove:hover {
+	color: #ffffff;
+	text-decoration: none;	
+}
+
+.full-screen {
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+}
+
+*{
+	font-family: BebasNeueBold;
+}

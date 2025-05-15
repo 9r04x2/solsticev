@@ -1,0 +1,17 @@
+{
+  "toggle_front_driver_door": "Ön sürücü kapısını aç/kapat",
+  "toggle_front_passenger_door": "Ön yolcu kapısını aç/kapat",
+  "toggle_rear_driver_door": "Arka sürücü kapısını aç/kapat",
+  "toggle_rear_passenger_door": "Arka yolcu kapısını aç/kapat",
+  "toggle_hood": "Kaputu aç/kapat",
+  "toggle_trunk": "Bagajı aç/kapat",
+  "debug_box": "(Hata Ayıklama) Kutu",
+  "debug_sphere": "(Hata Ayıklama) Küre",
+  "debug_police_car": "Polis aracı",
+  "debug_ped": "(Hata Ayıklama) Yaya",
+  "debug_vehicle": "(Hata Ayıklama) Araç",
+  "debug_object": "(Hata Ayıklama) Nesne",
+  "debug_global": "(Hata Ayıklama) Küresel",
+  "toggle_targeting": "Hedeflemeyi aç/kapat",
+  "go_back": "Geri dön"
+}
